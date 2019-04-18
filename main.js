@@ -74,6 +74,7 @@ function start() {
 function bgcolor(col){
 	switch(col){
 	case 'colorD':
+                document.getElementById('siteTheme').setAttribute('content', '#263238');
 		$('body').css('background-color', '#263238');
 		$('#logo').removeClass('logoTheme');
 		$('#mobileNav button').css('color', '#ffffff');
@@ -94,6 +95,7 @@ function bgcolor(col){
 		$('#aboutMenu button').css('color','#000');
 	break;
 	case 'colorW': 
+                document.getElementById('siteTheme').setAttribute('content', '#ffffff');
 		$('body').css('background-color', '#ffffff');
 		$('#logo').addClass('logoTheme');
 		$('#mobileNav button').css('color', '#1E88E5');

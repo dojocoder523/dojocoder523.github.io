@@ -10,7 +10,7 @@
 	transition: 0.5s;
 }
 body {
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto Condensed', sans-serif;
 	background: #263238;
 	transition: 0.5s;
 }

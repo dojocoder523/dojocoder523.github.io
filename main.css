@@ -45,6 +45,7 @@ body {
 	top: 100px;
 	left: 50%;
 	z-index: 0;
+        transition: 0.8s;
 	transform:translateX(-54.9%);
 }
 #nav ul {
@@ -58,7 +59,6 @@ body {
 #nav ul li {
 	list-style: none;
 	margin: 0 29px 0 0;
-        transition: 0.8s;
 }
 #nav ul li a {
 	text-decoration: none;

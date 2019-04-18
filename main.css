@@ -82,12 +82,12 @@ body {
 	color: #fff;
 	width: 400px;
 	text-align: center;
-	transition: 0.3s;
+	transition: 0.5s;
 	z-index:4;
 }
 #form.activeForm {
 	margin-top: 55px;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 .form p input[type="text"] {
 	padding: 18px;

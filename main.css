@@ -7,7 +7,7 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #263238;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .header {
 	width: 100%;
@@ -46,7 +46,7 @@ body {
 	left: 50%;
 	z-index: 0;
 	transform:translateX(-54.9%);
-	transition:0.3s;
+	transition:0.5s;
 }
 #nav ul {
 	display: flex;
@@ -54,7 +54,7 @@ body {
 #nav.active {
 	top: 70px;
 	z-index: 5;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 #nav ul li {
 	list-style: none;
@@ -300,6 +300,7 @@ body {
 #aboutMenu h3 {
 	padding: 10px 0 10px 0;
 	text-transform:uppercase;
+        font-weight: 300;
 }
 #aboutMenu p {
 	padding: 20px 0;
@@ -339,11 +340,13 @@ body {
 	margin-top: 15px;
 	text-align: center;
 	margin-bottom: 10px;
+        font-weight: 300;
 }
 #settings h3 {
 	text-align: left;
 	margin-left: 15px;
 	margin-bottom: 15px;
+        font-weight: 300;
 	font-size: 25px;
 }
 #settings p  {

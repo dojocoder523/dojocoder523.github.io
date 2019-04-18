@@ -1,16 +1,13 @@
 * {
 	margin: 0;
 }
-#bodys {
-	transition: 0.5s;
+#bodys, #bodys.load{
+	transition: 0.3s;
 }
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #263238;
 	transition: 0.5s;
-}
-#bodys.load {
-	transition:0.5s;
 }
 .header {
 	width: 100%;
@@ -24,7 +21,7 @@ body {
 	margin-left: 15px;
 	font: 25px 'Roboto Condensed', sans-serif;
 	font-weight: 300;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 #logo.logoTheme {
 	color: #1E88E5;
@@ -49,7 +46,7 @@ body {
 	left: 50%;
 	z-index: 0;
 	transform:translateX(-54.9%);
-	transition:0.8s;
+	transition:0.3s;
 }
 #nav ul {
 	display: flex;
@@ -57,7 +54,7 @@ body {
 #nav.active {
 	top: 70px;
 	z-index: 5;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 #nav ul li {
 	list-style: none;
@@ -85,12 +82,12 @@ body {
 	color: #fff;
 	width: 400px;
 	text-align: center;
-	transition: 0.8s;
+	transition: 0.3s;
 	z-index:4;
 }
 #form.activeForm {
 	margin-top: 55px;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .form p input[type="text"] {
 	padding: 18px;
@@ -125,11 +122,11 @@ body {
 	background-color: rgba(0,0,0,0.8);
 	padding: 15px 10px;
 	border-radius: 8px;
-	transition: 0.5s;
+	transition: 0.3s;
 	box-shadow: 0 0 10px rgba(0,0,0,0.75);
 }
 .feedback form{
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .feedback input[type="text"]{
 	border-bottom: 2px dashed rgba(0,0,0,0.8);
@@ -179,11 +176,6 @@ body {
 	border-radius: 3px;
 	background-color: #76FF03;
 }
-.exp {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 .wrapper {
 	width: 358px;
 	margin: 0 auto;
@@ -199,7 +191,6 @@ body {
 	height: 60px;
 	color: #000;
 	background: none;
-	opacity: 1;
 	text-align: left;
 	margin: 0;
 	border-top-left-radius: 8px;
@@ -215,7 +206,6 @@ body {
 #n2 {
 	width: 358px;
 	text-align: right;
-	opacity: 1;
 	background: none;
 	height: 60px;
 	color: #000;
@@ -238,6 +228,7 @@ body {
 	height: 60px;
 	border: none;
 	outline: none;
+        cursor: default;
 	font-size: 24px;
 	font-weight: 300;
 	border-radius: 5px;
@@ -255,6 +246,7 @@ body {
 	color: #000;
 	border-top-right-radius: 8px;
 	outline: none;
+        cursor: default;
 	background: none;
 	font-size: 18pt;
 }
@@ -267,6 +259,7 @@ body {
 	height: 60px;
 	border: none; 
 	outline: none;
+        cursor: default;
 	margin: 8px 7px;
 	border-radius: 5px;
 	background: #E65100;
@@ -283,7 +276,6 @@ body {
 }
 #aboutMenu.aboutActive {
 	display: block;
-	transition: 0.5s;
 }
 #aboutMenu {
 	position:absolute;
@@ -292,20 +284,20 @@ body {
 	z-index: 10;
 	text-align: center;
 	width: 200px;
+        font-weight: 300;
 	background: rgba(0,0,0,0.8);
 	padding: 10px;
 	color: #fff;
 	display: none;
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.75);
-	transition: 0.5s;
+	transition: 0.3s;
 }
 #aboutMenu.aboutTheme {
 	background: #fff;
 	color: #000;
 }
 #aboutMenu h3 {
-	font-weight: 300;
 	padding: 10px 0 10px 0;
 	text-transform:uppercase;
 }
@@ -330,6 +322,7 @@ body {
 	top: 150px;
 	z-index: 11;
 	color: #fff;
+        font-weight: 300;
 	line-height: 2;
 	display: none;
 	padding: 10px;
@@ -346,14 +339,12 @@ body {
 	margin-top: 15px;
 	text-align: center;
 	margin-bottom: 10px;
-	font-weight: 300;
 }
 #settings h3 {
 	text-align: left;
 	margin-left: 15px;
 	margin-bottom: 15px;
 	font-size: 25px;
-	font-weight: 300;
 }
 #settings p  {
 	margin: 15px 0 10px 0;
@@ -370,6 +361,7 @@ body {
 	margin: 15px auto;
 	border-radius: 5px;
 	border: none;
+        cursor: default;
 	background: #76FF03;
 	outline: none;
 }

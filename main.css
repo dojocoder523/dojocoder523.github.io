@@ -46,7 +46,7 @@ body {
 	left: 50%;
 	z-index: 0;
 	transform:translateX(-54.9%);
-	transition:0.5s;
+	transition:0.8s;
 }
 #nav ul {
 	display: flex;

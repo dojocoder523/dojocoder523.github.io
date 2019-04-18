@@ -1,29 +1,20 @@
-//Проверка на пустое поле и передача
-//значения клавиши в строку(поле)
 function number(n) {
 	let num = document.getElementById('nb1');
-	if (num.innerHTML == 'Поле ввода...') {
+	if (num.innerHTML === 'Поле ввода...') {
 		num.innerHTML = n;
 	}else {
 		num.innerHTML += n;
 	}
-}  //Получение выражения из строки(поля) и 
-function equal() { //выполнение вычеслений.
+} 
+function equal() { 
 	let exp;
 	exp = document.getElementById('nb1').innerHTML;
-	exp = eval(exp);
-	
-	//Если результат не является целым
-	//то округлить его до двух знаков после
-	//точки, если является, то округлить до		 	 						
-	if (exp % 1 != 0) {	  //целого	 
+	exp = eval(exp);	 	 						
+	if (exp % 1 != 0) {	 
 		exp = exp.toFixed(2); 
 	}else {
 		exp = exp.toFixed();
-	}//Проверка на возвращаемый результат:
-	//если результат равен бесконечность 
-	//то вывести сообщение - "На 0 делить 
-	//нельзя!", иначе вывести результат выражения
+	}
 	if (exp == Infinity) {
 		document.getElementById('nb2').innerHTML = 'На 0 делить нельзя!';
 	}else {
@@ -33,7 +24,6 @@ function equal() { //выполнение вычеслений.
 function clr() {
 	let str = document.getElementById('nb1').innerHTML;
 	document.getElementById('nb1').innerHTML = str.substring(0, str.length-1);
-	//Эмуляция работы placeholder
 	if (document.getElementById('nb1').innerHTML == '') {
 		document.getElementById('nb1').innerHTML = 'Поле ввода...';
 	}

@@ -82,7 +82,7 @@ body {
 	color: #fff;
 	width: 400px;
 	text-align: center;
-	transition: 0.5s;
+	transition: 0.8s;
 	z-index:4;
 }
 #form.activeForm {

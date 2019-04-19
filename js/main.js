@@ -1,5 +1,5 @@
 function number(e) {
-    let o = document.querySellector("nb1");
+    let o = document.getElementById("nb1");
     if (o.innerHTML == 'Поле ввода...') {
         o.innerHTML = e;
     }else {
@@ -8,7 +8,7 @@ function number(e) {
 }
 function equal() {
     let exp;
-    exp = document.querySellector("nb1").innerHTML;
+    exp = document.getElementById("nb1").innerHTML;
     exp = eval(exp);
     if (exp % 1 != 0) {
         exp.toFixed(2);
@@ -16,9 +16,9 @@ function equal() {
         exp.toFixed();
     }
     if (exp == Infinity) {
-        document.querySellector("nb2").innerHTML = "На 0 делить нельзя!";
+        document.getElementById("nb2").innerHTML = "На 0 делить нельзя!";
     }else {
-        document.querySellector("nb2").innerHTML = exp;
+        document.getElementById("nb2").innerHTML = exp;
     }
 }
 function clr() {

@@ -99,12 +99,13 @@ body {
 }
 
 #nav {
+    position: absolute;
     width: 400px;
     top: 100px;
-    left: 50.5%;
+    left: 50%;
     z-index: 0;
     transition: .8s;
-    transform: translateX(-54.9%)
+    transform: translateX(-54.5%)
 }
 
 #nav.active {

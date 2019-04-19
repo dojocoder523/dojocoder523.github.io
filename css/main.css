@@ -1,48 +1,30 @@
-#nb1,
-#nb2,
-body {
+#nb1,#nb2,body {
     font-family: 'Roboto Condensed', sans-serif;
     overflow-y: hidden;
 }
-.clbutt,
-.feedback input[type=text],
-.form p input[type=text] {
+.clbutt,.feedback input[type=text],.form p input[type=text] {
     border-top: none;
     border-left: none;
     border-right: none;
     outline: 0
 }
-#aboutMenu,
-#settings,
-#settings h2,
-#settings p,
-.form {
+#aboutMenu,#settings,#settings h2,#settings p,.form {
     text-align: center
 }
-#bodys,
-#bodys.load,
-#logo,
-body {
+#bodys,#bodys.load,#logo,body {
     transition: .3s
 }
-#nav ul,
-#numBlock,
-.header,
-.numWrapper {
+#nav ul,#numBlock,.header,.numWrapper {
     display: flex
 }
-#aboutMenu.aboutActive,
-#nav ul li a {
+#aboutMenu.aboutActive,#nav ul li a {
     display: block
 }
 .form {
     position: absolute;
     left: 50%
 }
-#aboutMenu h3,
-#mobileNav button,
-#nav ul li a,
-#settings h2 {
+#aboutMenu h3,#mobileNav button,#nav ul li a,#settings h2 {
     text-transform: uppercase
 }
 * {
@@ -139,14 +121,11 @@ body {
     display: none;
     background: rgba(0, 0, 0, .2)
 }
-#aboutMenu,
-#settings,
-.feedback {
+#aboutMenu,#settings,.feedback {
     position: absolute;
     display: none
 }
-#aboutMenu,
-.feedback {
+#aboutMenu,.feedback {
     z-index: 5;
     transition: .3s
 }
@@ -159,8 +138,7 @@ body {
     padding: 15px 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .75)
 }
-#aboutMenu,
-#settings {
+#aboutMenu,#settings {
     transform: translateX(-50%);
     left: 50%
 }
@@ -217,8 +195,7 @@ body {
     background: #fff;
     border-radius: 8px
 }
-#n1,
-#n2 {
+#n1,#n2 {
     background: 0 0;
     height: 60px;
     color: #000
@@ -233,8 +210,7 @@ body {
     border-top-left-radius: 8px;
     border-bottom: 1px solid #000
 }
-#nb1,
-#nb2 {
+#nb1,#nb2 {
     padding: 18px 14px;
     font-size: 20px;
     letter-spacing: 1px;
@@ -281,8 +257,7 @@ body {
     background: 0 0;
     font-size: 18pt
 }
-#aboutMenu button,
-#settings button {
+#aboutMenu button,#settings button {
     width: 60px;
     padding: 12px 0;
     outline: 0
@@ -308,8 +283,7 @@ body {
     justify-content: center;
     align-items: center
 }
-#aboutMenu,
-#settings {
+#aboutMenu,#settings {
     width: 200px;
     top: 150px;
     padding: 10px;

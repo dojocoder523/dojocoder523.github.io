@@ -323,7 +323,8 @@ body {
 }
 
 .clbutt img {
-    margin-top: 8px
+    margin-top: 8px;
+    width: 32px;
 }
 
 #numBlock input[type=reset] {

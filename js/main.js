@@ -1,6 +1,10 @@
 function number(e) {
     let o = document.getElementById("nb1");
-    "Поле ввода..." === o.innerHTML ? o.innerHTML = e : o.innerHTML += e
+    if (o.innerHTML == 'Поле ввода...') {
+        o.innerHTML = e;
+    }else {
+        o.innerHTML += e;
+    }
 }
 
 function equal() {

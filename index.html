@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html id="bodys" onload="start()" lang="ru">
-
 <head>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
@@ -12,15 +11,14 @@
     <meta name="theme-color" id="siteTheme" content="#263238">
     <title>Calc+</title>
 </head>
-
 <body>
     <div id="settings">
         <h2>Settings</h2>
         <h3>Тема</h3>
         <p><label for="d">Темная &nbsp;&nbsp;<input onchange="bgcolor('colorD')" type="radio" value="dark" id="d"
-                    name="theme" checked="checked"></label></p>
+              name="theme" checked="checked"></label></p>
         <p><label for="w">Светлая &nbsp;<input onchange="bgcolor('colorW')" type="radio" value="white" id="w"
-                    name="theme"></label></p><button onclick="setClose();">OK</button>
+              name="theme"></label></p><button onclick="setClose();">OK</button>
     </div>
     <div id="aboutMenu">
         <h3>About Me</h3>
@@ -30,7 +28,7 @@
         <form action="#" method="post">
             <h2>FEEDBACK</h2>
             <div class="formTextArea"><input type="text" placeholder="Имя..."><input type="text"
-                    placeholder="Тема сообщения..."><textarea placeholder="Введите своё сообщение здесь..."></textarea>
+                placeholder="Тема сообщения..."><textarea placeholder="Введите своё сообщение здесь..."></textarea>
             </div><button type="button" onclick="push()">Отправить</button>
         </form>
     </div>
@@ -58,16 +56,15 @@
             </div>
         </div>
         <p id="numBlock"><button onclick="number('1')">1</button><button onclick="number('2')">2</button><button
-                onclick="number('3')">3</button><button onclick="number('+')">+</button><button
-                onclick="number('4')">4</button><button onclick="number('5')">5</button><button
-                onclick="number('6')">6</button><button onclick="number('-')">-</button><button
-                onclick="number('7')">7</button><button onclick="number('8')">8</button><button
-                onclick="number('9')">9</button><button onclick="number('*')">x</button><button
-                onclick="number('.')">.</button><button onclick="number('0')">0</button><button
-                onclick="equal()">=</button><button onclick="number('/')">/</button><button
-                onclick="number('(')">(</button><input onclick="resetButton()" type="reset" value="Очистить"><button
-                onclick="number(')')">)</button></p>
+            onclick="number('3')">3</button><button onclick="number('+')">+</button><button
+            onclick="number('4')">4</button><button onclick="number('5')">5</button><button
+            onclick="number('6')">6</button><button onclick="number('-')">-</button><button
+            onclick="number('7')">7</button><button onclick="number('8')">8</button><button
+            onclick="number('9')">9</button><button onclick="number('*')">x</button><button
+            onclick="number('.')">.</button><button onclick="number('0')">0</button><button
+            onclick="equal()">=</button><button onclick="number('/')">/</button><button
+            onclick="number('(')">(</button><input onclick="resetButton()" type="reset" value="Очистить"><button
+            onclick="number(')')">)</button></p>
     </div>
 </body>
-
 </html>

@@ -1,3 +1,4 @@
+alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");
 function number(n) {
     let num = document.getElementById("nb1");
     if (num.innerHTML == 'Поле ввода...') {
@@ -43,20 +44,20 @@ function classremove() {
 function aboutme() {
     classremove();
     $("#aboutMenu").toggleClass("aboutActive");
-    $(".layer").css("display", "block");
+    $(".layer").toggleClass('activeLayer');
 };
 function feedback() {
     $(".feedback").toggleClass('activeFeedBack');
-    $(".layer").css("display", "block");
+    $(".layer").toggleClass('activeLayer');
     classremove();
 };
 function push() {
-    $(".feedback").css("display", "none");
-    $(".layer").css("display", "none");
+    $(".feedback").removeClass('activeFeedBack');
+    $(".layer").removeClass('activeLayer');
 };
 function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
-    $(".layer").css("display", "none");
+    $(".layer").removeClass('activeLayer');
 };
 function start() {
     $("#bodys").toggleClass("load");
@@ -113,4 +114,3 @@ function setting() {
 function setClose() {
     $("#settings").removeClass("setActive");
 };
-alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");

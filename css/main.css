@@ -124,6 +124,9 @@ body {
     display: none;
     background: rgba(0, 0, 0, .2)
 }
+.layer.activeLayer {
+  display: block;
+}
 #aboutMenu,#settings,.feedback {
     position: absolute;
     display: none

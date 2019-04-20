@@ -1,67 +1,70 @@
 alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");
 function number(n) {
-    let num = document.getElementById("nb1");
-    if (num.innerHTML == 'Поле ввода...') {
+    var num = document.getElementById("nb1");
+    if (num.innerHTML === 'Поле ввода...') {
         num.innerHTML = n;
-    }else {
+    }
+    else {
         num.innerHTML += n;
     }
-};
+}
 function equal() {
-    let exp;
+    var exp;
     exp = document.getElementById("nb1").innerHTML;
     exp = eval(exp);
     if (exp % 1 !== 0) {
         exp.toFixed(2);
-    }else {
+    }
+    else {
         exp.toFixed();
     }
     if (exp == Infinity) {
         document.getElementById("nb2").innerHTML = "На 0 делить нельзя!";
-    }else {
+    }
+    else {
         document.getElementById("nb2").innerHTML = exp;
     }
-};
+}
 function clr() {
-    let nex = document.getElementById("nb1").innerHTML;
+    var nex = document.getElementById("nb1").innerHTML;
     document.getElementById("nb1").innerHTML = nex.substring(0, nex.length - 1);
-    if (document.getElementById("nb1").innerHTML == '') {
+    if (document.getElementById("nb1").innerHTML === '') {
         document.getElementById("nb1").innerHTML = 'Поле ввода...';
     }
-};
+}
 function resetButton() {
     document.getElementById("nb1").innerHTML = "Поле ввода...";
     document.getElementById("nb2").innerHTML = "Результат";
-};
+}
 function menu() {
     $("#nav").toggleClass("active");
     $("#form").toggleClass("activeForm");
-};
+}
 function classremove() {
     $("#nav").removeClass("active");
     $("#form").removeClass("activeForm");
-};
+}
 function aboutme() {
     classremove();
     $("#aboutMenu").toggleClass("aboutActive");
     $(".layer").toggleClass('activeLayer');
-};
+}
 function feedback() {
     $(".feedback").toggleClass('activeFeedBack');
     $(".layer").toggleClass('activeLayer');
     classremove();
-};
+}
 function push() {
     $(".feedback").removeClass('activeFeedBack');
     $(".layer").removeClass('activeLayer');
-};
+}
 function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
     $(".layer").removeClass('activeLayer');
-};
+}
 function start() {
     $("#bodys").toggleClass("load");
-};
+}
 function bgcolor(c) {
     switch (c) {
         case "colorD":
@@ -106,11 +109,11 @@ function bgcolor(c) {
             $("#aboutMenu button").css("background", "#673AB7");
             $("#aboutMenu button").css("color", "#fff");
     }
-};
+}
 function setting() {
     $("#settings").toggleClass("setActive");
     classremove();
-};
+}
 function setClose() {
     $("#settings").removeClass("setActive");
-};
+}

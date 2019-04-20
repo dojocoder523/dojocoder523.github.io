@@ -131,7 +131,7 @@ body {
 }
 .feedback {
     left: 50%;
-    top: 200px;
+    top: 150px;
     width: 320px;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, .8);

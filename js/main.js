@@ -46,7 +46,7 @@ function aboutme() {
     $(".layer").css("display", "block");
 };
 function feedback() {
-    $(".feedback").css("display", "block");
+    $(".feedback").toggleClass('activeFeedBack');
     $(".layer").css("display", "block");
     classremove();
 };

@@ -65,6 +65,9 @@ body {
     text-align: center;
     border-radius: 8px
 }
+.feedback.activeFeedBack {
+  display: block;
+}
 #nav {
     position: absolute;
     width: 400px;

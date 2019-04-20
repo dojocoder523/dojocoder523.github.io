@@ -1,68 +1,68 @@
-function number(e) {
-    let o = document.getElementById("nb1");
-    if (o.innerHTML == 'Поле ввода...') {
-        o.innerHTML = e;
+function number(n) {
+    let num = document.getElementById("nb1");
+    if (num.innerHTML == 'Поле ввода...') {
+        num.innerHTML = n;
     }else {
-        o.innerHTML += e;
+        num.innerHTML += n;
     }
-}
+};
 function equal() {
-    let exp;
-    exp = document.getElementById("nb1").innerHTML;
-    exp = eval(exp);
-    if (exp % 1 != 0) {
-        exp.toFixed(2);
+    let expression;
+    expression = document.getElementById("nb1").innerHTML;
+    expression = eval(expression);
+    if (expression % 1 != 0) {
+        expression.toFixed(2);
     }else {
-        exp.toFixed();
+        expression.toFixed();
     }
-    if (exp == Infinity) {
+    if (expression == Infinity) {
         document.getElementById("nb2").innerHTML = "На 0 делить нельзя!";
     }else {
-        document.getElementById("nb2").innerHTML = exp;
+        document.getElementById("nb2").innerHTML = expression;
     }
-}
+};
 function clr() {
-    let e = document.getElementById("nb1").innerHTML;
-    document.getElementById("nb1").innerHTML = e.substring(0, e.length - 1);
+    let nex = document.getElementById("nb1").innerHTML;
+    document.getElementById("nb1").innerHTML = nex.substring(0, nex.length - 1);
     if (document.getElementById("nb1").innerHTML == '') {
         document.getElementById("nb1").innerHTML = 'Поле ввода...';
     }
-}
+};
 function resetButton() {
     document.getElementById("nb1").innerHTML = "Поле ввода...";
     document.getElementById("nb2").innerHTML = "Результат";
-}
+};
 function menu() {
     $("#nav").toggleClass("active");
     $("#form").toggleClass("activeForm");
-}
+};
 function classremove() {
     $("#nav").removeClass("active");
     $("#form").removeClass("activeForm");
-}
+};
 function aboutme() {
     classremove();
     $("#aboutMenu").toggleClass("aboutActive");
     $(".layer").css("display", "block");
-}
+};
 function feedback() {
     $(".feedback").css("display", "block");
     $(".layer").css("display", "block");
     classremove();
-}
+};
 function push() {
     $(".feedback").css("display", "none");
     $(".layer").css("display", "none");
-}
+};
 function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
     $(".layer").css("display", "none");
-}
+};
 function start() {
     $("#bodys").toggleClass("load");
-}
-function bgcolor(e) {
-    switch (e) {
+};
+function bgcolor(c) {
+    switch (c) {
         case "colorD":
             document.getElementById("siteTheme").setAttribute("content", "#263238");
             $("body").css("background-color", "#263238");
@@ -105,12 +105,12 @@ function bgcolor(e) {
             $("#aboutMenu button").css("background", "#673AB7");
             $("#aboutMenu button").css("color", "#fff");
     }
-}
+};
 function setting() {
     $("#settings").toggleClass("setActive");
     classremove();
-}
+};
 function setClose() {
     $("#settings").removeClass("setActive");
-}
+};
 alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");

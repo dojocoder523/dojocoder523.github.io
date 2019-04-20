@@ -1,70 +1,75 @@
 alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");
 function number(n) {
-    var num = document.getElementById("nb1");
-    if (num.innerHTML === ' ') {
-        num.innerHTML = n;
-    }
-    else {
-        num.innerHTML += n;
+    let num = document.getElementById("n1").value;
+    if (document.getElementById('n1') === '') {
+      document.getElementById("n1").value = n;
+    }else {
+        document.getElementById("n1").value += n;
     }
 }
+
 function equal() {
-    var exp;
-    exp = document.getElementById("nb1").innerHTML;
-    exp = eval(exp);
-    if (exp % 1 !== 0) {
-        exp.toFixed(2);
-    }
-    else {
-        exp.toFixed();
-    }
-    if (exp == Infinity) {
-        document.getElementById("nb2").innerHTML = "На 0 делить нельзя!";
-    }
-    else {
-        document.getElementById("nb2").innerHTML = exp;
-    }
+  let exp = document.getElementById("n1").value;
+  exp = eval(exp);
+
+  if (exp % 1 != 0) {
+  		exp = exp.toFixed(2);
+  	}else {
+  		exp = exp.toFixed();
 }
+  if (exp == Infinity) {
+    alert("На 0 делить нельзя!");
+  }else {
+    document.getElementById("n2").value = exp;
+  }
+}
+
 function clr() {
-    var nex = document.getElementById("nb1").innerHTML;
-    document.getElementById("nb1").innerHTML = nex.substring(0, nex.length - 1);
-    if (document.getElementById("nb1").innerHTML === '') {
-        document.getElementById("nb1").innerHTML = 'Поле ввода...';
-    }
+  let n = document.getElementById("n1").value;
+  document.getElementById("n1").value = n.substring(0, n.length - 1);
 }
+
 function resetButton() {
-    document.getElementById("nb1").innerHTML = "Поле ввода...";
-    document.getElementById("nb2").innerHTML = "Результат";
+    document.getElementById("n1").value = "";
+    document.getElementById("n2").value = "";
 }
+
 function menu() {
     $("#nav").toggleClass("active");
     $("#form").toggleClass("activeForm");
 }
+
 function classremove() {
     $("#nav").removeClass("active");
     $("#form").removeClass("activeForm");
 }
+
 function aboutme() {
     classremove();
     $("#aboutMenu").toggleClass("aboutActive");
     $(".layer").toggleClass('activeLayer');
 }
+
 function feedback() {
     $(".feedback").toggleClass('activeFeedBack');
     $(".layer").toggleClass('activeLayer');
     classremove();
 }
+
 function push() {
     $(".feedback").removeClass('activeFeedBack');
     $(".layer").removeClass('activeLayer');
 }
+
 function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
     $(".layer").removeClass('activeLayer');
 }
+
 function start() {
     $("#bodys").toggleClass("load");
 }
+
 function bgcolor(c) {
     switch (c) {
         case "colorD":
@@ -110,10 +115,12 @@ function bgcolor(c) {
             $("#aboutMenu button").css("color", "#fff");
     }
 }
+
 function setting() {
     $("#settings").toggleClass("setActive");
     classremove();
 }
+
 function setClose() {
     $("#settings").removeClass("setActive");
 }

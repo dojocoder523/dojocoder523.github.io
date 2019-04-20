@@ -11,7 +11,7 @@ function equal() {
     let expression;
     expression = document.getElementById("nb1").innerHTML;
     expression = eval(expression);
-    if (expression % 1 != 0) {
+    if (expression % 1 !== 0) {
         expression.toFixed(2);
     }else {
         expression.toFixed();

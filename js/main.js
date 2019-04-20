@@ -8,18 +8,18 @@ function number(n) {
     }
 };
 function equal() {
-    let expression;
-    expression = document.getElementById("nb1").innerHTML;
-    expression = eval(expression);
-    if (expression % 1 !== 0) {
-        expression.toFixed(2);
+    let exp;
+    exp = document.getElementById("nb1").innerHTML;
+    exp = eval(exp);
+    if (exp % 1 !== 0) {
+        exp.toFixed(2);
     }else {
-        expression.toFixed();
+        exp.toFixed();
     }
-    if (expression == Infinity) {
+    if (exp == Infinity) {
         document.getElementById("nb2").innerHTML = "На 0 делить нельзя!";
     }else {
-        document.getElementById("nb2").innerHTML = expression;
+        document.getElementById("nb2").innerHTML = exp;
     }
 };
 function clr() {

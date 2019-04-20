@@ -20,7 +20,7 @@
 #aboutMenu.aboutActive,#nav ul li a {
     display: block
 }
-.form {
+#form {
     position: absolute;
     left: 50%
 }
@@ -92,7 +92,7 @@ body {
     cursor: default;
     background-color: rgba(0, 0, 0, .6)
 }
-.form {
+#form {
     top: 80px;
     transform: translateX(-50%);
     color: #fff;
@@ -104,7 +104,7 @@ body {
     margin-top: 55px;
     transition: .5s
 }
-.form p input[type=text] {
+#form p input[type=text] {
     padding: 18px;
     background: 0 0;
     border-bottom: none;

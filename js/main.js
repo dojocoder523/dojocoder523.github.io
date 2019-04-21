@@ -25,7 +25,7 @@ function equal() {
 }
 
 function clr() {
-  var n = document.getElementById("n1").value;
+  var n = document.getElementById("n1").value; 
   document.getElementById("n1").value = n.substring(0, n.length - 1);
 }
 

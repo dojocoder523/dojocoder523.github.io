@@ -1,4 +1,4 @@
-alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");
+// alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");
 function number(n) {
     let num = document.getElementById("n1").value;
     if (document.getElementById('n1') === '') {
@@ -76,12 +76,12 @@ function bgcolor(c) {
             document.getElementById("siteTheme").setAttribute("content", "#263238");
             $("body").css("background-color", "#263238");
             $("#logo").removeClass("logoTheme");
-            $("#mobileNav button").css("color", "#ffffff");
-            $("#numBlock button").css("background", "#76FF03");
-            $("#numBlock input").css("background", "#E65100");
-            $("#nav ul li a").css("background-color", "rgba(0,0,0,0.5)");
-            $("#nav ul li a").css("color", "#fff");
-            $(".wrapper").css("background", "#fff");
+            $(".mobileBtn").css("color", "#ffffff");
+            $(".btn").css("background", "#76FF03");
+            $(".clear").css("background", "#E65100");
+            $(".btnNav").css("background-color", "rgba(0,0,0,0.5)");
+            $(".btnNav").css("color", "#fff");
+            $(".textArea").css("background", "#fff");
             $(".feedback").css("background-color", "rgba(0,0,0,0.8)");
             $(".feedback h2").css("color", "#fff");
             $(".feedback button").css("background-color", "#76FF03");
@@ -97,12 +97,12 @@ function bgcolor(c) {
             document.getElementById("siteTheme").setAttribute("content", "#ffffff");
             $("body").css("background-color", "#ffffff");
             $("#logo").addClass("logoTheme");
-            $("#mobileNav button").css("color", "#1E88E5");
-            $("#numBlock button").css("background", "#1E88E5");
-            $("#numBlock input").css("background", "#E53935");
-            $("#nav ul li a").css("background-color", "#673AB7");
-            $("#nav ul li a").css("color", "#fff");
-            $(".wrapper").css("background", "#1E88E5");
+            $(".mobileBtn").css("color", "#1E88E5");
+            $(".btn").css("background", "#1E88E5");
+            $(".clear").css("background", "#E53935");
+            $(".btnNav").css("background-color", "#673AB7");
+            $(".btnNav").css("color", "#fff");
+            $(".textArea").css("background", "#1E88E5");
             $(".feedback").css("background-color", "#fff");
             $(".feedback h2").css("color", "#000");
             $(".feedback button").css("background-color", "#673AB7");

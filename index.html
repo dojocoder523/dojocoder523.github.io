@@ -49,16 +49,14 @@
 			Calc+
 		</div>
 		<nav id="mobileNav">
-			<button  onclick="menu()">&#9776;</button>
+			<button class="mobileBtn"  onclick="menu()">&#9776;</button>
 		</nav>
 	</header>
-	<div id="nav">
-	<ul>
-		<li><a onclick="setting()" href="#" >Settings</a></li>
-		<li><a onclick="feedback()" href="#" >Feedback</a></li>
-		<li><a onclick="aboutme()" href="#">About Me</a></li>
-	</ul>
-	</div>
+    <div id="nav">
+      <button class="btnNav" onclick="setting()">Settings</button>
+      <button class="btnNav" onclick="feedback()">Feedback</button>
+      <button class="btnNav" onclick="aboutme()">About Me</button>
+    </div>
 	<div class="form" id="form" >
     <div class="textArea">
         <p class="exp">
@@ -71,26 +69,25 @@
         </p>
     </div>
 		<p id="numBlock">
-			<button onclick="number('1')">1</button>
-			<button onclick="number('2')">2</button>
-			<button onclick="number('3')">3</button>
-			<button onclick="number('+')">+</button>
-			<button onclick="number('4')">4</button>
-			<button onclick="number('5')">5</button>
-			<button onclick="number('6')">6</button>
-			<button onclick="number('-')">-</button>
-			<button onclick="number('7')">7</button>
-			<button onclick="number('8')">8</button>
-			<button onclick="number('9')">9</button>
-			<button onclick="number('*')">x</button>
-			<button onclick="number('.')">.</button>
-			<button onclick="number('0')">0</button>
-			<button onclick="equal()">=</button>
-			<button onclick="number('/')">/</button>
-			<button onclick="number('(')">(</button>
-			<input onclick="resetButton()"
-				type="reset" value="Очистить">
-			<button onclick="number(')')">)</button>
+			<button class="btn" onclick="number('1')">1</button>
+			<button class="btn" onclick="number('2')">2</button>
+			<button class="btn" onclick="number('3')">3</button>
+			<button class="btn" onclick="number('+')">+</button>
+			<button class="btn" onclick="number('4')">4</button>
+			<button class="btn" onclick="number('5')">5</button>
+			<button class="btn" onclick="number('6')">6</button>
+			<button class="btn" onclick="number('-')">-</button>
+			<button class="btn" onclick="number('7')">7</button>
+			<button class="btn" onclick="number('8')">8</button>
+			<button class="btn" onclick="number('9')">9</button>
+			<button class="btn" onclick="number('*')">x</button>
+			<button class="btn" onclick="number('.')">.</button>
+			<button class="btn" onclick="number('0')">0</button>
+			<button class="btn" onclick="equal()">=</button>
+			<button class="btn" onclick="number('/')">/</button>
+			<button class="btn" onclick="number('(')">(</button>
+			<button onclick="resetButton()" class="clear">Очистить</button>
+			<button class="btn" onclick="number(')')">)</button>
 		</p>
 	</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

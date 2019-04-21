@@ -52,6 +52,10 @@ body {
 	text-transform: uppercase;
 }
 
+.mobileBtn.mbTheme {
+	color: #1E88E5;
+}
+
 #nav {
   position: absolute;
   width: 360px;
@@ -79,6 +83,11 @@ body {
   font-size: 14px;
   padding: 15px 0;
   border-radius: 8px;
+}
+
+.btnNav.btnTheme {
+	background: #673AB7;
+	color: #fff;
 }
 
 #nav.active {
@@ -149,6 +158,10 @@ body {
   display: block;
 }
 
+.fbTheme {
+	background: #fff;
+}
+
 .feedback input[type="text"] {
 	border-bottom: 2px dashed rgba(0, 0, 0, 0.8);
 	border-top: none;
@@ -210,6 +223,10 @@ body {
 	border-radius: 8px;
 }
 
+.textArea.taTheme {
+	background: #1E88E5;
+}
+
 .exp {
 	display: flex;
 	justify-content: center;
@@ -257,6 +274,10 @@ body {
 	margin: 7px;
 }
 
+.btn.btn_numb_theme {
+	background: #1E88E5;
+}
+
 .clear {
   width: 174px;
   height: 60px;
@@ -266,6 +287,10 @@ body {
   border-radius: 5px;
   background: #E65100;
   font-size: 18px;
+}
+
+.clear.clTheme {
+	background: #E53935;
 }
 
 .clbutt {

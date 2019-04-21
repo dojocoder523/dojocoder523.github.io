@@ -55,7 +55,7 @@ body {
 #nav {
   position: absolute;
   width: 360px;
-  top: 100px;
+  top: 90px;
   left: 50%;
   overflow-x: hidden;
   transform: translateX(-50%);
@@ -82,7 +82,7 @@ body {
 }
 
 #nav.active {
-	top: 70px;
+	top: 65px;
 	transition: 0.5s;
 }
 
@@ -245,7 +245,7 @@ body {
 :-ms-input-placeholder { color: #000; }
 
 .btn {
-  width: 80px;
+  width: 79px;
 	height: 60px;
 	border: none;
 	outline: none;
@@ -258,7 +258,7 @@ body {
 }
 
 .clear {
-  width: 175px;
+  width: 174px;
   height: 60px;
   border: none;
   outline: none;
@@ -269,7 +269,7 @@ body {
 }
 
 .clbutt {
-	height: 61px;
+	height: 60px;
 	width: 58px;
 	border-bottom: 1px solid #000;
 	border-top: none;
@@ -288,7 +288,7 @@ body {
 
 #numBlock {
 	width: 400px;
-	margin: 15px auto;
+	margin: 10px auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

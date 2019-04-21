@@ -1,6 +1,6 @@
 // alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");
 function number(n) {
-    let num = document.getElementById("n1").value;
+    var num = document.getElementById("n1").value;
     if (document.getElementById('n1') === '') {
       document.getElementById("n1").value = n;
     }else {
@@ -9,7 +9,7 @@ function number(n) {
 }
 
 function equal() {
-  let exp = document.getElementById("n1").value;
+  var exp = document.getElementById("n1").value;
   exp = eval(exp);
 
   if (exp % 1 != 0) {
@@ -25,7 +25,7 @@ function equal() {
 }
 
 function clr() {
-  let n = document.getElementById("n1").value;
+  var n = document.getElementById("n1").value;
   document.getElementById("n1").value = n.substring(0, n.length - 1);
 }
 

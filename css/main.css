@@ -204,7 +204,7 @@ body {
 	height: 100px;
 	padding: 12px 16px 0 16px;
 	font-size: 19px;
-  font-weight: 300;
+        font-weight: 300;
 	border: none;
 	outline: none;
 	background: none;
@@ -303,7 +303,7 @@ body {
 
 .clbutt {
 	height: 60px;
-	width: 58px;
+	width: 57.5px;
 	border-bottom: 1px solid #000;
 	border-top: none;
 	border-left: none;

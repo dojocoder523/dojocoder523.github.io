@@ -9,7 +9,8 @@ function number(n) {
 }
 
 function equal() {
-  var exp = document.getElementById("n1").value;
+  var exp = document.getElementById("n1").value, exp1;
+  exp1 = exp;
   exp = eval(exp);
 
   if (exp % 1 != 0) {
@@ -21,11 +22,12 @@ function equal() {
     alert("На 0 делить нельзя!");
   }else {
     document.getElementById("n2").value = exp;
+    document.getElementById('note').value += exp1 + ' = ' + exp + '\n';
   }
 }
 
 function clr() {
-  var n = document.getElementById("n1").value; 
+  var n = document.getElementById("n1").value;
   document.getElementById("n1").value = n.substring(0, n.length - 1);
 }
 
@@ -37,6 +39,7 @@ function resetButton() {
 function menu() {
     $("#nav").toggleClass("active");
     $("#form").toggleClass("activeForm");
+    $('.notes').toggleClass('notesDown');
 }
 
 function classremove() {
@@ -121,4 +124,13 @@ function setting() {
 
 function setClose() {
     $("#settings").removeClass("setActive");
+}
+
+function openNote() {
+	$('.notes').toggleClass('notesActive');
+	$('.fas').toggleClass('fa-chevron-right');
+}
+
+function clearNote() {
+	document.getElementById('note').value = '';
 }

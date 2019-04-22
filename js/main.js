@@ -45,6 +45,7 @@ function menu() {
 function classremove() {
     $("#nav").removeClass("active");
     $("#form").removeClass("activeForm");
+    $('.notes').toggleClass('notesDown');
 }
 
 function aboutme() {

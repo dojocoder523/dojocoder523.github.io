@@ -50,23 +50,19 @@ function classremove() {
 function aboutme() {
     classremove();
     $("#aboutMenu").toggleClass("aboutActive");
-    $(".layer").toggleClass('activeLayer');
 }
 
 function feedback() {
     $(".feedback").toggleClass('activeFeedBack');
-    $(".layer").toggleClass('activeLayer');
     classremove();
 }
 
 function push() {
     $(".feedback").removeClass('activeFeedBack');
-    $(".layer").removeClass('activeLayer');
 }
 
 function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
-    $(".layer").removeClass('activeLayer');
 }
 
 function start() {

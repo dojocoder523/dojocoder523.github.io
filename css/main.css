@@ -284,13 +284,14 @@ body {
   border: none;
   outline: none;
   margin: 0 6px;
+  font-weight: 300;
   border-radius: 5px;
   background: #E65100;
   font-size: 18px;
 }
 
 .clear.clTheme {
-	background: #E53935;
+  background: #E53935;
 }
 
 .clbutt {

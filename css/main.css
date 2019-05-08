@@ -287,7 +287,7 @@ body {
   font-weight: 300;
   border-radius: 5px;
   background: #E65100;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .clear.clTheme {
@@ -500,4 +500,10 @@ body {
 }
 .notesActive {
 	transform:translateX(0%);
+}
+
+@media (max-width: 419px) {
+	.textArea {
+		width: 340px;
+	}
 }

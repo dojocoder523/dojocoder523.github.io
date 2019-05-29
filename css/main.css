@@ -514,4 +514,14 @@ body {
 		height: 57px;
 		font-size: 22px;
 	}
+	.clear {
+		width: 164px;
+		height: 57px;
+	}
+	#n1 {
+		width: 290px;
+	}
+	#n2 {
+		width: 310px;
+	}
 }

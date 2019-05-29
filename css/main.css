@@ -502,7 +502,7 @@ body {
 	transform:translateX(0%);
 }
 
-@media (max-width: 419px) {
+@media (min-width: 419px) {
 	.textArea {
 		width: 341px;
 	}

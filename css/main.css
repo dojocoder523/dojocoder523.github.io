@@ -502,7 +502,7 @@ body {
 	transform:translateX(0%);
 }
 
-@media (min-width: 419px) {
+@media (max-width: 419px) {
 	.textArea {
 		width: 341px;
 	}
@@ -532,7 +532,7 @@ body {
 	}
 }
 
-@media (min-width: 396px) {
+@media (max-width: 396px) {
 	.textArea {
 		width: 300px;
 	}

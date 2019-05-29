@@ -524,4 +524,10 @@ body {
 	#n2 {
 		width: 310px;
 	}
+	#nav {
+		width: 339px;
+	}
+	.btnNav {
+		width: 95px;
+	}
 }

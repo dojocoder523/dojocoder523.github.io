@@ -534,28 +534,28 @@ body {
 
 @media (min-width: 396px) {
 	.textArea {
-		width: 301px;
+		width: 300px;
 	}
 	#numBlock {
-		width: 362px;
+		width: 316px;
 	}
 	.btn {
-	  width: 74px;
+	  width: 65px;
 		height: 57px;
 		font-size: 22px;
 	}
 	.clear {
-		width: 164px;
+		width: 146px;
 		height: 57px;
 	}
 	#n1 {
-		width: 290px;
+		width: 215px;
 	}
 	#n2 {
 		width: 310px;
 	}
 	#nav {
-		width: 339px;
+		width: 272px;
 	}
 	.btnNav {
 		width: 95px;

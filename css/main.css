@@ -240,7 +240,6 @@ body {
 	opacity: 1;
 	text-align: left;
 	margin: 0;
-	border-top-left-radius: 8px;
 	border-bottom: 1px solid #000;
 }
 
@@ -250,8 +249,6 @@ body {
 	opacity: 1;
 	background: none;
 	color: #000;
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
 }
 
 ::-webkit-input-placeholder { color: #000; }
@@ -540,25 +537,39 @@ body {
 		width: 316px;
 	}
 	.btn {
-	  width: 65px;
-		height: 57px;
-		font-size: 22px;
+	  width: 64px;
+		height: 50px;
+		font-size: 18px;
 	}
 	.clear {
-		width: 146px;
-		height: 57px;
+		width: 143px;
+		height: 50px;
+		font-size: 18px;
+	}
+	.form p input[type="text"] {
+		padding: 13px 10px;
+		font-size: 16px;
+	}
+	.clbutt {
+		height: 44.5px;
+		width: 36.5px;
+	}
+	.clbutt img {
+		width: 20px;
 	}
 	#n1 {
-		width: 215px;
+		width: 243px;
 	}
 	#n2 {
-		width: 270px;
+		width: 281px;
 	}
 	#nav {
 		width: 300px;
 	}
 	.btnNav {
 		width: 85px;
+		padding: 13px;
+		font-size: 12px;
 	}
 }
 

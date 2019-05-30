@@ -552,7 +552,10 @@ body {
 	}
 	.clbutt {
 		height: 44.5px;
-		width: 36.5px;
+		width: 44.5px;
+	}
+	#nav.active {
+		top: 74px;
 	}
 	.clbutt img {
 		width: 20px;
@@ -583,15 +586,19 @@ body {
 	}
 	.btn {
 	  width: 54px;
-		height: 55px;
-		font-size: 22px;
+		height: 50px;
+		font-size: 18px;
+	}
+	.leftBtn {
+		top: 56.5px;
+		padding: 16px 20px 16px 8px;
 	}
 	.clear {
-		width: 123px;
-		height: 55px;
+		width: 124px;
+		height: 50px;
 	}
 	#n1 {
-		width: 175px;
+		width: 187px;
 	}
 	#n2 {
 		width: 230px;
@@ -608,10 +615,10 @@ body {
 		font-size: 13px;
 	}
 	.form p input[type="text"] {
-		padding: 18px;
-		font-size: 16px;
+		padding: 12px;
+		font-size: 15px;
 	}
 	.clbutt {
-		height: 54.5px;
+		height: 41.5px;
 	}
 }

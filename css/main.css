@@ -587,15 +587,21 @@ body {
 	.header {
 		height: 50px;
 	}
+	#nav.active {
+		top: 55px;
+	}
 	#logo {
 		font-size: 22px;
 	}
 	.mobileBtn {
 		font-size: 15pt;
 	}
+	.form {
+		top: 50px;
+	}
 	.btn {
 	  width: 54px;
-		height: 50px;
+		height: 44px;
 		font-size: 18px;
 	}
 	.leftBtn {
@@ -604,7 +610,7 @@ body {
 	}
 	.clear {
 		width: 124px;
-		height: 50px;
+		height: 44px;
 	}
 	#n1 {
 		width: 187px;

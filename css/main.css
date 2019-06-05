@@ -570,6 +570,15 @@ body {
 		width: 316px;
 		margin: 5px auto;
 	}
+	.header {
+		height: 50px;
+	}
+	#logo {
+		font-size: 22px;
+	}
+	.mobileBtn {
+		font-size: 15pt;
+	}
 	.btn {
 	  width: 54px;
 		height: 55px;

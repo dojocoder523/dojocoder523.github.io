@@ -80,7 +80,7 @@ body {
 }
 
 .btnNav {
-  background: rgba(0, 80, 150, 0.4);
+  background: rgba(0, 150, 70, 0.4);
   border: none;
   color: #fff;
   text-transform: uppercase;
@@ -212,13 +212,12 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	border-radius: 3px;
-	background-color: #76FF03;
+	background-color: #2E7D32;
 }
-
 .textArea {
 	background: #E0E0E0;
 	width: 362px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.75);
+        box-shadow: 0 0 3px rgba(0,0,0,0.75);
 	margin: 0 auto;
 	outline: none;
 	border-radius: 8px;
@@ -267,7 +266,7 @@ body {
 	font-size: 24px;
 	font-weight: 300;
 	border-radius: 5px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.75);
+        box-shadow: 0 0 3px rgba(0,0,0,0.75);
 	background: rgba(0,150,50,0.7);
 	color: #000;
 	margin: 7px;
@@ -287,7 +286,7 @@ body {
   border-radius: 5px;
   background: rgba(255,40,0,0.5);
   font-size: 20px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.75);
+  box-shadow: 0 0 3px rgba(0,0,0,0.75);
 }
 
 .clear.clTheme {
@@ -363,7 +362,7 @@ body {
 	padding: 12px 0;
 	width: 60px;
 	outline: none;
-	background: #76FF03;
+	background: #2E7D32;
 	border-radius: 5px;
 	margin-bottom: 10px;
 }
@@ -424,7 +423,7 @@ body {
 	margin: 15px auto;
 	border-radius: 5px;
 	border: none;
-	background: #76FF03;
+	background: #2E7D32;
 	outline: none;
 }
 
@@ -488,7 +487,7 @@ body {
 	right: 10px;
 	padding: 2px 8px;
 	border: none;
-	background: rgba(0, 150, 50, 0.4);
+	background: #2E7D32;
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 5px;

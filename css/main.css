@@ -218,7 +218,7 @@ body {
 .textArea {
 	background: #E0E0E0;
 	width: 362px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.75);
+        box-shadow: 0 0 5px rgba(0,0,0,0.75);
 	margin: 0 auto;
 	outline: none;
 	border-radius: 8px;
@@ -267,7 +267,7 @@ body {
 	font-size: 24px;
 	font-weight: 300;
 	border-radius: 5px;
-        box-shadow: 0 0 8px rgba(0,0,0,0.75);
+        box-shadow: 0 0 5px rgba(0,0,0,0.75);
 	background: rgba(0,150,50,0.7);
 	color: #000;
 	margin: 7px;
@@ -287,7 +287,7 @@ body {
   border-radius: 5px;
   background: rgba(255,40,0,0.5);
   font-size: 20px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.75);
+  box-shadow: 0 0 5px rgba(0,0,0,0.75);
 }
 
 .clear.clTheme {
@@ -470,7 +470,7 @@ body {
 	position:absolute;
 	top: 61.5px;
 	right: 230px;
-	background: rgb(255,40,0);
+	background: #BF360C;
 	padding: 19px 15px 19px 10px;
 	border: none;
 	outline: none;
@@ -488,7 +488,7 @@ body {
 	right: 10px;
 	padding: 2px 8px;
 	border: none;
-	background: lawngreen;
+	background: rgba(0, 150, 50, 0.4);
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 5px;

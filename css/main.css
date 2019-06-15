@@ -16,7 +16,7 @@
 
 body {
 	font-family: 'Roboto Condensed', sans-serif;
-	background: #263238;
+	background: #212121;
 	transition: 0.3s;
   overflow: hidden;
 }
@@ -216,7 +216,7 @@ body {
 }
 
 .textArea {
-	background: rgba(255,255,255,0.7);
+	background: rgb(255,255,255);
 	width: 362px;
 	margin: 0 auto;
 	outline: none;

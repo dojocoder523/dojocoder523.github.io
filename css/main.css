@@ -218,7 +218,7 @@ body {
 .textArea {
 	background: rgb(255,255,255);
 	width: 362px;
-        box-shadow: 0 0 8px rgba(0,0,0,0.75);
+        box-shadow: 0 0 10px rgba(0,0,0,0.75);
 	margin: 0 auto;
 	outline: none;
 	border-radius: 8px;
@@ -267,7 +267,7 @@ body {
 	font-size: 24px;
 	font-weight: 300;
 	border-radius: 5px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.75);
+        box-shadow: 0 0 8px rgba(0,0,0,0.75);
 	background: rgba(0,150,50,0.7);
 	color: #000;
 	margin: 7px;
@@ -285,8 +285,9 @@ body {
   margin: 0 6px;
   font-weight: 300;
   border-radius: 5px;
-  background: #E65100;
+  background: rgba(255,40,0,0.5);
   font-size: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.75);
 }
 
 .clear.clTheme {

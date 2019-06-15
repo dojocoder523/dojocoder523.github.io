@@ -34,7 +34,7 @@ body {
 }
 
 #logo {
-	color: #fff;
+	color: rgba(255,255,255,0.6);
 	margin-left: 15px;
 	font-size: 25px;
 	font-weight: 300;
@@ -51,7 +51,7 @@ body {
 
 .mobileBtn {
   background: none;
-	color: #fff;
+	color: rgba(255,255,255,0.6);
 	border: none;
 	font-size: 18pt;
 	font-weight: 300;
@@ -176,7 +176,7 @@ body {
 }
 
 .formTextArea {
-	background-color: #fff;
+	background-color: #BDBDBD;
 	width: 285px;
 	margin: 10px auto;
 	border-radius: 5px;
@@ -456,7 +456,7 @@ body {
 	resize: none;
 	color: #000;
 	line-height: 1.5;
-	background: rgb(255,255,255);
+	background: #BDBDBD;
 	font-size: 16px;
 	outline: none;
 	padding: 10px 10px;

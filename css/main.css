@@ -474,11 +474,11 @@ body {
 	position:absolute;
 	top: 61.5px;
 	right: 232px;
-	background: #1B5E20;
+	background: #212121;
 	padding: 19px 15px 19px 10px;
-	border: none;
+	border: 1px solid #1B5E20;
 	outline: none;
-	color: #fff;
+	color: #1B5E20;
 	cursor:default;
 	border-bottom-left-radius: 50%;
 	border-top-left-radius: 50%;
@@ -494,7 +494,7 @@ body {
 	border: 1px solid #2E7D32;
 	background: none;
         color: #1B5E20;
-        font-size: 13px;
+        font-size: 14px;
 	border-radius: 5px;
 	margin-top: 8px;
 	margin-bottom: 5px;

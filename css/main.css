@@ -295,7 +295,7 @@ body {
 }
 
 .clbutt {
-	padding: 18.5px;
+	padding: 18.3px;
 	width: 57.5px;
 	border-bottom: 1px solid #1B5E20;
 	border-top: none;
@@ -466,9 +466,9 @@ body {
 	position:absolute;
 	top: 61.5px;
 	right: 230px;
-	background: #212121;
+	background: #1B5E20;
 	padding: 19px 15px 19px 10px;
-	border: 1px solid #1B5E20;
+	border: none;
 	outline: none;
 	color: #fff;
 	cursor:default;

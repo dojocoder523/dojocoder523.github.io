@@ -80,7 +80,7 @@ body {
 }
 
 .btnNav {
-  background: #2E7D32;
+  background: #1B5E20;
   border: none;
   color: rgba(255,255,255,0.6);
   text-transform: uppercase;
@@ -216,9 +216,11 @@ body {
 	background-color: #2E7D32;
 }
 .textArea {
-	background: #BDBDBD;
+	background: #212121;
 	width: 362px;
 	margin: 0 auto;
+        color: #fff;
+        border: 1px solid #1B5E20;
 	outline: none;
 	border-radius: 8px;
 }
@@ -251,12 +253,12 @@ body {
 	color: #000;
 }
 
-::-webkit-input-placeholder { color: #000; }
+::-webkit-input-placeholder { color: #fff; }
 
-::-moz-placeholder { color: #000; }/* Firefox 19+ */
+::-moz-placeholder { color: #fff; }/* Firefox 19+ */
 
-:-moz-placeholder { color: #000; }/* Firefox 18- */
-:-ms-input-placeholder { color: #000; }
+:-moz-placeholder { color: #fff; }/* Firefox 18- */
+:-ms-input-placeholder { color: #fff; }
 
 .btn {
   width: 79px;

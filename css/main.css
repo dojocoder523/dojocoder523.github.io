@@ -216,7 +216,7 @@ body {
 	background-color: #2E7D32;
 }
 .textArea {
-	background: #000;
+	background: #212121;
 	width: 362px;
 	margin: 0 auto;
         border: 1px solid #1B5E20;
@@ -239,6 +239,7 @@ body {
 	color: #00C853;
 	background: none;
 	opacity: 1;
+        letter-spacing: 1px;
 	text-align: left;
 	margin: 0;
 	border-bottom: 1px solid #1B5E20;
@@ -248,15 +249,16 @@ body {
 	width: 330px;
 	text-align: right;
 	opacity: 1;
+        letter-spacing: 1px;
 	background: none;
 	color: #00C853;
 }
-::-webkit-input-placeholder { color: #00C853; }
+::-webkit-input-placeholder { color: #00C853; letter-spacing: 1px;}
 
-::-moz-placeholder { color: #00C853; }/* Firefox 19+ */
+::-moz-placeholder { color: #00C853; letter-spacing: 1px;}/* Firefox 19+ */
 
-:-moz-placeholder { color: #00C853; }/* Firefox 18- */
-:-ms-input-placeholder { color: #00C853; }
+:-moz-placeholder { color: #00C853; letter-spacing: 1px; }/* Firefox 18- */
+:-ms-input-placeholder { color: #00C853; letter-spacing: 1px; }
 
 .btn {
   width: 79px;
@@ -293,7 +295,7 @@ body {
 }
 
 .clbutt {
-	height: 59.5px;
+	height: 59.6px;
 	width: 57.5px;
 	border-bottom: 1px solid #1B5E20;
 	border-top: none;
@@ -303,7 +305,7 @@ body {
 	border-top-right-radius: 8px;
 	outline: none;
 	background: none;
-	font-size: 18pt;
+	font-size: 20px;
 }
 
 .clbutt img {

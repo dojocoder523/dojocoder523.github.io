@@ -473,7 +473,7 @@ body {
 .leftBtn {
 	position:absolute;
 	top: 61.5px;
-	right: 233px;
+	right: 232px;
 	background: #1B5E20;
 	padding: 19px 15px 19px 10px;
 	border: none;
@@ -494,6 +494,7 @@ body {
 	border: 1px solid #2E7D32;
 	background: none;
         color: #fff;
+        font-size: 8px;
 	border-radius: 5px;
 	margin-top: 8px;
 	margin-bottom: 5px;

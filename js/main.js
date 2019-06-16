@@ -68,7 +68,7 @@ function aboutClose() {
 function start() {
     $("#bodys").toggleClass("load");
 }
-
+/*
 function bgcolor(c) {
     switch (c) {
         case "colorD":
@@ -111,7 +111,7 @@ function bgcolor(c) {
             $("#aboutMenu button").css("background", "#673AB7");
             $("#aboutMenu button").css("color", "#fff");
     }
-}
+}*/
 
 function setting() {
     $("#settings").toggleClass("setActive");

@@ -186,7 +186,7 @@ body {
 }
 
 .feedback h2 {
-	color: #fff;
+	color: #1B5E20;
 	margin-bottom: 15px;
 	padding-top: 0;
 	font-weight: 300;
@@ -212,10 +212,11 @@ body {
 	cursor: pointer;
 	padding: 12px 20px;
 	margin-top: 5px;
+        color: #1B5E20;
 	font-size: 16px;
 	font-weight: 300;
 	border-radius: 3px;
-	background-color: none;
+	background: none;
 }
 .textArea {
 	background: #212121;
@@ -362,6 +363,7 @@ body {
 	padding: 12px 0;
 	width: 60px;
 	outline: none;
+        color: #1B5E20;
 	background: none;
 	border-radius: 5px;
 	margin-bottom: 10px;

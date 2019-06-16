@@ -451,7 +451,7 @@ body {
 }
 .notes h3 {
 	text-align: center;
-	color: #fff;
+	color: #1B5E20;
 	text-transform:uppercase;
 	font-weight: 300;
 	padding-bottom: 10px;
@@ -494,7 +494,7 @@ body {
 	border: 1px solid #2E7D32;
 	background: none;
         color: #fff;
-        font-size: 8px;
+        font-size: 12px;
 	border-radius: 5px;
 	margin-top: 8px;
 	margin-bottom: 5px;

@@ -219,7 +219,6 @@ body {
 	background: #212121;
 	width: 362px;
 	margin: 0 auto;
-        color: #fff;
         border: 1px solid #1B5E20;
 	outline: none;
 	border-radius: 8px;
@@ -237,12 +236,12 @@ body {
 
 #n1 {
 	width: 300px;
-	color: #000;
+	color: #00C853;
 	background: none;
 	opacity: 1;
 	text-align: left;
 	margin: 0;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #1B5E20;
 }
 
 #n2 {
@@ -250,15 +249,14 @@ body {
 	text-align: right;
 	opacity: 1;
 	background: none;
-	color: #000;
+	color: #00C853;
 }
+::-webkit-input-placeholder { color: #00C853; }
 
-::-webkit-input-placeholder { color: #fff; }
+::-moz-placeholder { color: #00C853; }/* Firefox 19+ */
 
-::-moz-placeholder { color: #fff; }/* Firefox 19+ */
-
-:-moz-placeholder { color: #fff; }/* Firefox 18- */
-:-ms-input-placeholder { color: #fff; }
+:-moz-placeholder { color: #00C853; }/* Firefox 18- */
+:-ms-input-placeholder { color: #00C853; }
 
 .btn {
   width: 79px;
@@ -297,11 +295,11 @@ body {
 .clbutt {
 	height: 59.5px;
 	width: 57.5px;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #1B5E20;
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	color: #000;
+	color: #1B5E20;
 	border-top-right-radius: 8px;
 	outline: none;
 	background: none;

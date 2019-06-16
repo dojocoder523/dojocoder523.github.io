@@ -297,6 +297,7 @@ body {
 .clbutt {
 	height: 59.7px;
 	width: 57.5px;
+	margin-top: 0.5px;
 	border-bottom: 1px solid #1B5E20;
 	border-top: none;
 	border-left: none;
@@ -306,10 +307,6 @@ body {
 	outline: none;
 	background: none;
 	font-size: 20px;
-}
-
-.clbutt img {
-	margin-top: 8px;
 }
 
 #numBlock {
@@ -474,7 +471,7 @@ body {
 	padding: 19px 15px 19px 10px;
 	border: 1px solid #1B5E20;
 	outline: none;
-	color: #1B5E20;
+	color: rgba(255,255,255,0.6);
 	cursor:default;
 	border-bottom-left-radius: 50%;
 	border-top-left-radius: 50%;

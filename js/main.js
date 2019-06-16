@@ -72,7 +72,7 @@ function start() {
 function bgcolor(c) {
     switch (c) {
         case "colorD":
-            document.getElementById("siteTheme").setAttribute("content", "#263238");
+            document.getElementById("siteTheme").setAttribute("content", "#212121");
             $("body").css("background-color", "#212121");
             $("#logo").removeClass("logoTheme");
             $(".mobileBtn").removeClass('mbTheme');

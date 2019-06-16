@@ -279,7 +279,7 @@ body {
 
 .clear {
   width: 174px;
-  height: 60px;
+  padding: 18px;
   border: 1px solid rgba(240,40,0,0.5);
   outline: none;
   margin: 0 6px;
@@ -295,7 +295,7 @@ body {
 }
 
 .clbutt {
-	height: 60.7px;
+	height: 58.7px;
 	width: 57.5px;
 	border-bottom: 1px solid #1B5E20;
 	border-top: none;

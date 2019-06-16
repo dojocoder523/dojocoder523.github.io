@@ -217,7 +217,7 @@ body {
 }
 .textArea {
 	background: #212121;
-	width: 362px;
+	width: 358px;
 	margin: 0 auto;
         border: 1px solid #1B5E20;
 	outline: none;
@@ -470,10 +470,11 @@ body {
 	position:absolute;
 	top: 61.5px;
 	right: 230px;
-	background: #BF360C;
+	background: none;
 	padding: 19px 15px 19px 10px;
-	border: none;
+	border: 1px solid #1B5E20;
 	outline: none;
+	color: #1B5E20;
 	cursor:default;
 	border-bottom-left-radius: 50%;
 	border-top-left-radius: 50%;

@@ -373,7 +373,7 @@ body {
 	top: 150px;
   transform: translateX(-50%);
 	z-index: 5;
-	color: #fff;
+	color: #2E7D32;
 	line-height: 2;
 	display: none;
 	padding: 10px;
@@ -420,8 +420,9 @@ body {
 	padding: 12px 0;
 	margin: 15px auto;
 	border-radius: 5px;
-	border: none;
-	background: #2E7D32;
+        color: #fff;
+	border: 1px solid #2E7D32;
+	background: none;
 	outline: none;
 }
 
@@ -466,7 +467,7 @@ body {
 .leftBtn {
 	position:absolute;
 	top: 61.5px;
-	right: 230px;
+	right: 239px;
 	background: #1B5E20;
 	padding: 19px 15px 19px 10px;
 	border: none;
@@ -484,8 +485,9 @@ body {
 	top: 0.6px;
 	right: 10px;
 	padding: 2px 8px;
-	border: none;
-	background: #2E7D32;
+	border: 1px solid #2E7D32;
+	background: none;
+        color: #fff;
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 5px;

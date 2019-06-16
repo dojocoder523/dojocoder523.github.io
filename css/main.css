@@ -297,7 +297,7 @@ body {
 .clbutt {
 	height: 59.7px;
 	width: 57.5px;
-	margin-top: 0.5px;
+	margin-top: 1px;
 	border-bottom: 1px solid #1B5E20;
 	border-top: none;
 	border-left: none;
@@ -471,7 +471,7 @@ body {
 	padding: 19px 15px 19px 10px;
 	border: 1px solid #1B5E20;
 	outline: none;
-	color: rgba(255,255,255,0.6);
+	color: #fff;
 	cursor:default;
 	border-bottom-left-radius: 50%;
 	border-top-left-radius: 50%;

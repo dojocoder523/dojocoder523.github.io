@@ -80,8 +80,8 @@ body {
 }
 
 .btnNav {
-  background: #1B5E20;
-  border: none;
+  background: none;
+  border: 1px solid #1B5E20;
   color: rgba(255,255,255,0.6);
   text-transform: uppercase;
   font-weight: 300;
@@ -263,12 +263,12 @@ body {
 .btn {
   width: 79px;
 	height: 60px;
-	border: none;
+	border: 1px solid #1B5E20;
 	outline: none;
 	font-size: 24px;
 	font-weight: 300;
 	border-radius: 5px;
-	background: #1B5E20;
+	background: none;
 	color: rgba(255,255,255,0.6);
 	margin: 7px;
 }
@@ -280,13 +280,13 @@ body {
 .clear {
   width: 174px;
   height: 60px;
-  border: none;
+  border: 1px solid rgba(240,40,0,0.5);
   outline: none;
   margin: 0 6px;
   color: rgba(255,255,255,0.6);
   font-weight: 300;
   border-radius: 5px;
-  background: rgba(240,40,0,0.5);
+  background: none;
   font-size: 20px;
 }
 
@@ -295,7 +295,7 @@ body {
 }
 
 .clbutt {
-	height: 59.6px;
+	height: 59.7px;
 	width: 57.5px;
 	border-bottom: 1px solid #1B5E20;
 	border-top: none;

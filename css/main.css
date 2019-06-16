@@ -80,7 +80,7 @@ body {
 }
 
 .btnNav {
-  background: #10893E;
+  background: #018574;
   border: none;
   color: #000;
   text-transform: uppercase;
@@ -266,7 +266,7 @@ body {
 	font-size: 24px;
 	font-weight: 300;
 	border-radius: 5px;
-	background: #10893E;
+	background: #018574;
 	color: #000;
 	margin: 7px;
 }
@@ -283,7 +283,7 @@ body {
   margin: 0 6px;
   font-weight: 300;
   border-radius: 5px;
-  background: #BF360C;
+  background: #CA5010;
   font-size: 20px;
 }
 

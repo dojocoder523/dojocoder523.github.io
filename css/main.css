@@ -436,7 +436,8 @@ body {
 	top: 68.5px;
 	right: 10px;
 	z-index: 4;
-	background: rgba(0,0,0,0.8);
+	/*background: rgba(0,0,0,0.8);*/
+        background: #212121;
 	padding: 10px;
 	transform:translateX(105%);
 	text-align: center;

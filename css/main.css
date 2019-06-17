@@ -278,10 +278,9 @@ body {
 }
 
 #n2 {
-	width: 320px;
+	width: 355px;
 	text-align: right;
 	opacity: 1;
-	padding-right: 15px;
   letter-spacing: 1px;
 	background: none;
 	color: #00C853;
@@ -345,7 +344,7 @@ body {
 
 .clbutt i {
 	font-size: 25px;
-	padding-right: 15px;
+	padding-right: 12px;
 	color: #00C853;
 }
 
@@ -489,7 +488,7 @@ body {
 	margin: 5px 0 13px 0;
 }
 .notes textarea {
-	width: 198px;
+	width: 218px;
 	height: 200px;
 	border-radius: 5px;
 	border: 1px solid #1B5E20;

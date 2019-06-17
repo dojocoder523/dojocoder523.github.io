@@ -13,12 +13,13 @@
 </head>
 <body>
   <div class="main">
+    <!--
 	<div class="notes">
 		<h3>Log</h3>
 		<textarea id="note" readonly></textarea><br>
 		<button onclick="clearNote()" class="clearBtn">Clear</button>
 		<button onclick="openNote()" class="leftBtn"><i class="fas fa-chevron-left"></i></button>
-	</div>
+	</div>-->
 	<div id="settings">
 		<h2>Settings</h2>
 		<h3>Тема</h3>
@@ -62,9 +63,13 @@
       <button class="btnNav" onclick="setting()">Settings</button>
       <button class="btnNav" onclick="feedback()">Feedback</button>
       <button class="btnNav" onclick="aboutme()">About Me</button>
+      <div class="notes">
+    		<h3>Log</h3>
+    		<textarea id="note" readonly></textarea><br>
+    		<button onclick="clearNote()" class="clearBtn">Clear</button>
+    	</div>
     </div>
 	<div class="form" id="form" >
-    <div class="wrapper">
       <div class="textArea">
           <p class="exp">
             <input type="text" id="n1" placeholder="Поле ввода..." autocomplete="off"
@@ -74,7 +79,6 @@
           <p>
             <input type="text" id="n2" placeholder="Результат" autocomplete="off" readonly="readonly">
           </p>
-      </div>
     </div>
 		<p id="numBlock">
 			<button class="btn" onclick="number('1')">1</button>

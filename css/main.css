@@ -49,9 +49,9 @@ body {
 
 .mobileBtn {
 	position: absolute;
-	right: 270px;
+	right: 275px;
 	top: 15px;
-  background: none;
+        background: none;
 	color: #00C853;
 	border: none;
 	font-size: 18pt;
@@ -73,7 +73,7 @@ body {
 	height: 100vh;
 	background: #252525;
 	z-index: 20;
-	transform: translateX(100%);
+	transform: translateX(103%);
 	transition: 0.8s;
 	border: none;
   display: flex;

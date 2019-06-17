@@ -68,7 +68,7 @@ body {
 	position: absolute;
 	right: 25px;
 	width: 300px;
-	height: 62vh;
+	height: 66vh;
 	background: #212121;
   overflow-x: hidden;
 	z-index: 20;
@@ -109,9 +109,10 @@ body {
 .form {
 	position: absolute;
 	top: 75px;
-	left: 22.1%;
+	left: 50%;
 	color: #fff;
 	width: 400px;
+	transform: translateX(-50%);
 	margin: 0 auto;
 	text-align: center;
 	transition: 0.8s;
@@ -457,7 +458,7 @@ body {
 	margin: 0 0 10px 0;
 }
 .notes textarea {
-	width: 240px;
+	width: 238px;
 	height: 200px;
 	border-radius: 5px;
 	border: 1px solid #1B5E20;
@@ -473,9 +474,9 @@ body {
 
 .clearBtn {
 	position: absolute;
-	top: 215px;
-	right: 18.8px;
-	padding: 5px 9px;
+	top: 212px;
+	right: 20px;
+	padding: 5px 10px;
 	border: none;
 	letter-spacing: 1px;
 	background: rgba(220,40,0,0.7);
@@ -485,143 +486,4 @@ body {
 	border-radius: 3px;
 	outline: none;
 	cursor:default;
-}
-
-@media (max-width: 419px) {
-	.textArea {
-		width: 341px;
-	}
-	#numBlock {
-		width: 362px;
-	}
-	.btn {
-	  width: 74px;
-		height: 57px;
-		font-size: 22px;
-	}
-	.clear {
-		width: 164px;
-		height: 57px;
-	}
-	#n1 {
-		width: 290px;
-	}
-	#n2 {
-		width: 310px;
-	}
-	#nav {
-		width: 339px;
-	}
-	.btnNav {
-		width: 95px;
-	}
-}
-
-@media (max-width: 396px) {
-	.textArea {
-		width: 300px;
-	}
-	#numBlock {
-		width: 316px;
-	}
-	.btn {
-	  width: 64px;
-		height: 50px;
-		font-size: 18px;
-	}
-	.clear {
-		width: 143px;
-		height: 50px;
-		font-size: 18px;
-	}
-	.form p input[type="text"] {
-		padding: 13px 10px;
-		font-size: 16px;
-	}
-	.clbutt {
-		height: 44.5px;
-		width: 44.5px;
-	}
-	#nav.active {
-		top: 74px;
-	}
-	.clbutt img {
-		width: 20px;
-	}
-	#n1 {
-		width: 243px;
-	}
-	#n2 {
-		width: 281px;
-	}
-	#nav {
-		width: 300px;
-	}
-	.btnNav {
-		width: 85px;
-		padding: 13px;
-		font-size: 12px;
-	}
-}
-
-@media (max-width: 355px) {
-	.textArea {
-		width: 260px;
-	}
-	#numBlock {
-		width: 316px;
-		margin: 5px auto;
-	}
-	.header {
-		height: 50px;
-	}
-	#nav.active {
-		top: 55px;
-	}
-	#logo {
-		font-size: 22px;
-	}
-	.mobileBtn {
-		font-size: 15pt;
-	}
-	.form {
-		top: 50px;
-	}
-	.btn {
-	  width: 54px;
-		height: 44px;
-		font-size: 18px;
-	}
-	.leftBtn {
-		top: 56.5px;
-		padding: 16px 20px 16px 8px;
-	}
-	.clear {
-		width: 124px;
-		height: 44px;
-	}
-	#n1 {
-		width: 187px;
-	}
-	#n2 {
-		width: 230px;
-	}
-	#nav {
-		width: 260px;
-	}
-	.nav.active {
-		top: 74px;
-	}
-	.btnNav {
-		width: 75px;
-		padding: 13px 0;
-		font-size: 13px;
-	}
-	.form p input[type="text"] {
-		padding: 12px;
-		font-size: 15px;
-	}
-	.clbutt {
-		height: 41.5px;
-	}
 }

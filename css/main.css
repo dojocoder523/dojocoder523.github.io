@@ -66,9 +66,10 @@ body {
 
 #nav {
 	position: absolute;
+	top: 85px;
 	right: 25px;
 	width: 300px;
-	height: 66vh;
+	height: 470px;
 	background: #212121;
   overflow-x: hidden;
 	z-index: 20;
@@ -76,9 +77,19 @@ body {
 	border-radius: 10px;
 	transition: 0.8s;
   display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu {
+	width: 270px;
+	height: 56vh;
+	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	border-radius: 10px;
 }
 
 .btnNav {
@@ -446,7 +457,7 @@ body {
 }
 
 .notes {
-  background: #212121;
+	position: relative;
 	padding: 10px;
 	text-align: center;
 }
@@ -455,7 +466,7 @@ body {
 	color: #1B5E20;
 	text-transform:uppercase;
 	font-weight: 300;
-	margin: 0 0 10px 0;
+	margin: 4px 0 10px 0;
 }
 .notes textarea {
 	width: 238px;
@@ -474,13 +485,13 @@ body {
 
 .clearBtn {
 	position: absolute;
-	top: 212px;
-	right: 20px;
-	padding: 5px 10px;
-	border: none;
+	top: 12px;
+	right: 10px;
+	padding: 5px 8px;
+	border: 1px solid rgba(240,70,0,0.5);
 	letter-spacing: 1px;
-	background: rgba(220,40,0,0.7);
-  color: #fff;
+	background: none;
+  color: rgba(240,70,0,0.5);
 	text-transform: uppercase;
   font-size: 10px;
 	border-radius: 3px;

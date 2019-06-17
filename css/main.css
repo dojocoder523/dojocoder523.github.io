@@ -45,11 +45,11 @@ body {
 	color: #1E88E5;
 }
 
-#mobileNav {
-	margin-right: 15px;
-}
 
 .mobileBtn {
+	position: absolute;
+	right: 270px;
+	top: 15px;
   background: none;
 	color: #00C853;
 	border: none;
@@ -66,30 +66,38 @@ body {
 
 #nav {
 	position: absolute;
-	top: 73px;
-	right: 25px;
-	width: 300px;
-	height: 470px;
+	top: 0;
+	right: 0;
+	width: 260px;
+	height: 100vh;
 	background: #252525;
-  overflow-x: hidden;
 	z-index: 20;
-	transform: translateX(110%);
-	border-radius: 10px;
+	transform: translateX(100%);
 	transition: 0.8s;
+	border-left: 1.5px solid #1B5E20;
   display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 .menu {
 	width: 270px;
-	height: 61vh;
+	height: 100vh;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
 	border-radius: 10px;
+}
+
+.menu h3 {
+	margin-top: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #1B5E20;
 }
 
 .btnNav {
@@ -98,7 +106,8 @@ body {
   color: rgba(255,255,255,0.6);
   text-transform: uppercase;
   font-weight: 300;
-  width: 260px;
+	letter-spacing: 0.5px;
+  width: 220px;
 	margin: 15px 0 0 0;
   outline: none;
   cursor: default;
@@ -157,8 +166,7 @@ body {
 	text-align: center;
 	display: none;
 	transform: translateX(-50%);
-	/*background-color: rgba(0, 0, 0, 0.8);*/
-        background: #212121;
+  background: #212121;
 	padding: 15px 10px;
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
@@ -178,7 +186,7 @@ body {
 	border-left: none;
 	letter-spacing: 1px;
 	font-weight: 300;
-        color: #1B5E20;
+  color: #1B5E20;
 	border-right: none;
 	width: 255px;
 	padding: 15px;
@@ -188,10 +196,11 @@ body {
 }
 
 .formTextArea {
-	background-color: #212121;
+	background-color: #3b3b3b;
 	width: 285px;
 	margin: 10px auto;
 	border-radius: 5px;
+	border: 1px solid #1B5E20;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
@@ -203,30 +212,31 @@ body {
 }
 
 .feedback textarea {
-	width: 260px;
+	width: 250px;
 	height: 100px;
 	padding: 12px 16px 0 16px;
 	font-size: 19px;
-        font-weight: 300;
+  font-weight: 300;
 	resize: none;
-        color: #1B5E20;
 	border: none;
+  color: #1B5E20;
 	outline: none;
 	background: none;
 	letter-spacing: 1px;
 }
 
 .feedback button {
-	border: 1px solid #1B5E20;
+	border: none;
 	outline: none;
 	cursor: pointer;
 	padding: 12px 20px;
 	margin-top: 5px;
-        color: #1B5E20;
+  color: #fff;
+	letter-spacing: 0.5px;
 	font-size: 16px;
 	font-weight: 300;
 	border-radius: 3px;
-	background: none;
+	background: rgba(0,180,70,0.5);
 }
 .wrapper {
 	background-color: #fff;
@@ -353,7 +363,7 @@ body {
 	z-index: 4;
 	text-align: center;
 	width: 230px;
-        background: #212121;
+  background: #212121;
 	padding: 10px;
 	color: #1B5E20;
 	display: none;
@@ -379,12 +389,13 @@ body {
 }
 
 #aboutMenu button {
-	border: 1px solid #1B5E20;
+	border: none;
 	padding: 12px 0;
 	width: 60px;
 	outline: none;
-        color: #1B5E20;
-	background: none;
+  color: #fff;
+	font-weight: 300;
+	background: rgba(0, 180, 70, 0.5);
 	border-radius: 5px;
 	margin-bottom: 10px;
 }
@@ -446,9 +457,11 @@ body {
 	padding: 12px 0;
 	margin: 15px auto;
 	border-radius: 5px;
-        color: #1B5E20;
-	border: 1px solid #2E7D32;
-	background: none;
+  color: #fff;
+	border: none;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+	background: rgba(0,180,70,0.5);
 	outline: none;
 }
 
@@ -466,15 +479,15 @@ body {
 	color: #1B5E20;
 	text-transform:uppercase;
 	font-weight: 300;
-	margin: 4px 0 10px 0;
+	margin: 5px 0 13px 0;
 }
 .notes textarea {
-	width: 238px;
+	width: 198px;
 	height: 200px;
 	border-radius: 5px;
 	border: 1px solid #1B5E20;
 	resize: none;
-	color: #1B5E20;
+	color: #00C853;
 	line-height: 1.5;
 	background: rgba(255,255,255,0.1);
 	font-size: 16px;
@@ -485,7 +498,7 @@ body {
 
 .clearBtn {
 	position: absolute;
-	top: 13px;
+	top: 14px;
 	right: 10px;
 	padding: 5px 8px;
 	border: 1px solid rgba(240,70,0,0.5);

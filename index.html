@@ -49,21 +49,23 @@
 			Calc+
 		</div>
 		<nav id="mobileNav">
-			<button class="mobileBtn"  onclick="menu()">&#9776;</button>
+      <div id="nav">
+        <button class="mobileBtn"  onclick="menu()">&#9776;</button>
+        <div class="menu">
+          <h3>Menu</h3>
+          <button class="btnNav" onclick="setting()">Settings</button>
+          <button class="btnNav" onclick="feedback()">Feedback</button>
+          <button class="btnNav" onclick="aboutme()">About Me</button>
+          <div class="notes">
+        		<h3>Log</h3>
+        		<textarea id="note" readonly></textarea><br>
+        		<button onclick="clearNote()" class="clearBtn">Clear</button>
+        	</div>
+        </div>
+      </div>
 		</nav>
 	</header>
-    <div id="nav">
-      <div class="menu">
-        <button class="btnNav" onclick="setting()">Settings</button>
-        <button class="btnNav" onclick="feedback()">Feedback</button>
-        <button class="btnNav" onclick="aboutme()">About Me</button>
-        <div class="notes">
-      		<h3>Log</h3>
-      		<textarea id="note" readonly></textarea><br>
-      		<button onclick="clearNote()" class="clearBtn">Clear</button>
-      	</div>
-      </div>
-    </div>
+
 	<div class="form" id="form" >
       <div class="textArea">
           <p class="exp">

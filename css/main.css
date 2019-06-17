@@ -84,7 +84,7 @@ body {
 
 .menu {
 	width: 270px;
-	height: 56vh;
+	height: 61vh;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -485,7 +485,7 @@ body {
 
 .clearBtn {
 	position: absolute;
-	top: 12px;
+	top: 13px;
 	right: 10px;
 	padding: 5px 8px;
 	border: 1px solid rgba(240,70,0,0.5);

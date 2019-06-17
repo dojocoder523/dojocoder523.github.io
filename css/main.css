@@ -408,7 +408,7 @@ body {
 
 #settings {
 	width: 200px;
-        background: #212121;
+  background: #212121;
 	position: absolute;
 	left: 50%;
 	top: 150px;
@@ -417,7 +417,7 @@ body {
 	color: #2E7D32;
 	line-height: 2;
 	display: none;
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);

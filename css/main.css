@@ -189,7 +189,7 @@ body {
   color: #1B5E20;
 	border-right: none;
 	width: 255px;
-	padding: 15px;
+	padding: 18px 15px;
 	outline: none;
 	font-size: 18px;
 	background: none;
@@ -246,7 +246,7 @@ body {
 	border: none;
 }
 .textArea {
-	background: rgba(0,0,0,0.0);
+	background: rgb(59,59,59);
 	width: 358px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.75);
 	margin: 0 auto;
@@ -277,10 +277,11 @@ body {
 }
 
 #n2 {
-	width: 330px;
+	width: 320px;
 	text-align: right;
 	opacity: 1;
-        letter-spacing: 1px;
+	padding-right: 15px;
+  letter-spacing: 1px;
 	background: none;
 	color: #00C853;
 }
@@ -329,17 +330,22 @@ body {
 }
 
 .clbutt {
-	padding: 9.5px;
+	padding: 17px 0;
 	width: 57.5px;
 	border-bottom: 1px solid #00C853;
 	border-top: none;
 	border-left: none;
+	font-weight: 300;
 	border-right: none;
-	color: #00C853;
 	border-top-right-radius: 8px;
 	outline: none;
 	background: none;
-	font-size: 35px;
+}
+
+.clbutt i {
+	font-size: 25px;
+	padding-right: 15px;
+	color: #00C853;
 }
 
 #numBlock {

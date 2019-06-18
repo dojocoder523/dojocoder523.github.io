@@ -2,8 +2,8 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.dojo.calc"
-    versionCode = "10"
-    version     = "1.0.0" >
+    versionCode = "20"
+    version     = "1.0.1" >
 
 <!-- versionCode is optional and Android only -->
 
@@ -14,7 +14,7 @@
   </description>
   
   <platform name="android" />
-  
+  <img src="https://cdn.icon-icons.com/icons2/923/PNG/512/calculator_icon-icons.com_72046.png" alt="icon">
   <author href="https://github.com/Serg523/Serg523.github.io/" email="serg52396@yandex.ru">
       _dojo.coder_
   </author>

@@ -543,6 +543,36 @@ body {
 	cursor:default;
 }
 
+@media (max-width: 386px) {
+	.textArea {
+		width: 306px;
+	}
+	#n1 {
+		width: 246px;
+	}
+	#n2 {
+		width: 303px;
+	}
+	.clbutt {
+		padding: 9.7px 0;
+	}
+	.clbutt img {
+		padding-right: 0px;
+	}
+	.form p input[type="text"] {
+		padding: 18px 12px;
+	}
+	#numBlock {
+		width: 320px;
+	}
+	.btn {
+		width: 66px;
+	}
+	.clear {
+		width: 146px;
+	}
+}
+
 @media (max-width: 365px) {
 	.textArea {
 		width: 280px;

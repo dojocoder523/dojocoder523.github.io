@@ -230,7 +230,7 @@ body {
 }
 
 .feedback h2 {
-	color: #1B5E20;
+	color: #00C853;
 	margin-bottom: 15px;
 	padding-top: 0;
 	font-weight: 300;
@@ -396,7 +396,7 @@ body {
 	width: 230px;
   background: #212121;
 	padding: 10px;
-	color: #1B5E20;
+	color: #00C853;
 	display: none;
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
@@ -439,7 +439,7 @@ body {
 	top: 150px;
   transform: translateX(-50%);
 	z-index: 5;
-	color: #2E7D32;
+	color: #00C853;
 	line-height: 2;
 	display: none;
 	padding: 5px;

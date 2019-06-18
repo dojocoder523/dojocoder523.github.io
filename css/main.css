@@ -11,19 +11,10 @@
 	z-index: 0;
 }
 
-#bodys {
-	transition: 0.5s;
-}
-
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: rgba(0,0,0,0.8);
-	transition: 0.3s;
-  overflow: hidden;
-}
-
-#bodys.load {
-	transition: 0.3s;
+        overflow: hidden;
 }
 
 .header {
@@ -39,7 +30,6 @@ body {
 	margin-left: 15px;
 	font-size: 25px;
 	font-weight: 300;
-	transition: 0.3s;
 }
 
 #logo.logoTheme {

@@ -37,7 +37,7 @@ function resetButton() {
 
 function menu() {
     $("#nav").toggleClass("active");
-    $(".fas").toggleClass("fa-chevron-circle-right");
+    $('.fas').toggleClass('fa-chevron-right');
 }
 
 function classremove() {

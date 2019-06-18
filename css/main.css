@@ -116,13 +116,15 @@ body {
 	color: #00C853;
 }
 
-.menu i {
+.menu img {
 	position: absolute;
 	color: #00C853;
-  bottom: 50px;
+        bottom: 50px;
 	transform: translateX(50%);
 	right: 50%;
 	font-size: 40px;
+        width: 64px;
+        height: 64px;
 }
 
 .btnNav {

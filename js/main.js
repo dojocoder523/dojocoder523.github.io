@@ -42,6 +42,8 @@ function menu() {
 
 function classremove() {
     $("#nav").removeClass("active");
+    $('.fas').removeClass('fa-chevron-circle-right');
+    $('.fas').addClass('fa-bars');
 }
 
 function aboutme() {

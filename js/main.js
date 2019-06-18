@@ -37,7 +37,11 @@ function resetButton() {
 
 function menu() {
     $("#nav").toggleClass("active");
-    $('.fas').toggleClass('fa-chevron-circle-right');
+    $('#mobileBtn').toggleClass('.btnClose');
+}
+
+function menuClose() {
+  $("#nav").removeClass("active");
 }
 
 function classremove() {

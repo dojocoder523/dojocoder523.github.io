@@ -47,9 +47,9 @@ body {
 }
 
 
-.mobileBtn {
+#mobileBtn {
 	position: absolute;
-	right: 275px;
+	right: 105vw;
 	top: 15px;
         background: none;
 	color: #00C853;
@@ -61,7 +61,7 @@ body {
 	text-transform: uppercase;
 }
 
-.btnClose {
+#nobileBtn.btnClose {
 	display: none;
 }
 
@@ -77,7 +77,7 @@ body {
 	height: 100vh;
 	background: #252525;
 	z-index: 20;
-	//transform: translateX(103%);
+	transform: translateX(103%);
 	transition: 0.8s;
 	border: none;
   display: flex;

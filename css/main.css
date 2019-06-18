@@ -61,6 +61,10 @@ body {
 	text-transform: uppercase;
 }
 
+.btnClose {
+	display: none;
+}
+
 .mobileBtn.mbTheme {
 	color: #1E88E5;
 }
@@ -69,11 +73,11 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 260px;
+	width: 100vw;
 	height: 100vh;
 	background: #252525;
 	z-index: 20;
-	transform: translateX(103%);
+	//transform: translateX(103%);
 	transition: 0.8s;
 	border: none;
   display: flex;
@@ -84,6 +88,7 @@ body {
 }
 
 .menu {
+	position: relative;
 	width: 270px;
 	height: 100vh;
 	display: flex;
@@ -94,11 +99,20 @@ body {
 }
 
 .menu h3 {
-	margin-top: 15px;
+	margin-top: 30px;
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #1B5E20;
+}
+
+.menu i {
+	position: absolute;
+	color: #00C853;
+	bottom: 4vh;
+	transform: translateX(50%);
+	right: 50%;
+	font-size: 40px;
 }
 
 .btnNav {
@@ -330,7 +344,7 @@ body {
 }
 
 .clbutt {
-	padding: 11.7px 0;
+	padding: 8.7px 0;
 	width: 57.5px;
 	border-bottom: 1px solid #00C853;
 	border-top: none;
@@ -342,9 +356,10 @@ body {
 	background: none;
 }
 
-.clbutt i {
+.clbutt img {
 	font-size: 25px;
 	padding-right: 12px;
+	padding-top: 5px;
 	color: #00C853;
 }
 

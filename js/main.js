@@ -37,14 +37,11 @@ function resetButton() {
 
 function menu() {
     $("#nav").toggleClass("active");
-    $("#form").toggleClass("activeForm");
-    $('.notes').toggleClass('notesDown');
+    $("#mBtn").togleClass("fa-chevron-circle-right");
 }
 
 function classremove() {
     $("#nav").removeClass("active");
-    $("#form").removeClass("activeForm");
-    $('.notes'). removeClass('notesDown');
 }
 
 function aboutme() {

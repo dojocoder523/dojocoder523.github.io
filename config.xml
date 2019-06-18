@@ -13,14 +13,10 @@
       Calc+ Web App
   </description>
   
-  <author>
-    _dojo.coder_
-  </author>
-  
   <platform name="android" />
   
   <author href="https://github.com/Serg523/Serg523.github.io/" email="serg52396@yandex.ru">
-      Hardeep Shoker
+      _dojo.coder_
   </author>
 
 </widget>

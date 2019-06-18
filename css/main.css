@@ -61,7 +61,7 @@ body {
 	text-transform: uppercase;
 }
 
-#nobileBtn.btnClose {
+#mobileBtn.btnClose {
 	display: none;
 }
 
@@ -99,11 +99,21 @@ body {
 	border-radius: 10px;
 }
 
+#nav h2 {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-weight: 300;
+	color: #00C853;
+	top: 20px;
+	letter-spacing: 1px;
+}
+
 .menu h3 {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #1B5E20;
+	color: #00C853;
 }
 
 .menu i {
@@ -497,7 +507,7 @@ body {
 }
 .notes h3 {
 	text-align: center;
-	color: #1B5E20;
+	color: #00C853;
 	text-transform:uppercase;
 	font-weight: 300;
 	margin: 5px 0 13px 0;

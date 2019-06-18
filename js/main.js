@@ -37,17 +37,17 @@ function resetButton() {
 
 function menu() {
     $("#nav").toggleClass("active");
-    $('#mobileBtn').toggleClass('.btnClose');
+    $('#mobileBtn').addClass('btnClose');
 }
 
 function menuClose() {
   $("#nav").removeClass("active");
+  $('#mobileBtn').removeClass('btnClose');
 }
 
 function classremove() {
     $("#nav").removeClass("active");
-    $('.fas').removeClass('fa-chevron-circle-right');
-    $('.fas').addClass('fa-bars');
+    $('#mobileBtn').removeClass('btnClose');
 }
 
 function aboutme() {

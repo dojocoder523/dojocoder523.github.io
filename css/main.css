@@ -90,7 +90,7 @@ body {
 .menu {
 	position: relative;
 	width: 270px;
-	height: 90vh;
+	height: 530px;
 	overflow: hidden;
 	display: flex;
 	justify-content: flex-start;
@@ -100,7 +100,6 @@ body {
 }
 
 .menu h3 {
-	margin-top: 30px;
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 1px;

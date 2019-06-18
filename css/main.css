@@ -542,3 +542,75 @@ body {
 	outline: none;
 	cursor:default;
 }
+
+@media (max-width: 386px) {
+	.textArea {
+		width: 280px;
+	}
+	#n1 {
+		width: 220px;
+	}
+	#n2 {
+		width: 279px;
+	}
+	.form p input[type="text"] {
+		padding: 12px;
+		font-size: 16px;
+	}
+	.clbutt {
+		padding: 1px 0;
+	}
+	.clbutt img {
+		padding-right: 0px;
+	}
+	#numBlock {
+		width: 320px;
+	}
+	.btn {
+		width: 58px;
+		height: 55px;
+	}
+	.clear {
+		width: 131px;
+		height: 55px;
+	}
+	#logo {
+		font-size: 22px;
+	}
+	#mobileBtn {
+		font-size: 15pt;
+	}
+	.form {
+		top: 65px;
+	}
+	#nav h2 {
+		font-size: 20px;
+		top: 15px;
+		left: 15px;
+	}
+	.menu {
+		width: 250px;
+	}
+	.menu h3 {
+		font-size: 14px;
+	}
+	.btnNav {
+		width: 180px;
+		padding: 12px 0;
+		font-size: 12px;
+	}
+	.notes textarea {
+		width: 180px;
+		height: 165px;
+	}
+	.clearBtn {
+		font-size: 9px;
+		padding: 3px 5px;
+	}
+	.menu {
+		height: 460px;
+	}
+	.menu i {
+		font-size: 35px;
+	}
+}

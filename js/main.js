@@ -68,9 +68,6 @@ function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
 }
 
-function start() {
-    $("#bodys").toggleClass("load");
-}
 /*
 function bgcolor(c) {
     switch (c) {

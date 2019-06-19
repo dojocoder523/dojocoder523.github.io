@@ -287,7 +287,7 @@ body {
 }
 
 #n1 {
-	width: 380vw;
+	width: 75vw;
 	color: #00C853;
 	background: none;
 	opacity: 1;
@@ -366,6 +366,7 @@ body {
 .clbutt {
 	height: 10vh;
 	width: 20vw;
+	padding: 2.2vh 0;
 	border-bottom: 1px solid #00C853;
 	border-top: none;
 	border-left: none;
@@ -375,13 +376,13 @@ body {
 	outline: none;
 	background: none;
 }
-
+/*
 .clbutt img {
 	font-size: 25px;
-	padding-right: 12px;
-	padding-top: 5px;
+
+
 	color: #00C853;
-}
+}*/
 
 #numBlock {
 	position: fixed;

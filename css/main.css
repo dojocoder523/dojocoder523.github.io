@@ -5,10 +5,8 @@
 
 .main {
 	position:fixed;
-	width: 100%;
-	left: 50%;
+	width: 100vw;
 	height: 100vh;
-	transform:translateX(-50%);
 	z-index: 0;
 }
 
@@ -40,7 +38,7 @@ body {
 
 #mobileBtn {
 	position: absolute;
-	right: 105vw;
+	right: 104vw;
 	top: 2vh;
         background: none;
 	color: #00C853;
@@ -48,7 +46,7 @@ body {
 	font-size: 18pt;
 	font-weight: 300;
 	outline: none;
-	padding: 8px 8px;
+	padding: 1vh 3vw;
 	text-transform: uppercase;
 }
 
@@ -145,31 +143,23 @@ body {
 }
 
 .form {
-	position: absolute;
-
-	left: 50%;
 	color: #fff;
 	width: 100vw;
-	height: 90vh;
-	transform: translateX(-50%);
-	margin: 0 auto;
-	text-align: center;
-	transition: 0.8s;
-	z-index: 1;
+	height: 85vh;
 }
 
 .form p input[type="text"] {
 	height: 10vh;
-	padding: 0 3vw;
+	padding: 0 2vw;
 	outline: none;
 	background: none;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	border-bottom: none;
-	font-size: 20px;
+	font-size: 1.2em;
 	font-weight: 400;
-	letter-spacing: 1px;
+	letter-spacing: 0.5em;
 	color: #000;
 }
 
@@ -201,7 +191,6 @@ body {
 }
 
 .feedback input[type="text"] {
-
 	border-top: none;
 	border-left: none;
 	letter-spacing: 1px;
@@ -287,21 +276,19 @@ body {
 }
 
 #n1 {
-	width: 75vw;
+	width: 74vw;
 	color: #00C853;
 	background: none;
-	opacity: 1;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
 	text-align: left;
-	margin: 0;
 	border-bottom: 1px solid #00C853;
 }
 
 #n2 {
-	width: 91vw;
+	width: 90.5vw;
 	text-align: right;
 	opacity: 1;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
 	background: none;
 	color: #00C853;
 }

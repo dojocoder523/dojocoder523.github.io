@@ -150,7 +150,7 @@ body {
 }
 
 .form p input[type="text"] {
-	height: 9vh;
+	height: 10vh;
 	padding: 0 2vw;
 	outline: none;
 	background: none;
@@ -254,8 +254,8 @@ body {
 }
 .textArea {
 	background: rgb(59,59,59);
-	width: 92vw;
-	height: 18vh;
+	width: 100vw;
+	height: 20vh;
 	margin: 0 auto;
   border: 0.5px solid #212121;
 	outline: none;
@@ -296,8 +296,8 @@ body {
 :-ms-input-placeholder { color: #00C853; letter-spacing: 1px; }
 
 .btn {
-  width: 20vw;
-	height: 9vh;
+  width: 25vw;
+	height: 11.6vh;
 	border: none;
 	outline: none;
 	font-size: 24px;
@@ -313,8 +313,8 @@ body {
 }
 
 .clear {
-  width: 20vw;
-  height: 9vh;
+  width: 25vw;
+  height: 11.6vh;
   border: none;
   outline: none;
   color: rgba(255,255,255,0.6);
@@ -330,8 +330,8 @@ body {
 	border: none;
 	outline: none;
 	font-weight: 300;
-	width: 40vw;
-	height: 9vh;
+	width: 50vw;
+	height: 11.6vh;
 }
 
 .clear.clTheme {
@@ -359,8 +359,8 @@ body {
 }
 
 #numBlock {
-	width: 80vw;
-	height: 55vh;
+	width: 100vw;
+	height: 70vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

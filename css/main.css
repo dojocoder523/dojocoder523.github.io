@@ -153,10 +153,7 @@ body {
 	padding: 0 2vw;
 	outline: none;
 	background: none;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
+	border: none;
 	font-size: 1.2em;
 	font-weight: 400;
 	letter-spacing: 0.5em;
@@ -259,7 +256,7 @@ body {
 	width: 93vw;
 	height: 20vh;
 	box-shadow: 0 0 10px rgba(0,0,0,0.75);
-	margin: 0 auto;
+	margin: 1vh auto;
   border: 1px solid #00C853;
 	outline: none;
 	border-radius: 10px;
@@ -300,7 +297,7 @@ body {
 :-ms-input-placeholder { color: #00C853; letter-spacing: 1px; }
 
 .btn {
-  width: 21vw;
+  width: 20vw;
 	height: 9vh;
 	border: none;
 	outline: none;
@@ -310,7 +307,7 @@ body {
 	background: rgba(0, 180, 70, 0.5);
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
 	color: rgba(255,255,255,0.6);
-	margin: 5px;
+	margin: 1vh;
 }
 
 .btn.btn_numb_theme {
@@ -318,18 +315,18 @@ body {
 }
 
 .clear {
-  width: 21vw;
+  width: 20vw;
   height: 9vh;
   border: none;
   outline: none;
-  margin: 0 7px;
+  margin: 1vw;
   color: rgba(255,255,255,0.6);
   font-weight: 300;
   border-radius: 10px;
 	letter-spacing: 1px;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
   background: rgba(230,60,0,0.6);
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 .journal {
@@ -343,7 +340,7 @@ body {
 	border-radius: 10px;
 	width: 45vw;
 	height: 9vh;
-	margin: 3.5px;
+	margin: 1vw;
 }
 
 .clear.clTheme {
@@ -372,12 +369,8 @@ body {
 }*/
 
 #numBlock {
-	position: fixed;
-	left: 0;
-	bottom: 0;
 	width: 100vw;
-	height: 68vh;
-	margin: 5px auto;
+	height: 65vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

@@ -296,9 +296,9 @@ body {
 :-ms-input-placeholder { color: #00C853; letter-spacing: 1px; }
 
 .btn {
-  width: 23vw;
+  width: 20vw;
 	height: 9vh;
-	border: 0.5px solid #212121;
+	border: none;
 	outline: none;
 	font-size: 24px;
 	font-weight: 300;
@@ -313,25 +313,24 @@ body {
 }
 
 .clear {
-  width: 23vw;
+  width: 20vw;
   height: 9vh;
-  border: 0.5px solid #212121;
+  border: none;
   outline: none;
   color: rgba(255,255,255,0.6);
   font-weight: 300;
 	letter-spacing: 1px;
   background: rgba(230,60,0,0.6);
-  font-size: 1em;
+
 }
 
 .journal {
 	background: rgba(0, 80, 250, 0.4);
 	color: rgba(255,255,255,0.6);
-	border: 0.5px solid #212121;
+	border: none;
 	outline: none;
-	font-size: 1.3em;
 	font-weight: 300;
-	width: 46vw;
+	width: 40vw;
 	height: 9vh;
 }
 
@@ -340,7 +339,7 @@ body {
 }
 
 .clbutt {
-	height: 9vh;
+	height: 10vh;
 	width: 20vw;
 	display: flex;
 	justify-content: flex-end;
@@ -360,7 +359,7 @@ body {
 }
 
 #numBlock {
-	width: 100vw;
+	width: 80vw;
 	height: 55vh;
 	display: flex;
 	flex-wrap: wrap;

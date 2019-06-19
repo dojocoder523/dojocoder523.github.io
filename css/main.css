@@ -19,8 +19,8 @@ body {
 }
 
 .header {
-	width: 100%;
-	height: 70px;
+	width: 100vw;
+	height: 10vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -159,8 +159,8 @@ body {
 }
 
 .form p input[type="text"] {
-	height: 12vh;
-	padding: 0 15px 0 15px;
+	height: 10vh;
+	padding: 0 3vw;
 	outline: none;
 	background: none;
 	border-top: none;
@@ -268,7 +268,7 @@ body {
 .textArea {
 	background: rgb(59,59,59);
 	width: 93vw;
-	height: 24vh;
+	height: 20vh;
 	box-shadow: 0 0 10px rgba(0,0,0,0.75);
 	margin: 0 auto;
   border: 1px solid #00C853;
@@ -364,7 +364,7 @@ body {
 }
 
 .clbutt {
-	height: 12vh;
+	height: 10vh;
 	width: 20vw;
 	border-bottom: 1px solid #00C853;
 	border-top: none;
@@ -388,6 +388,7 @@ body {
 	left: 0;
 	bottom: 0;
 	width: 100vw;
+	height: 68vh;
 	margin: 5px auto;
 	display: flex;
 	flex-wrap: wrap;

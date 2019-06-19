@@ -149,7 +149,7 @@ body {
 }
 
 .form p input[type="text"] {
-	height: 10vh;
+	height: 9vh;
 	padding: 0 2vw;
 	outline: none;
 	background: none;
@@ -254,7 +254,7 @@ body {
 .textArea {
 	background: rgb(59,59,59);
 	width: 93vw;
-	height: 20vh;
+	height: 18vh;
 	box-shadow: 0 0 10px rgba(0,0,0,0.75);
 	margin: 1vh auto;
   border: 1px solid #00C853;
@@ -348,9 +348,11 @@ body {
 }
 
 .clbutt {
-	height: 10vh;
+	height: 9vh;
 	width: 20vw;
-	padding: 2.2vh 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	border-bottom: 1px solid #00C853;
 	border-top: none;
 	border-left: none;
@@ -360,17 +362,14 @@ body {
 	outline: none;
 	background: none;
 }
-/*
+
 .clbutt img {
-	font-size: 25px;
-
-
-	color: #00C853;
-}*/
+	margin-right: 2vw;
+}
 
 #numBlock {
 	width: 100vw;
-	height: 65vh;
+	height: 68vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

@@ -146,7 +146,7 @@ body {
 .form {
 	color: #fff;
 	width: 100vw;
-	height: 85vh;
+	height: 90vh;
 }
 
 .form p input[type="text"] {
@@ -254,13 +254,11 @@ body {
 }
 .textArea {
 	background: rgb(59,59,59);
-	width: 93vw;
+	width: 92vw;
 	height: 18vh;
-	box-shadow: 0 0 10px rgba(0,0,0,0.75);
-	margin: 1vh auto;
-  border: 1px solid #00C853;
+	margin: 0 auto;
+  border: 0.5px solid #212121;
 	outline: none;
-	border-radius: 10px;
 }
 
 .textArea.taTheme {
@@ -298,17 +296,16 @@ body {
 :-ms-input-placeholder { color: #00C853; letter-spacing: 1px; }
 
 .btn {
-  width: 20vw;
+  width: 23vw;
 	height: 9vh;
-	border: none;
+	border: 0.5px solid #212121;
 	outline: none;
 	font-size: 24px;
 	font-weight: 300;
-	border-radius: 10px;
+	//border-radius: 10px;
 	background: rgba(0, 180, 70, 0.5);
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
 	color: rgba(255,255,255,0.6);
-	margin: 1vh;
+	//margin: 1vh;
 }
 
 .btn.btn_numb_theme {
@@ -316,32 +313,26 @@ body {
 }
 
 .clear {
-  width: 20vw;
+  width: 23vw;
   height: 9vh;
-  border: none;
+  border: 0.5px solid #212121;
   outline: none;
-  margin: 1vw;
   color: rgba(255,255,255,0.6);
   font-weight: 300;
-  border-radius: 10px;
 	letter-spacing: 1px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
   background: rgba(230,60,0,0.6);
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .journal {
 	background: rgba(0, 80, 250, 0.4);
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
 	color: rgba(255,255,255,0.6);
-	border: none;
+	border: 0.5px solid #212121;
 	outline: none;
 	font-size: 1.3em;
 	font-weight: 300;
-	border-radius: 10px;
-	width: 45vw;
+	width: 46vw;
 	height: 9vh;
-	margin: 1vw;
 }
 
 .clear.clTheme {
@@ -370,7 +361,7 @@ body {
 
 #numBlock {
 	width: 100vw;
-	height: 68vh;
+	height: 55vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

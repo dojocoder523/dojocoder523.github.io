@@ -78,8 +78,8 @@ body {
 
 .menu {
 	position: relative;
-	width: 270px;
-	height: 90vh;
+	width: 80vh;
+	height: 70vh;
 	overflow: hidden;
 	display: flex;
 	justify-content: flex-start;
@@ -100,15 +100,16 @@ body {
 
 .menu h3 {
 	font-weight: 300;
+	font-size: 1em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #00C853;
 }
 
-.menu img {
+#nav img {
 	position: absolute;
 	color: #00C853;
-        bottom: 50px;
+        bottom: 5vh;
 	transform: translateX(50%);
 	right: 50%;
 	font-size: 40px;
@@ -123,12 +124,12 @@ body {
   text-transform: uppercase;
   font-weight: 300;
 	letter-spacing: 0.5px;
-  width: 220px;
+  width: 50vw;
 	margin: 15px 0 0 0;
   outline: none;
   cursor: default;
-  font-size: 14px;
-  padding: 15px 0;
+  font-size: 0.8em;
+  padding: 2vh 0;
   border-radius: 5px;
 }
 
@@ -507,8 +508,8 @@ body {
 	margin: 5px 0 13px 0;
 }
 .notes textarea {
-	width: 218px;
-	height: 200px;
+	width: 50vw;
+	height: 27vh;
 	border-radius: 5px;
 	border: 1px solid #1B5E20;
 	resize: none;

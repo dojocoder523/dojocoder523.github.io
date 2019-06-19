@@ -7,6 +7,7 @@
 	position:fixed;
 	width: 100%;
 	left: 50%;
+	height: 100vh;
 	transform:translateX(-50%);
 	z-index: 0;
 }
@@ -145,10 +146,11 @@ body {
 
 .form {
 	position: absolute;
-	top: 75px;
+
 	left: 50%;
 	color: #fff;
-	width: 400px;
+	width: 100vw;
+	height: 100vh;
 	transform: translateX(-50%);
 	margin: 0 auto;
 	text-align: center;
@@ -157,7 +159,7 @@ body {
 }
 
 .form p input[type="text"] {
-	height: 60px;
+	height: 12vh;
 	padding: 0 15px 0 15px;
 	outline: none;
 	background: none;
@@ -199,7 +201,7 @@ body {
 }
 
 .feedback input[type="text"] {
-	border-bottom: 2px dashed #1B5E20;
+
 	border-top: none;
 	border-left: none;
 	letter-spacing: 1px;
@@ -265,7 +267,8 @@ body {
 }
 .textArea {
 	background: rgb(59,59,59);
-	width: 358px;
+	width: 93vw;
+	height: 24vh;
 	box-shadow: 0 0 10px rgba(0,0,0,0.75);
 	margin: 0 auto;
   border: 1px solid #00C853;
@@ -284,7 +287,7 @@ body {
 }
 
 #n1 {
-	width: 300px;
+	width: 380vw;
 	color: #00C853;
 	background: none;
 	opacity: 1;
@@ -295,7 +298,7 @@ body {
 }
 
 #n2 {
-	width: 355px;
+	width: 91vw;
 	text-align: right;
 	opacity: 1;
   letter-spacing: 1px;
@@ -310,8 +313,8 @@ body {
 :-ms-input-placeholder { color: #00C853; letter-spacing: 1px; }
 
 .btn {
-  width: 79px;
-	height: 60px;
+  width: 21vw;
+	height: 9vh;
 	border: none;
 	outline: none;
 	font-size: 24px;
@@ -320,7 +323,7 @@ body {
 	background: rgba(0, 180, 70, 0.5);
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
 	color: rgba(255,255,255,0.6);
-	margin: 7px;
+	margin: 5px;
 }
 
 .btn.btn_numb_theme {
@@ -328,8 +331,8 @@ body {
 }
 
 .clear {
-  width: 79px;
-  height: 60px;
+  width: 21vw;
+  height: 9vh;
   border: none;
   outline: none;
   margin: 0 7px;
@@ -348,12 +351,12 @@ body {
 	color: rgba(255,255,255,0.6);
 	border: none;
 	outline: none;
-	font-size: 24px;
+	font-size: 1.3em;
 	font-weight: 300;
 	border-radius: 10px;
-	width: 171px;
-	height: 60px;
-	margin: 0 7px 0 7px;
+	width: 45vw;
+	height: 9vh;
+	margin: 3.5px;
 }
 
 .clear.clTheme {
@@ -361,8 +364,8 @@ body {
 }
 
 .clbutt {
-	height: 60px;
-	width: 57.5px;
+	height: 12vh;
+	width: 20vw;
 	border-bottom: 1px solid #00C853;
 	border-top: none;
 	border-left: none;
@@ -381,8 +384,11 @@ body {
 }
 
 #numBlock {
-	width: 400px;
-	margin: 10px auto;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	margin: 5px auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -548,107 +554,4 @@ body {
 	border-radius: 3px;
 	outline: none;
 	cursor:default;
-}
-
-@media (max-width: 386px) {
-	.textArea {
-		width: 306px;
-	}
-	#n1 {
-		width: 246px;
-	}
-	#n2 {
-		width: 303px;
-	}
-	.clbutt {
-		padding: 9.7px 0;
-	}
-	.clbutt img {
-		padding-right: 0px;
-	}
-	.form p input[type="text"] {
-		padding: 18px 12px;
-	}
-	#numBlock {
-		width: 320px;
-	}
-	.btn {
-		width: 66px;
-	}
-	.clear {
-		width: 146px;
-	}
-}
-
-@media (max-width: 365px) {
-	.textArea {
-		width: 280px;
-	}
-	#n1 {
-		width: 220px;
-	}
-	#n2 {
-		width: 279px;
-	}
-	.form p input[type="text"] {
-		padding: 12px;
-		font-size: 16px;
-	}
-	.clbutt {
-		padding: 1px 0;
-	}
-	.clbutt img {
-		padding-right: 0px;
-	}
-	#numBlock {
-		width: 320px;
-	}
-	.btn {
-		width: 58px;
-		height: 55px;
-	}
-	.clear {
-		width: 131px;
-		height: 55px;
-	}
-	#logo {
-		font-size: 22px;
-	}
-	#mobileBtn {
-		font-size: 15pt;
-	}
-	.form {
-		top: 65px;
-	}
-	#nav h2 {
-		font-size: 20px;
-		top: 15px;
-		left: 15px;
-	}
-	.menu {
-		width: 250px;
-	}
-	.menu h3 {
-		font-size: 14px;
-	}
-	.btnNav {
-		width: 180px;
-		padding: 12px 0;
-		font-size: 12px;
-	}
-	.notes textarea {
-		width: 180px;
-		height: 165px;
-	}
-	.clearBtn {
-		font-size: 9px;
-		padding: 3px 5px;
-	}
-	.menu {
-		height: 460px;
-	}
-	.menu i {
-		font-size: 35px;
-		bottom: 20px;
-	}
 }

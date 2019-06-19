@@ -28,8 +28,8 @@ body {
 
 #logo {
 	color: #00C853;
-	margin-left: 15px;
-	font-size: 25px;
+	margin-left: 3vw;
+	font-size: 1.5em;
 	font-weight: 300;
 }
 
@@ -41,7 +41,7 @@ body {
 #mobileBtn {
 	position: absolute;
 	right: 105vw;
-	top: 15px;
+	top: 2vh;
         background: none;
 	color: #00C853;
 	border: none;
@@ -81,7 +81,7 @@ body {
 .menu {
 	position: relative;
 	width: 270px;
-	height: 580px;
+	height: 90vh;
 	overflow: hidden;
 	display: flex;
 	justify-content: flex-start;
@@ -150,7 +150,7 @@ body {
 	left: 50%;
 	color: #fff;
 	width: 100vw;
-	height: 100vh;
+	height: 90vh;
 	transform: translateX(-50%);
 	margin: 0 auto;
 	text-align: center;

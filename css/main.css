@@ -157,7 +157,8 @@ body {
 }
 
 .form p input[type="text"] {
-	padding: 18px;
+	height: 60px;
+	padding: 0 15px 0 15px;
 	outline: none;
 	background: none;
 	border-top: none;
@@ -346,7 +347,7 @@ body {
 }
 
 .clbutt {
-	padding: 9.3px 0;
+	height: 60px;
 	width: 57.5px;
 	border-bottom: 1px solid #00C853;
 	border-top: none;

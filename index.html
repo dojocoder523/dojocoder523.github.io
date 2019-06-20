@@ -18,12 +18,12 @@
 		<h3>Тема</h3>
 		<p>
 			<label for="d">Темная &nbsp;&nbsp;
-				<input type="radio" value="dark" id="d" name="theme" checked>
+				<input type="radio" value="dark" onchange="bgcolor('d');" id="d" name="theme" checked>
 			</label>
 		</p>
 		<p>
 			<label for="w">Светлая &nbsp;
-				<input type="radio" value="white" id="w" name="theme" >
+				<input type="radio" value="white" onchange="bgcolor('w');" id="w" name="theme" >
 			</label>
 		</p>
 		<button onclick="setClose();">OK</button>
@@ -48,16 +48,12 @@
 		<div id="logo">
 			Calc+
 		</div>
-		<nav id="mobileNav">
       <div id="nav">
         <h2>Calc+</h2>
         <button id="mobileBtn"  onclick="menu()">
-	      <!--<i id="mBtn" class="fas fa-bars"></i>-->
-               &#9776;
+	      &#9776;
 	      </button>
         <div class="menu">
-
-         <!-- <i onclick="menuClose()" class="far fa-times-circle"></i>-->
           <h3>Menu</h3>
           <button class="btnNav" onclick="setting()">Settings</button>
           <button class="btnNav" onclick="feedback()">Feedback</button>
@@ -68,54 +64,47 @@
         		<button onclick="clearNote()" class="clearBtn">Clear</button>
         	</div>
         </div>
-        <img onclick="menuClose()" src="img/close.png">
+        <i onclick="menuClose()" class="far fa-times-circle"></i>
       </div>
-		</nav>
 	</header>
-
 	<div class="form" id="form" >
-      <div class="textArea">
+      <div id="textArea">
           <p class="exp">
             <input type="text" id="n1" placeholder="Поле ввода..." autocomplete="off"
                   readonly="readonly">
             <button onclick="clr()" class="clbutt">
-              <img src="img/backspace-32 (1).png" alt="&lt;">
+              <!--<img src="img/backspace-32 (1).png" alt="&lt;">-->
+              <
             </button>
           </p>
-          <p>
-            <input type="text" id="n2" placeholder="Результат" autocomplete="off" readonly="readonly">
-          </p>
     </div>
-    <p id="numBlock">
-      <button class="btn" onclick="number('1')">1</button>
-      <button class="btn" onclick="number('2')">2</button>
-      <button class="btn" onclick="number('3')">3</button>
-      <button onclick="resetButton()" class="clear">CLR</button>
-      <button class="btn" onclick="number('4')">4</button>
-      <button class="btn" onclick="number('5')">5</button>
-      <button class="btn" onclick="number('6')">6</button>
-      <button class="btn" onclick="number('+')">+</button>
-      <button class="btn" onclick="number('7')">7</button>
-      <button class="btn" onclick="number('8')">8</button>
-      <button class="btn" onclick="number('9')">9</button>
-      <button class="btn" onclick="number('-')">-</button>
-      <button class="btn" onclick="number('.')">.</button>
-      <button class="btn" onclick="number('0')">0</button>
-      <button class="btn" onclick="equal()">=</button>
-      <button class="btn" onclick="number('*')">&times;</button>
-      <button class="btn" onclick="number('%')">%</button>
-      <button class="btn" onclick="number('/')">&radic;</button>
-      <button class="btn" onclick="number('/')">&pi;</button>
-      <button class="btn" onclick="number('/')">&divide;</button>
-      <button class="btn" onclick="number('(')">(</button>
-      <button class="journal" onclick="menu()">Журнал</button>
-      <button class="btn" onclick="number(')')">)</button>
-    </p>
+		<p id="numBlock">
+			<button class="btn" onclick="number('1')">1</button>
+			<button class="btn" onclick="number('2')">2</button>
+			<button class="btn" onclick="number('3')">3</button>
+			<button class="btn" onclick="down()">
+			<i class="fas fa-chevron-down"></i>
+			</button>
+			<button class="btn" onclick="number('4')">4</button>
+			<button class="btn" onclick="number('5')">5</button>
+			<button class="btn" onclick="number('6')">6</button>
+			<button onclick="resetButton()" class="clear">CLR</button>
+		 	<button class="btn" onclick="number('7')">7</button>
+			<button class="btn" onclick="number('8')">8</button>
+			<button class="btn" onclick="number('9')">9</button>
+			<button class="btn" onclick="number(' + ')">+</button>
+			<button class="btn" onclick="number('.')">.</button>
+			<button class="btn" onclick="number('0')">0</button>
+			<button class="btn" onclick="number(' - ')">-</button>
+			<button class="btn" onclick="number(' * ')">x</button>
+			<button class="btn" onclick="number('(')">(</button>
+			<button class="btn" onclick="number(')')">)</button>
+			<button class="btn" onclick="number(' / ')">&divide;</button>
+			<button class="btn equal" onclick="equal()">=</button>
+		</p>
 	</div>
-
 </div>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>-->
-       <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="js/main.js" defer></script>
 </body>
 </html>

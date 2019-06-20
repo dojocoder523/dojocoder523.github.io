@@ -4,29 +4,27 @@
 }
 
 .main {
-	position:fixed;
+    position:fixed;
 	width: 100vw;
 	height: 100vh;
-	z-index: 0;
 }
-
 body {
 	font-family: 'Roboto Condensed', sans-serif;
-	background: rgba(0,0,0,0.8);
-        overflow: hidden;
+	background: #212121;
 }
 
 .header {
 	width: 100vw;
 	height: 10vh;
 	display: flex;
+	background: rgba(0,0,0,0.1);
 	justify-content: space-between;
 	align-items: center;
 }
 
 #logo {
 	color: #00C853;
-	margin-left: 3vw;
+	margin-left: 5vw;
 	font-size: 1.5em;
 	font-weight: 300;
 }
@@ -38,15 +36,15 @@ body {
 
 #mobileBtn {
 	position: absolute;
-	right: 104vw;
-	top: 2vh;
-        background: none;
+	right: 110vw;
+	top: 1.5vh;
+    background: none;
 	color: #00C853;
 	border: none;
 	font-size: 18pt;
 	font-weight: 300;
 	outline: none;
-	padding: 1vh 3vw;
+	padding: 1.6vh 1vw;
 	text-transform: uppercase;
 }
 
@@ -64,12 +62,12 @@ body {
 	right: 0;
 	width: 100vw;
 	height: 100vh;
-	background: #252525;
+	background: #212121;
 	z-index: 20;
-	transform: translateX(103%);
+	transform: translateX(105%);
 	transition: 0.8s;
 	border: none;
-  display: flex;
+    display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
@@ -78,8 +76,8 @@ body {
 
 .menu {
 	position: relative;
-	width: 80vh;
-	height: 70vh;
+	width: 90vw;
+	height: 80vh;
 	overflow: hidden;
 	display: flex;
 	justify-content: flex-start;
@@ -100,36 +98,33 @@ body {
 
 .menu h3 {
 	font-weight: 300;
-	font-size: 1em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #00C853;
 }
 
-#nav img {
+#nav i {
 	position: absolute;
 	color: #00C853;
-        bottom: 5vh;
+    bottom: 10vh;
 	transform: translateX(50%);
 	right: 50%;
 	font-size: 40px;
-        width: 48px;
-        height: 48px;
 }
 
 .btnNav {
-  background: rgba(0, 180, 70, 0.5);
-  border: none;
-  color: rgba(255,255,255,0.6);
+  background: none;
+  border: 1px solid #00C853;
+  color: #00C853;
   text-transform: uppercase;
   font-weight: 300;
 	letter-spacing: 0.5px;
-  width: 50vw;
+  width: 220px;
 	margin: 15px 0 0 0;
   outline: none;
   cursor: default;
-  font-size: 0.8em;
-  padding: 2vh 0;
+  font-size: 14px;
+  padding: 15px 0;
   border-radius: 5px;
 }
 
@@ -150,14 +145,14 @@ body {
 }
 
 .form p input[type="text"] {
-	height: 10vh;
-	padding: 0 2vw;
+	height: 20vh;
+	padding: 0 5vw;
 	outline: none;
 	background: none;
 	border: none;
-	font-size: 1.2em;
-	font-weight: 400;
-	letter-spacing: 0.5em;
+	font-size: 1.6em;
+	font-weight: 300;
+	letter-spacing: 1px;
 	color: #000;
 }
 
@@ -174,7 +169,7 @@ body {
 	text-align: center;
 	display: none;
 	transform: translateX(-50%);
-  background: #212121;
+  	background: #212121;
 	padding: 15px 10px;
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
@@ -189,11 +184,12 @@ body {
 }
 
 .feedback input[type="text"] {
+	border-bottom: 2px dashed #1B5E20;
 	border-top: none;
 	border-left: none;
 	letter-spacing: 1px;
 	font-weight: 300;
-  color: #1B5E20;
+  	color: #1B5E20;
 	border-right: none;
 	width: 255px;
 	padding: 18px 5px;
@@ -203,11 +199,11 @@ body {
 }
 
 .formTextArea {
-	background-color: #3b3b3b;
+	background-color: rgba(0,0,0,0.1);
 	width: 285px;
 	margin: 10px auto;
 	border-radius: 5px;
-	border: 1px solid #1B5E20;
+	border: none;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
@@ -223,27 +219,27 @@ body {
 	height: 100px;
 	padding: 12px 0 0 5px;
 	font-size: 19px;
-  font-weight: 300;
+  	font-weight: 300;
 	resize: none;
 	border: none;
-  color: #1B5E20;
+  	color: #1B5E20;
 	outline: none;
 	background: none;
 	letter-spacing: 1px;
 }
 
 .feedback button {
-	border: none;
+	border: 1px solid #00C853;
 	outline: none;
 	cursor: pointer;
 	padding: 12px 20px;
 	margin-top: 5px;
-  color: #fff;
+    color: #00C853;
 	letter-spacing: 0.5px;
 	font-size: 16px;
 	font-weight: 300;
 	border-radius: 3px;
-	background: rgba(0,180,70,0.5);
+	background: none;
 }
 .wrapper {
 	background-color: #fff;
@@ -252,17 +248,21 @@ body {
 	margin: 0 auto;
 	border: none;
 }
-.textArea {
-	background: rgb(59,59,59);
+#textArea {
+	background: rgba(0,0,0,0.2);
 	width: 100vw;
 	height: 20vh;
-	margin: 0 auto;
-  border: 0.5px solid #414141;
+	transition: 0.3s ease;
 	outline: none;
+	box-shadow: inset 0 0 8px rgba(0,0,0,0.75);
+}
+
+#textArea.taActive {
+	height: 76vh;
 }
 
 .textArea.taTheme {
-	background: #1E88E5;
+	background: #fff;
 }
 
 .exp {
@@ -275,19 +275,12 @@ body {
 	width: 80vw;
 	color: #00C853;
 	background: none;
-  letter-spacing: 0.1em;
+	opacity: 1;
+  	letter-spacing: 1px;
 	text-align: left;
-	border-bottom: 1px solid #00C853;
+	margin: 0;
 }
 
-#n2 {
-	width: 100vw;
-	text-align: right;
-	opacity: 1;
-  letter-spacing: 0.1em;
-	background: none;
-	color: #00C853;
-}
 ::-webkit-input-placeholder { color: #00C853; letter-spacing: 1px;}
 
 ::-moz-placeholder { color: #00C853; letter-spacing: 1px;}/* Firefox 19+ */
@@ -297,15 +290,13 @@ body {
 
 .btn {
   width: 25vw;
-	height: 11.6vh;
-	border: 0.5px solid #414141;
+	height: 14vh;
+	border: 0.1px solid rgba(0,0,0,0.4);
 	outline: none;
-	font-size: 24px;
+	font-size: 1.8em;
 	font-weight: 300;
-	//border-radius: 10px;
-	background: rgba(0, 180, 70, 0.5);
-	color: rgba(255,255,255,0.6);
-	//margin: 1vh;
+	background: rgba(0, 0, 0, 0.1);
+	color: #00C853;
 }
 
 .btn.btn_numb_theme {
@@ -314,24 +305,20 @@ body {
 
 .clear {
   width: 25vw;
-  height: 11.6vh;
-  border: 0.5px solid #414141;
+  height: 14vh;
+  border: 0.1px solid rgba(0,0,0,0.4);
   outline: none;
-  color: rgba(255,255,255,0.6);
+  color: #B71C1C;
   font-weight: 300;
-	letter-spacing: 1px;
-  background: rgba(230,60,0,0.6);
-
+  letter-spacing: 1.5px;
+  background: rgba(0,0,0,0.1);
+  font-size: 1.5em;
 }
 
-.journal {
-	background: rgba(0, 80, 250, 0.4);
-	color: rgba(255,255,255,0.6);
-	border: 0.5px solid #414141;
-	outline: none;
-	font-weight: 300;
-	width: 50vw;
-	height: 11.6vh;
+.equal {
+	width: 25vw;
+	background: rgba(0,0,0,0.1);
+	color: #0D47A1;
 }
 
 .clear.clTheme {
@@ -339,23 +326,24 @@ body {
 }
 
 .clbutt {
-	height: 10vh;
+	height: 20vh;
 	width: 20vw;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	border-bottom: 1px solid #00C853;
+	border: none;
 	border-top: none;
 	border-left: none;
-	font-weight: 300;
 	border-right: none;
+	font-size: 4em;
+	font-weight: 300;
+	color: #00C853;
 	border-top-right-radius: 8px;
 	outline: none;
 	background: none;
 }
 
 .clbutt img {
-	margin-right: 2vw;
+	padding-top: 1vh;
+	padding-right: 1.5vh;
+	color: #00C853;
 }
 
 #numBlock {
@@ -365,6 +353,16 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	transition: 0.5s ease;
+	transform: translateY(0%);
+}
+
+#numBlock.nbActive {
+	transform: translateY(0%);
+}
+
+#numBlock.nbTheme {
+	background: #1E88E5;
 }
 
 #aboutMenu.aboutActive {
@@ -375,11 +373,11 @@ body {
 	position: absolute;
 	left: 50%;
 	top: 150px;
-  transform: translateX(-50%);
+  	transform: translateX(-50%);
 	z-index: 4;
 	text-align: center;
 	width: 230px;
-  background: #212121;
+  	background: #212121;
 	padding: 10px;
 	color: #00C853;
 	display: none;
@@ -405,13 +403,13 @@ body {
 }
 
 #aboutMenu button {
-	border: none;
+	border: 1px solid #00C853;
 	padding: 12px 0;
 	width: 60px;
 	outline: none;
-  color: #fff;
+  	color: #00C853;
 	font-weight: 300;
-	background: rgba(0, 180, 70, 0.5);
+	background: none;
 	border-radius: 5px;
 	margin-bottom: 10px;
 }
@@ -473,11 +471,11 @@ body {
 	padding: 12px 0;
 	margin: 15px auto;
 	border-radius: 5px;
-  color: #fff;
-	border: none;
+   	color: #00C853;
+	border: 1px solid #00C853;
 	letter-spacing: 0.5px;
 	font-weight: 300;
-	background: rgba(0,180,70,0.5);
+	background: none;
 	outline: none;
 }
 
@@ -498,14 +496,14 @@ body {
 	margin: 5px 0 13px 0;
 }
 .notes textarea {
-	width: 50vw;
-	height: 27vh;
+	width: 218px;
+	height: 200px;
 	border-radius: 5px;
-	border: 1px solid #1B5E20;
+	border: 1px solid #00C853;
 	resize: none;
 	color: #00C853;
 	line-height: 1.5;
-	background: rgba(255,255,255,0.1);
+	background: rgba(0,0,0,0.1);
 	font-size: 16px;
 	outline: none;
 	padding: 10px 10px;
@@ -517,13 +515,15 @@ body {
 	top: 14px;
 	right: 10px;
 	padding: 5px 8px;
-	border: 1px solid rgba(240,70,0,0.5);
+	border: 1px solid #B71C1C;
 	letter-spacing: 1px;
 	background: none;
-  color: rgba(240,70,0,0.5);
+    color: #B71C1C;
 	text-transform: uppercase;
-  font-size: 10px;
+  	font-size: 10px;
 	border-radius: 3px;
 	outline: none;
 	cursor:default;
 }
+
+	

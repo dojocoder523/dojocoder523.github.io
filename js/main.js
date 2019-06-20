@@ -20,7 +20,7 @@ function equal() {
   if (exp == Infinity) {
     alert("На 0 делить нельзя!");
   }else {
-    document.getElementById("n2").value = exp;
+    document.getElementById("n1").value = exp1 + ' = ' + exp;
     document.getElementById('note').value += exp1 + ' = ' + exp + '\n';
   }
 }
@@ -32,7 +32,6 @@ function clr() {
 
 function resetButton() {
     document.getElementById("n1").value = "";
-    document.getElementById("n2").value = "";
 }
 
 function menu() {
@@ -68,10 +67,13 @@ function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
 }
 
+function start() {
+    $("#bodys").toggleClass("load");
+}
 /*
 function bgcolor(c) {
     switch (c) {
-        case "colorD":
+        case "d":
             document.getElementById("siteTheme").setAttribute("content", "#212121");
             $("body").css("background-color", "#212121");
             $("#logo").removeClass("logoTheme");
@@ -91,13 +93,12 @@ function bgcolor(c) {
             $("#aboutMenu button").css("background", "#76FF03");
             $("#aboutMenu button").css("color", "#000");
             break;
-        case "colorW":
+        case "w":
             document.getElementById("siteTheme").setAttribute("content", "#ffffff");
             $("body").css("background-color", "#ffffff");
             $("#logo").addClass("logoTheme");
             $(".mobileBtn").addClass('mbTheme');
-            $(".btn").addClass('btn_numb_theme');
-            $(".clear").addClass('clTheme');
+            $("#numBlock").addClass('.nbTheme');
             $(".btnNav").addClass('btnTheme');
             $(".textArea").addClass('taTheme');
             $(".feedback").addClass('fbTheme');
@@ -111,8 +112,8 @@ function bgcolor(c) {
             $("#aboutMenu button").css("background", "#673AB7");
             $("#aboutMenu button").css("color", "#fff");
     }
-}*/
-
+}
+*/
 function setting() {
     $("#settings").toggleClass("setActive");
     classremove();
@@ -129,4 +130,9 @@ function openNote() {
 
 function clearNote() {
 	document.getElementById('note').value = '';
+}
+
+function down() {
+	$('#numBlock').toggleClass('nbActive');
+	$('#textArea').toggleClass('taActive');
 }

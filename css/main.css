@@ -147,7 +147,7 @@ body {
 .form {
 	color: #fff;
 	width: 100vw;
-	height: 90%;
+	height: 80vh;
 }
 
 .form p input[type="text"] {

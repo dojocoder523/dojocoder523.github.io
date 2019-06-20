@@ -327,7 +327,7 @@ body {
 
 .btn {
   width: 25vw;
-	height: 14vh;
+	height: 22%;
 	border: 0.1px solid rgba(0,0,0,0.4);
 	outline: none;
 	font-size: 1.8em;
@@ -342,7 +342,7 @@ body {
 
 .clear {
   width: 25vw;
-  height: 14vh;
+  height: 22%;
   border: 0.1px solid rgba(0,0,0,0.4);
   outline: none;
   color: #B71C1C;
@@ -386,7 +386,7 @@ body {
 }
 
 #clbutt.clActive {
-	height: 77vh;
+	height: 77%;
 }
 
 #clbutt img {

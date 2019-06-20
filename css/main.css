@@ -11,15 +11,20 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #212121;
+	padding-top: 10vh;
 }
 
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100vw;
 	height: 10vh;
 	display: flex;
-	background: rgba(0,0,0,0.1);
+	background: #212121;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 2;
 }
 
 #logo {
@@ -228,6 +233,29 @@ body {
 	letter-spacing: 1px;
 }
 
+#journal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 20vh;
+	border: none;
+	resize: none;
+	padding: 1.5vh 2vw;
+	font-size: 2em;
+	background: #1a1a1a;
+	color: #00C853;
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.75);
+	transition: 0.5s ease;
+	display: none;
+	z-index: 2;
+}
+
+#journal.noteActive {
+	display: block;
+	height: 76vh;
+}
+
 .feedback button {
 	border: 1px solid #00C853;
 	outline: none;
@@ -248,16 +276,21 @@ body {
 	margin: 0 auto;
 	border: none;
 }
-#textArea {
+.textArea {
 	background: rgba(0,0,0,0.2);
 	width: 100vw;
 	height: 20vh;
-	transition: 0.3s ease;
+	padding: 1.5vh 2vw;
+	color: #00C853;
+	font-size: 2em;
+	border: none;
+	resize: none;
+	transition: 0.5s ease;
 	outline: none;
 	box-shadow: inset 0 0 8px rgba(0,0,0,0.75);
 }
 
-#textArea.taActive {
+#n1.taActive {
 	height: 76vh;
 }
 
@@ -271,15 +304,7 @@ body {
 	align-items: center;
 }
 
-#n1 {
-	width: 80vw;
-	color: #00C853;
-	background: none;
-	opacity: 1;
-  	letter-spacing: 1px;
-	text-align: left;
-	margin: 0;
-}
+
 
 ::-webkit-input-placeholder { color: #00C853; letter-spacing: 1px;}
 
@@ -353,12 +378,12 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	transition: 0.5s ease;
+
 	transform: translateY(0%);
 }
 
 #numBlock.nbActive {
-	transform: translateY(0%);
+	transform: translateY(80%);
 }
 
 #numBlock.nbTheme {
@@ -525,5 +550,3 @@ body {
 	outline: none;
 	cursor:default;
 }
-
-	

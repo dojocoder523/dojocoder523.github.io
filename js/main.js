@@ -21,7 +21,7 @@ function equal() {
     alert("На 0 делить нельзя!");
   }else {
     document.getElementById("n1").value = exp1 + ' = ' + exp;
-    document.getElementById('note').value += exp1 + ' = ' + exp + '\n';
+    document.getElementById('journal').value += exp1 + ' = ' + exp + '\n';
   }
 }
 
@@ -67,9 +67,6 @@ function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
 }
 
-function start() {
-    $("#bodys").toggleClass("load");
-}
 /*
 function bgcolor(c) {
     switch (c) {
@@ -133,6 +130,8 @@ function clearNote() {
 }
 
 function down() {
-	$('#numBlock').toggleClass('nbActive');
-	$('#textArea').toggleClass('taActive');
+	document.getElementById('journal').classList.toggle('noteActive');
+  $('.fas').toggleClass('fa-chevron-up');
+  $('#numBlock').toggleClass('nbActive');
+  //$('#n1').toggleClass('taActive');
 }

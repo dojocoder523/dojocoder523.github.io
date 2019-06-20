@@ -24,7 +24,7 @@ body {
 	background: #212121;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 2;
+	z-index: 5;
 }
 
 #logo {
@@ -245,15 +245,15 @@ body {
 	font-size: 2em;
 	background: #1a1a1a;
 	color: #00C853;
+	transition: 0.2s;
 	box-shadow: inset 0 0 10px rgba(0,0,0,0.75);
-	transition: 0.5s ease;
-	display: none;
+	visibility: hidden;
 	z-index: 2;
 }
 
 #journal.noteActive {
-	display: block;
-	height: 76vh;
+	visibility: visible;
+	height: 77vh;
 }
 
 .feedback button {
@@ -285,7 +285,7 @@ body {
 	font-size: 2em;
 	border: none;
 	resize: none;
-	transition: 0.5s ease;
+	transition: 0.2s ease;
 	outline: none;
 	box-shadow: inset 0 0 8px rgba(0,0,0,0.75);
 }
@@ -378,12 +378,12 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-
-	transform: translateY(0%);
+	transition: 0.2s;
 }
 
 #numBlock.nbActive {
-	transform: translateY(80%);
+	transition: 0.2s;
+	//transform: translateY(80%);
 }
 
 #numBlock.nbTheme {

@@ -133,5 +133,5 @@ function down() {
 	document.getElementById('journal').classList.toggle('noteActive');
   $('.fas').toggleClass('fa-chevron-up');
   $('#numBlock').toggleClass('nbActive');
-  //$('#n1').toggleClass('taActive');
+  $('#n1').toggleClass('taActive');
 }

@@ -134,6 +134,7 @@ function down() {
   $('.fas').toggleClass('fa-chevron-up');
   $('#numBlock').toggleClass('nbActive');
   $('#clbutt').toggleClass('clActive');
+  $('#n1').toggleClass('taActive');
   $('.fa').toggleClass('fa-trash-alt');
   $('#bsp').toggleClass('actBsp');
   $('#clnot').toggleClass('clnActive');

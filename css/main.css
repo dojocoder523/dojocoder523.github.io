@@ -6,7 +6,7 @@
 .main {
     position:fixed;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 }
 body {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -147,7 +147,7 @@ body {
 .form {
 	color: #fff;
 	width: 100vw;
-	height: 90vh;
+	height: 90%;
 }
 
 .form p input[type="text"] {
@@ -238,7 +238,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 75vw;
+	width: 75.2vw;
 	height: 20vh;
 	border: none;
 	resize: none;
@@ -247,14 +247,14 @@ body {
 	font-size: 1.8em;
 	background: #1a1a1a;
 	color: #00C853;
-  transition: 0.5s ease;
+  //transition: 0.1s ease;
 	box-shadow: inset 0 0 10px rgba(0,0,0,0.75);
 	visibility: hidden;
 	z-index: 2;
 }
 
 #journal.noteActive {
-	transition: 0.5s ease;
+	//transition: 0.1s ease;
 	display: block;
 	visibility: visible;
 	height: 77vh;
@@ -284,7 +284,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	background: rgba(0,0,0,0.2);
-	width: 91vw;
+	width: 90vw;
 	height: 20vh;
 	padding: 1.5vh 2vw;
 	color: #00C853;
@@ -297,7 +297,7 @@ body {
 }
 
 #n1.taActive {
-	//height: 76vh;
+	visibility: hidden;
 }
 
 .textArea.taTheme {
@@ -397,7 +397,7 @@ body {
 
 #numBlock {
 	width: 100vw;
-	height: 70vh;
+	height: 70%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -406,7 +406,7 @@ body {
 }
 
 #numBlock.nbActive {
-	transition: 0.5s;
+
 	//transform: translateY(80%);
 }
 

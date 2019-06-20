@@ -245,13 +245,14 @@ body {
 	font-size: 2em;
 	background: #1a1a1a;
 	color: #00C853;
-	transition: 0.2s;
+	transition: 0.1s;
 	box-shadow: inset 0 0 10px rgba(0,0,0,0.75);
 	visibility: hidden;
 	z-index: 2;
 }
 
 #journal.noteActive {
+	display: block;
 	visibility: visible;
 	height: 77vh;
 }
@@ -378,11 +379,11 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 #numBlock.nbActive {
-	transition: 0.3s;
+	transition: 0.5s;
 	//transform: translateY(80%);
 }
 

@@ -24,6 +24,7 @@ body {
 	background: #212121;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.75);
 	z-index: 5;
 }
 
@@ -237,13 +238,13 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 75vw;
 	height: 20vh;
 	border: none;
 	resize: none;
 	overflow-y: hidden;
 	padding: 1.5vh 2vw;
-	font-size: 2em;
+	font-size: 1.8em;
 	background: #1a1a1a;
 	color: #00C853;
   transition: 0.5s ease;
@@ -280,12 +281,14 @@ body {
 	border: none;
 }
 .textArea {
+	display: flex;
+	justify-content: flex-start;
 	background: rgba(0,0,0,0.2);
-	width: 100vw;
+	width: 91vw;
 	height: 20vh;
 	padding: 1.5vh 2vw;
 	color: #00C853;
-	font-size: 2em;
+	font-size: 1.8em;
 	border: none;
 	resize: none;
 	transition: 0.2s ease;
@@ -307,7 +310,13 @@ body {
 	align-items: center;
 }
 
+#bsp {
+	display: block;
+}
 
+#bsp.actBsp {
+	display: none;
+}
 
 ::-webkit-input-placeholder { color: #00C853; letter-spacing: 1px;}
 
@@ -353,22 +362,34 @@ body {
   background: #E53935;
 }
 
-.clbutt {
+#clbutt {
 	height: 20vh;
-	width: 20vw;
+	width: 30vw;
 	border: none;
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	font-size: 4em;
+	font-size: 2em;
 	font-weight: 300;
 	color: #00C853;
-	border-top-right-radius: 8px;
+	transition: 0.5s ease;
 	outline: none;
-	background: none;
+	background: rgba(0,0,0,0.2);
 }
 
-.clbutt img {
+#clnot {
+	display: none;
+}
+
+#clnot.clnActive {
+	display: block;
+}
+
+#clbutt.clActive {
+	height: 77vh;
+}
+
+#clbutt img {
 	padding-top: 1vh;
 	padding-right: 1.5vh;
 	color: #00C853;
@@ -386,7 +407,7 @@ body {
 
 #numBlock.nbActive {
 	transition: 0.5s;
-	transform: translateY(80%);
+	//transform: translateY(80%);
 }
 
 #numBlock.nbTheme {

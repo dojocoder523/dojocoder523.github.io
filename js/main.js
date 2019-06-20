@@ -126,12 +126,15 @@ function openNote() {
 }
 
 function clearNote() {
-	document.getElementById('note').value = '';
+	document.getElementById('journal').value = '';
 }
 
 function down() {
 	document.getElementById('journal').classList.toggle('noteActive');
   $('.fas').toggleClass('fa-chevron-up');
   $('#numBlock').toggleClass('nbActive');
-  $('#n1').toggleClass('taActive');
+  $('#clbutt').toggleClass('clActive');
+  $('.fa').toggleClass('fa-trash-alt');
+  $('#bsp').toggleClass('actBsp');
+  $('#clnot').toggleClass('clnActive');
 }

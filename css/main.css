@@ -245,6 +245,7 @@ body {
 	overflow-y: hidden;
 	padding: 1.5vh 2vw;
 	font-size: 4vh;
+        outline: none;
 	background: #1a1a1a;
 	color: #00C853;
   transition: 0.3s ease;

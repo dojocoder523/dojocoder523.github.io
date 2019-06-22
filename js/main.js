@@ -82,14 +82,7 @@ function bgcolor(c) {
             $(".clear").removeClass('clTheme');
             $(".textArea").removeClass('taTheme');
             $('#numBlock').removeClass('nbTheme');
-            $(".feedback button").css("background-color", "#76FF03");
-            $(".feedback button").css("color", "#000");
-            $("#settings").removeClass("setTheme");
-            $("#settings button").css("background", "#76FF03");
-            $("#settings button").css("color", "#000");
-            $("#aboutMenu").removeClass("aboutTheme");
-            $("#aboutMenu button").css("background", "#76FF03");
-            $("#aboutMenu button").css("color", "#000");
+            $('#journal').removeClass('jTheme');
             break;
         case "w":
             $("body").css("background-color", "#fff");

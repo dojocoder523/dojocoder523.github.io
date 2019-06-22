@@ -1,14 +1,17 @@
 //alert("Добро пожаловать! Обращаю ваше внимание. В данный момент ведутся работы по оптимизации сайта, поэтому возможны проблемы с отображением контента и работой самого сайта. Спасибо за внимание) Нажмите ОК чтобы открыть сайт.");
+var num1 = document.getElementById('n1'),
+    jurn = document.getElementById('journal');
+
 function number(n) {
-    if (document.getElementById('n1') === '') {
-      document.getElementById("n1").value = n;
+    if (num1.value === '') {
+      num1.value = n;
     }else {
-        document.getElementById("n1").value += n;
+        num1.value += n;
     }
 }
 
 function equal() {
-  var exp = document.getElementById("n1").value, exp1;
+  var exp = num1.value, exp1;
   exp1 = exp;
   exp = eval(exp);
 
@@ -20,18 +23,18 @@ function equal() {
   if (exp == Infinity) {
     alert("На 0 делить нельзя!");
   }else {
-    document.getElementById("n1").value = exp1 + ' = ' + exp;
-    document.getElementById('journal').value += exp1 + ' = ' + exp + '\n';
+    num1.value = exp1 + ' = ' + exp;
+    jurn.value += exp1 + ' = ' + exp + '\n';
   }
 }
 
 function clr() {
-  var n = document.getElementById("n1").value;
-  document.getElementById("n1").value = n.substring(0, n.length - 1);
+  var n = num1.value;
+  num1.value = n.substring(0, n.length - 1);
 }
 
 function resetButton() {
-    document.getElementById("n1").value = "";
+    num1.value = "";
 }
 
 function menu() {
@@ -114,7 +117,7 @@ function openNote() {
 }
 
 function clearNote() {
-	document.getElementById('journal').value = '';
+	jurn.value = '';
 }
 
 function down() {

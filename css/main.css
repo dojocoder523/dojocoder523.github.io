@@ -246,7 +246,6 @@ body {
 	height: 20vh;
 	border: none;
 	resize: none;
-	font-weight: 300;
 	overflow-y: hidden;
 	padding: 1.5vh 2vw;
 	font-size: 4vh;
@@ -299,7 +298,6 @@ body {
 	padding: 1.5vh 2vw;
 	color: #00C853;
 	font-size: 4vh;
-	font-weight: 300;
 	border: none;
 	resize: none;
 	transition: 0.4s;

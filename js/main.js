@@ -67,20 +67,21 @@ function aboutClose() {
     $("#aboutMenu").removeClass("aboutActive");
 }
 
-/*
+
 function bgcolor(c) {
     switch (c) {
         case "d":
             document.getElementById("siteTheme").setAttribute("content", "#212121");
             $("body").css("background-color", "#212121");
             $("#logo").removeClass("logoTheme");
-            $(".mobileBtn").removeClass('mbTheme');
+            $("#mobileBtn").removeClass('mbTheme');
+            $('.equal').removeClass('eqTheme');
+            $('#clbutt').removeClass('clbTheme');
+            $('.header').removeClass('hedTheme');
             $(".btn").removeClass('btn_numb_theme');
             $(".clear").removeClass('clTheme');
-            $(".btnNav").removeClass('btnTheme');
             $(".textArea").removeClass('taTheme');
-            $(".feedback").removeClass('fbTheme');
-            $(".feedback h2").css("color", "#fff");
+            $('#numBlock').removeClass('nbTheme');
             $(".feedback button").css("background-color", "#76FF03");
             $(".feedback button").css("color", "#000");
             $("#settings").removeClass("setTheme");
@@ -91,26 +92,20 @@ function bgcolor(c) {
             $("#aboutMenu button").css("color", "#000");
             break;
         case "w":
-            document.getElementById("siteTheme").setAttribute("content", "#ffffff");
-            $("body").css("background-color", "#ffffff");
+            $("body").css("background-color", "#fff");
+            $('#numBlock').addClass('nbTheme');
+            $(".btn").addClass('btn_numb_theme');
+            $(".clear").addClass('clTheme');
+            $('.equal').addClass('eqTheme');
+            $('#clbutt').addClass('clbTheme');
+            $('.header').addClass('hedTheme');
             $("#logo").addClass("logoTheme");
-            $(".mobileBtn").addClass('mbTheme');
-            $("#numBlock").addClass('.nbTheme');
-            $(".btnNav").addClass('btnTheme');
-            $(".textArea").addClass('taTheme');
-            $(".feedback").addClass('fbTheme');
-            $(".feedback h2").css("color", "#000");
-            $(".feedback button").css("background-color", "#673AB7");
-            $(".feedback button").css("color", "#fff");
-            $("#settings").addClass("setTheme");
-            $("#settings button").css("background", "#673AB7");
-            $("#settings button").css("color", "#fff");
-            $("#aboutMenu").addClass("aboutTheme");
-            $("#aboutMenu button").css("background", "#673AB7");
-            $("#aboutMenu button").css("color", "#fff");
+            $("#mobileBtn").addClass('mbTheme');
+            $('.textArea').addClass('taTheme');
+            $('#journal').addClass('jTheme');
     }
 }
-*/
+
 function setting() {
     $("#settings").toggleClass("setActive");
     classremove();

@@ -28,6 +28,10 @@ body {
 	z-index: 5;
 }
 
+.hedTheme {
+	background: #3f51b5;
+}
+
 #logo {
 	color: #00C853;
 	margin-left: 5vw;
@@ -36,7 +40,7 @@ body {
 }
 
 #logo.logoTheme {
-	color: #1E88E5;
+	color: #fff;
 }
 
 
@@ -58,8 +62,8 @@ body {
 	display: none;
 }
 
-.mobileBtn.mbTheme {
-	color: #1E88E5;
+#mobileBtn.mbTheme {
+	color: #fff;
 }
 
 #nav {
@@ -260,6 +264,11 @@ body {
 	height: 77vh;
 }
 
+#journal.jTheme {
+	background: #ccc;
+	color: #fff;
+}
+
 .feedback button {
 	border: 1px solid #00C853;
 	outline: none;
@@ -297,15 +306,17 @@ body {
 	box-shadow: inset 0 0 8px rgba(0,0,0,0.75);
 }
 
+.taTheme {
+	color: #fff;
+}
+
 #n1.taActive {
 	transition: 0.4s;
 	visibility: hidden;
 	height: 77vh;
 }
 
-.textArea.taTheme {
-	background: #fff;
-}
+
 
 .exp {
 	display: flex;
@@ -339,8 +350,9 @@ body {
 	color: #00C853;
 }
 
-.btn.btn_numb_theme {
-	background: #1E88E5;
+.btn_numb_theme {
+	background: #3f51b5;
+	color: #fff;
 }
 
 .clear {
@@ -361,13 +373,19 @@ body {
 	color: #0D47A1;
 }
 
+.eqTheme {
+	background: #3f51b5;
+	color: #fff;
+}
+
 .clear.clTheme {
-  background: #E53935;
+  background: #3f51b5;
+	color: #fff;
 }
 
 #clbutt {
 	height: 20vh;
-	width: 30vw;
+	width: 29.9vw;
 	border: none;
 	border-top: none;
 	border-left: none;
@@ -378,6 +396,11 @@ body {
 	transition: 0.4s;
 	outline: none;
 	background: rgba(0,0,0,0.2);
+}
+
+#clbutt.clbTheme {
+	background: #3f51b5;
+	color: #fff;
 }
 
 #clnot {
@@ -414,7 +437,7 @@ body {
 }
 
 #numBlock.nbTheme {
-	background: #1E88E5;
+	color: #fff;
 }
 
 #aboutMenu.aboutActive {

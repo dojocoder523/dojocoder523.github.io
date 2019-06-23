@@ -88,7 +88,7 @@ function bgcolor(c) {
             $('#journal').removeClass('jTheme');
             break;
         case "w":
-            $("body").css("background-color", "#fff");
+            $("body").css("background-color", "#212121");
             $('#numBlock').addClass('nbTheme');
             $(".btn").addClass('btn_numb_theme');
             $(".clear").addClass('clTheme');

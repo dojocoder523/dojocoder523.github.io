@@ -246,10 +246,11 @@ body {
 	height: 20vh;
 	border: none;
 	resize: none;
+	font-weight: 300;
 	overflow-y: hidden;
 	padding: 1.5vh 2vw;
 	font-size: 4vh;
-        outline: none;
+  outline: none;
 	background: #1a1a1a;
 	color: #00C853;
   transition: 0.3s ease;
@@ -265,8 +266,8 @@ body {
 }
 
 #journal.jTheme {
-	background: #ccc;
-	color: #212121;
+	background: rgba(255,255,255,0.8);
+	color: #000;
 }
 
 .feedback button {
@@ -299,6 +300,7 @@ body {
 	color: #00C853;
 	font-size: 4vh;
 	border: none;
+	font-weight: 300;
 	resize: none;
 	transition: 0.4s;
 	outline: none;
@@ -307,7 +309,8 @@ body {
 }
 
 .taTheme {
-	color: #212121;
+	color: #000;
+	background: rgba(255,255,255,0.8);
 }
 
 #n1.taActive {

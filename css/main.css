@@ -4,14 +4,13 @@
 }
 
 .main {
-    position:fixed;
+    
 	width: 100vw;
 	height: 100vh;
 }
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #212121;
-	padding-top: 10vh;
 }
 
 .header {

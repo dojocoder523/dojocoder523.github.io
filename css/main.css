@@ -11,7 +11,7 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 	background: #212121;
-        //padding-top: 10vh;
+        padding-top: 10vh;
 }
 
 .header {
@@ -149,7 +149,6 @@ body {
 }
 
 .form {
-        margin-top: 10vh;
 	color: #fff;
 	width: 100vw;
 	height: 90vh;

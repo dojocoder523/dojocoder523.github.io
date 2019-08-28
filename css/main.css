@@ -240,7 +240,7 @@ body {
 
 #journal {
 	position: absolute;
-	top: 0;
+	top: 66px;
 	left: 0;
 	width: 75.1vw;
 	height: 20vh;

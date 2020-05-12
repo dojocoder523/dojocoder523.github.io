@@ -11,45 +11,88 @@
 </head>
 
 <body>
+    
     <div class="main">
-        <div class="header">
-            <h1>Calc+</h1>
-            <button>&#9776;</button>
+        <div id="mMenu" class="mainMenu">
+            <div class="header">
+                <h1>Calc+</h1>
+                <button class="closeBtn"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="nav">
+                <button class="setAct">Settings</button>
+                <button class="fedAct">Feedback</button>
+                <button class="abAct">About Me</button>
+            </div>
+            <div id="settings">
+                 <div class="header">
+                     <h1>Settings</h1>
+                     <button class="closeBtn setClose"><i class="fa fa-close"></i></button>
+                 </div>
+                 <div class="set">
+                     <h3>Theme</h3>
+                     <p>
+                         <label for="d">Темная &nbsp;&nbsp;
+                             <input type="radio" value="dark" onchange="bgcolor('d');" id="d" name="theme" checked>
+                         </label>
+                     </p>
+                     <p>
+                         <label for="w">Светлая &nbsp;
+                             <input type="radio" value="white" onchange="bgcolor('w');" id="w" name="theme">
+                         </label>
+                     </p>
+                     <button class="setClose">OK</button>
+                 </div>
+            </div>
+            <div id="aboutMe">
+               <div class="header">
+                   <h1>About Me</h1>
+                   <button class="closeBtn abClose"><i class="fa fa-close"></i></button>
+               </div>
+               <div class="abCont">
+                   <h3>Разработчик</h3>
+                   <p>_dojo.coder_</p>
+                   <button>OK</button>
+               </div>
+            </div>
+            
         </div>
-        <div class="textArea">
-            <textarea id="n1" readonly></textarea>
-           <textarea id="journal" readonly></textarea>
-          
+        <div id="container">
+            <div class="header">
+                <h1>Calc+</h1>
+                <button class="menuBtn">&#9776;</button>
+            </div>
+            <div class="textArea">
+                <textarea id="n1" readonly></textarea>
+                <textarea id="journal" readonly></textarea>
+            </div>
+            <div id="pan" class="numBlock">
+                <button class="del pan"><i class="fa fa-trash"></i></button>
+                <button class="jur pan"><i class="fa fa-history"></i></button>
+                <button class="clr pan"><i class="fa fa-eraser"></i></button>
+                <button class="backSpace"><i class="fa fa-arrow-left"></i></button>
+                <button data="1" class="num">1</button>
+                <button data="2" class="num">2</button>
+                <button data="3" class="num">3</button>
+                <button data=" + " class="vt num">&plus;</button>
+                <button data="4" class="num">4</button>
+                <button data="5" class="num">5</button>
+                <button data="6" class="num">6</button>
+                <button data=" - " class="vt num">&minus;</button>
+                <button data="7" class="num">7</button>
+                <button data="8" class="num">8</button>
+                <button data="9" class="num">9</button>
+                <button data=" * " class="vt num">&times;</button>
+                <button data="-" class="num">&minus;</button>
+                <button data="0" class="num">0</button>
+                <button data="." class="num">•</button>
+                <button data=" / " class="vt num">&div;</button>
+                <button>√</button>
+                <button data="(" class="num">(</button>
+                <button data=")" class="num">)</button>
+                <button class="equal">=</button>
+            </div>
         </div>
-      
-        <div id="pan" class="numBlock">
-               
-        <button class="del pan"><i class="fa fa-trash"></i></button>
-        <button class="jur pan"><i class="fa fa-history"></i></button>
-        <button class="clr pan"><i class="fa fa-eraser"></i></button>
-        <button class="backSpace"><i class="fa fa-arrow-left"></i></button>
-              
-           <button data="1" class="num">1</button>
-           <button data="2" class="num">2</button>
-           <button data="3" class="num">3</button>
-           <button data=" + " class="vt num">&plus;</button>
-           <button data="4" class="num">4</button>
-           <button data="5" class="num">5</button>
-           <button data="6" class="num">6</button>
-           <button data=" - " class="vt num">&minus;</button>
-           <button data="7" class="num">7</button>
-           <button data="8" class="num">8</button>
-           <button data="9" class="num">9</button>
-           <button data=" * " class="vt num">&times;</button>
-           <button data="-" class="num">&minus;</button>
-           <button data="0" class="num">0</button>
-           <button data="." class="num">•</button>
-           <button data=" / " class="vt num">&div;</button>
-           <button>√</button>
-           <button data="(" class="num">(</button>
-           <button data=")" class="num">)</button>
-           <button class="equal">=</button>
-        </div>
+        
     </div>
   <script src="main.js"></script>
 </body>

@@ -64,3 +64,36 @@ del.onclick = function () {
     jrActive.value = exp1;
 }
 
+let mBtn = document.querySelector('.menuBtn');
+let mMenu = document.querySelector('#mMenu');
+let cont = document.querySelector('#container');
+mBtn.onclick = function () {
+    mMenu.classList.add('menuActive');
+    cont.classList.add('conActive');
+}
+let clBtn = document.querySelector('.closeBtn');
+
+clBtn.onclick = function () {
+    mMenu.classList.remove('menuActive');
+    cont.classList.remove('conActive');
+}
+let setActive = document.querySelector('#settings'), setBtn = document.querySelector('.setAct'); 
+setBtn.onclick = function () {
+    setActive.classList.add('setActive');
+    
+}
+
+let setClose = document.querySelector('.setClose');
+
+setClose.onclick = function () {
+    setActive.classList.remove('setActive');
+}
+let about = document.querySelector('#aboutMe'),
+    abBtn = document.querySelector('.abAct'),
+    abClose = document.querySelector('.abClose');
+abBtn.onclick = function () {
+    about.classList.add('aboutAct');
+}
+abClose.onclick = function () {
+    about.classList.remove('aboutAct');
+}

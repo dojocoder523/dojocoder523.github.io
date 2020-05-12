@@ -1,105 +1,56 @@
 <!DOCTYPE html>
-<html id="bodys" onload="start()" lang="ru" >
+<html lang="en">
 <head>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="fonts/robotocondensed.css" rel="stylesheet">
-    <link rel="stylesheet" href="wfonts/css/all.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8" />
-    <meta name="theme-color" id="siteTheme" content="#333333">
-    <title>Calc+</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calc+</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="main">
-	<div id="settings">
-		<h2>Settings</h2>
-		<h3>Тема</h3>
-		<p>
-			<label for="d">Темная &nbsp;&nbsp;
-				<input type="radio" value="dark" onchange="bgcolor('d');" id="d" name="theme" checked>
-			</label>
-		</p>
-		<p>
-			<label for="w">Светлая &nbsp;
-				<input type="radio" value="white" onchange="bgcolor('w');" id="w" name="theme" >
-			</label>
-		</p>
-		<button onclick="setClose();">OK</button>
-	</div>
-	<div id="aboutMenu">
-		<h3>About Me</h3>
-		<p>Разработчик: _dojo.coder_</p>
-		<button onclick="aboutClose();">OK</button>
-	</div>
-	<div class="feedback">
-	<form action="#" method="post" >
-		<h2>FEEDBACK</h2>
-		<div class="formTextArea">
-			<input type="text" placeholder="Имя..." >
-			<input type="text" placeholder="Тема сообщения..." >
-			<textarea placeholder="Введите своё сообщение здесь..." ></textarea>
-		</div>
-		<button type="button" onclick="push()">Отправить</button>
-	</form>
-	</div>
-	<header class="header">
-		<div id="logo">
-			Calc+
-		</div>
-      <div id="nav">
-        <h2>Calc+</h2>
-        <button id="mobileBtn"  onclick="menu()">
-	      &#9776;
-	      </button>
-        <div class="menu">
-          <h3>Menu</h3>
-          <button class="btnNav" onclick="setting()">Settings</button>
-          <button class="btnNav" onclick="feedback()">Feedback</button>
-          <button class="btnNav" onclick="aboutme()">About Me</button>
+    <div class="main">
+        <div class="header">
+            <h1>Calc+</h1>
+            <button>&#9776;</button>
         </div>
-        <i onclick="menuClose()" class="far fa-times-circle"></i>
-      </div>
-	</header>
-	<div class="form" id="form" >
-      <div id="textArea">
-          <p class="exp">
-                  <textarea readonly="readonly" id="journal"></textarea>
-                  <textarea readonly="readonly" id="n1" class="textArea"></textarea>
-            <button  id="clbutt">
-              <i id="bsp" onclick="clr()" class="fa fa-backspace"></i>
-              <i id='clnot' onclick="clearNote()" class="fas fa-trash-alt"></i>
-            </button>
-          </p>
+        <div class="textArea">
+            <textarea id="n1" readonly></textarea>
+           <textarea id="journal" readonly></textarea>
+          
+        </div>
+      
+        <div id="pan" class="numBlock">
+               
+        <button class="del pan"><i class="fa fa-trash"></i></button>
+        <button class="jur pan"><i class="fa fa-history"></i></button>
+        <button class="clr pan"><i class="fa fa-eraser"></i></button>
+        <button class="backSpace"><i class="fa fa-arrow-left"></i></button>
+              
+           <button data="1" class="num">1</button>
+           <button data="2" class="num">2</button>
+           <button data="3" class="num">3</button>
+           <button data=" + " class="vt num">&plus;</button>
+           <button data="4" class="num">4</button>
+           <button data="5" class="num">5</button>
+           <button data="6" class="num">6</button>
+           <button data=" - " class="vt num">&minus;</button>
+           <button data="7" class="num">7</button>
+           <button data="8" class="num">8</button>
+           <button data="9" class="num">9</button>
+           <button data=" * " class="vt num">&times;</button>
+           <button data="-" class="num">&minus;</button>
+           <button data="0" class="num">0</button>
+           <button data="." class="num">•</button>
+           <button data=" / " class="vt num">&div;</button>
+           <button>√</button>
+           <button data="(" class="num">(</button>
+           <button data=")" class="num">)</button>
+           <button class="equal">=</button>
+        </div>
     </div>
-		<p id="numBlock">
-			<button class="btn" onclick="number('1')">1</button>
-			<button class="btn" onclick="number('2')">2</button>
-			<button class="btn" onclick="number('3')">3</button>
-			<button class="btn" onclick="down()">
-			<i class="fas fa-chevron-down"></i>
-			</button>
-			<button class="btn" onclick="number('4')">4</button>
-			<button class="btn" onclick="number('5')">5</button>
-			<button class="btn" onclick="number('6')">6</button>
-			<button onclick="resetButton()" class="clear">CLR</button>
-		 	<button class="btn" onclick="number('7')">7</button>
-			<button class="btn" onclick="number('8')">8</button>
-			<button class="btn" onclick="number('9')">9</button>
-			<button class="btn" onclick="number(' + ')">+</button>
-			<button class="btn" onclick="number('.')">.</button>
-			<button class="btn" onclick="number('0')">0</button>
-			<button class="btn" onclick="number(' - ')">-</button>
-			<button class="btn" onclick="number(' * ')">x</button>
-			<button class="btn" onclick="number('(')">(</button>
-			<button class="btn" onclick="number(')')">)</button>
-			<button class="btn" onclick="number(' / ')">&divide;</button>
-			<button class="btn equal" onclick="equal()">=</button>
-		</p>
-	</div>
-</div>
-  <script src="js/jquery.js"></script>
-	<script src="js/main.js" defer></script>
+  <script src="main.js"></script>
 </body>
 </html>

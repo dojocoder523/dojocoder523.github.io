@@ -4,11 +4,16 @@ let text = document.querySelector('#n1');
 for (let i = 0; i < btn.length; i++) {
     btn[i].onclick = function () {
        let dat = this.getAttribute('data');
- 
-           text.value += dat;
+        if (text.value == ''){
+            text.value = dat;
+        }
+        else {
+            text.value += dat;
+        }
           
     }
 }
+
 let jrActive = document.querySelector('#journal');
 let equal = document.querySelector('.equal');
 equal.onclick = function () {
@@ -52,5 +57,10 @@ let bsp = document.querySelector('.backSpace');
 bsp.onclick = function () {
     let n = text.value;
     text.value = n.substring(0, n.length - 1);
+}
+let del = document.querySelector('.del');
+del.onclick = function () {
+    exp1 = '';
+    jrActive.value = exp1;
 }
 

@@ -4,7 +4,7 @@ let text = document.querySelector('#n1');
 for (let i = 0; i < btn.length; i++) {
     btn[i].onclick = function () {
        let dat = this.getAttribute('data');
-        if (text.value == ''){
+        if (text.value === ' '){
             text.value = dat;
         }
         else {
@@ -57,10 +57,10 @@ let result = document.querySelector('#result'),
 ok = document.querySelector('.ok');
 
 
-/* ok.onclick = function () {
+ok.onclick = function () {
   let pd = numPerc.value*percent.value/100;
   result.value = pd;
-} */
+} 
 
 let prcCalc = document.querySelector('#percentCalc'), prcBtn = document.querySelector('.prc'),
 clsPerc = document.querySelector('.clsPerc');
@@ -71,4 +71,47 @@ prcBtn.onclick = function () {
 
 clsPerc.onclick = function () {
   prcCalc.classList.remove('percAct');
+}
+
+let prBtn = document.querySelectorAll('.perBtn'),
+numBtn = document.querySelector('.numIn')
+numBoard = document.querySelector('#number');
+
+numBtn.onclick = function numInBoard () {
+  numBoard.value = '0';
+  for (let a = 0; a < prBtn.length; a++) {
+    prBtn[a].onclick = function () {
+      let dat1 = this.getAttribute('data');
+        if (numBoard.value == '0') {
+          numBoard.value = dat1;
+        }else {
+          numBoard.value += dat1;
+        }
+    }
+  }
+}
+
+let perCalc = document.querySelector('.per')
+perBoard = document.querySelector('#percent');
+
+perCalc.onclick = function () {
+  perBoard.value = '0';
+  for (let a = 0; a < prBtn.length; a++) {
+    prBtn[a].onclick = function () {
+      let dat1 = this.getAttribute('data');
+      if (perBoard.value == '0' ) {
+        perBoard.value = dat1;
+      }else {
+        perBoard.value += dat1;
+      }
+    }
+  }
+}
+
+let prClr = document.querySelector('.prClr');
+
+prClr.onclick = function () {
+  numBoard.value = '';
+  perBoard.value = '';
+  result.value = '';
 }

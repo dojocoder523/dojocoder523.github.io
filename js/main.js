@@ -1,17 +1,18 @@
 let btn = document.querySelectorAll('.num');
 let text = document.querySelector('#n1');
-
+let res;
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
-    let dat = this.getAttribute('data');
-    if (text.value === ' ') {
+    dat = this.getAttribute('data');
+    res = eval(dat);
+    if (text.value == ' ') {
       text.value = dat;
     }
     else {
       text.value += dat;
     }
-
-  }
+}
+    text.value = res;
 };
 
 let equal = document.querySelector('.equal');

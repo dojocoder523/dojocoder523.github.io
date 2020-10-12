@@ -3,16 +3,17 @@ let text = document.querySelector('#n1');
 let res;
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
+    text.style.font = "200 4vh 'Comfortaa'";
     dat = this.getAttribute('data');
-    res = eval(dat);
-    if (text.value == ' ') {
+    if (text.value == '') {
       text.value = dat;
-    }
-    else {
+    }else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+      text.value = dat;
+    }else {
       text.value += dat;
-    }
-}
-    text.value = res;
+    };
+};
+   
 };
 
 let equal = document.querySelector('.equal');
@@ -25,25 +26,33 @@ equal.onclick = function() {
     exp = exp.toFixed(2);
   } else {
     exp = exp.toFixed();
-  }
+  };
   if (exp == undefined) {
     text.value = '';
-  }
+  };
   if (exp == Infinity) {
-    alert('На 0 делить нельзя!');
-    text.value = '';
+    text.style.font = "200 2.5vh 'Comfortaa'";
+    text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
     text.value += ' = ' + exp;
-  }
+  };
 };
 let clr = document.querySelector('.clr');
 clr.onclick = function() {
-  text.value = '';
+  if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+    text.value = '';
+  }else {
+    text.value = '';
+  }
 };
 let bsp = document.querySelector('.backSpace');
 bsp.onclick = function() {
   let n = text.value;
-  text.value = n.substring(0, n.length - 1);
+  if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+    text.value = '';
+  }else {
+    text.value = n.substring(0, n.length - 1);
+  }
 };
 
 let numPerc = document.querySelector('#number');

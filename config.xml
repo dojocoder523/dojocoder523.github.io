@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.dojo.calc"
+    versionCode = "21"
+    version     = "1.3.0 beta" >
+
+<!-- versionCode is optional and Android only -->
+  <icon src="img/icon.png" />
+  <name>Calc+</name>
+
+  <description>
+      Calc+ Web App
+  </description>
+  
+  <platform name="android" />
+  
+  <author href="https://github.com/Serg523/Serg523.github.io/" email="serg52396@yandex.ru">
+      _dojo.coder_
+  </author>
+
+</widget>

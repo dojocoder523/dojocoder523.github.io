@@ -33,11 +33,6 @@ equal.onclick = function () {
           text.value = '';
       } else {
           text.value += ' = ' + exp;
-     
-        
-        
-         
-         
       }
         
 }

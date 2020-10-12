@@ -3,13 +3,13 @@
   padding: 0;
   margin: 0;
 }
+
 body {
-    font-family: 'Comfortaa';
-   
-   
-    background: #202833;
-    font-weight: lighter;
+  font-family: 'Comfortaa';
+  background: #202833;
+  font-weight: lighter;
 }
+
 .app {
   width: 100vw;
   height: 100vh;
@@ -17,21 +17,17 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
- 
-  
 }
+
 .appHeader {
   width: 100%;
   height: 10%;
   justify-content: space-between;
   display: flex;
-  background: rgba(0,0,0,0.4);
- 
+  background: rgba(0, 0, 0, 0.4);
   align-items: center;
- 
- 
- 
 }
+
 .appHeader h1 {
   width: 75%;
   font-size: 3.5vh;
@@ -40,29 +36,29 @@ body {
   color: #fff;
   letter-spacing: 2px;
 }
+
 .appHeader button {
- 
   width: 25%;
   height: 100%;
   background: #054b54;
-  background-image: url('/bg3.png')!important;
+  background-image: url('/bg3.png') !important;
   font-size: 3vh;
   font-weight: lighter;
   color: #fff;
   border: none;
   outline: none;
 }
+
 .ioBoard {
   width: 100%;
   height: 30%;
-  
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
+
 .ioBoard textarea {
   width: 100%;
   height: 75%;
@@ -77,6 +73,7 @@ body {
   letter-spacing: 2px;
   font: 200 4vh 'Comfortaa';
 }
+
 .numBlock {
   width: 100%;
   height: 60%;
@@ -84,18 +81,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  
 }
+
 .panel {
   width: 100%;
   height: 25%;
   display: flex;
- 
   align-items: center;
-  
- 
-  
 }
+
 .panel button {
   width: 25%;
   height: 100%;
@@ -105,31 +99,35 @@ body {
   font-size: 2.3vh;
   outline: none;
 }
+
 .numBtn {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .numBtn button {
   border: none;
   outline: none;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   font-size: 3.5vh;
   font-weight: 200;
   color: #fafafa;
 }
+
 .equal {
-  background: #054b54!important;
-  color: #fff!important;
-  font-size: 4vh!important;
-   background-image: url('/bg3.png')!important;
+  background: #054b54 !important;
+  color: #fff !important;
+  font-size: 4vh !important;
+  background-image: url('/bg3.png') !important;
 }
+
 .vt {
-  color: #fff!important;
-  background: #054b54!important;
-  font-size: 3vh!important;
-  background-image: url('/bg3.png')!important;
+  color: #fff !important;
+  background: #054b54 !important;
+  font-size: 3vh !important;
+  background-image: url('/bg3.png') !important;
 }
 
 #n1::placeholder {
@@ -139,6 +137,7 @@ body {
   font-family: 'Comfortaa';
   font-size: 4vh;
 }
+
 #percentCalc {
   position: absolute;
   visibility: hidden;
@@ -149,6 +148,7 @@ body {
   height: 100vh;
   background: #202833;
 }
+
 #percentCalc.percAct {
   visibility: visible;
 }
@@ -160,8 +160,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.6);
-  box-shadow: inset 0 0 10px #000;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .percentBoard input[type="text"] {
@@ -170,7 +169,6 @@ body {
   padding: 0 0 0 20px;
   background: none;
   border: none;
-  
   color: #fff;
   font-size: 3vh;
   font-family: 'Comfortaa';
@@ -178,6 +176,7 @@ body {
   letter-spacing: 2px;
   outline: none;
 }
+
 .percentBoard input[type="text"]::placeholder {
   font-size: 3vh;
   color: #fff;
@@ -185,31 +184,35 @@ body {
   font-weight: 200;
   letter-spacing: 2px;
 }
+
 .inpBoard {
   width: 100%;
   height: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .ok {
   grid-column: 4;
-  
 }
+
 .zero {
   grid-column: 3;
   grid-row: 4;
 }
+
 .per {
   grid-column: 4;
   grid-row: 2/4;
 }
+
 .inpBoard button {
   border: none;
   outline: none;
   color: #fff;
   font-size: 3.5vh;
   font-weight: 200;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .numIn {

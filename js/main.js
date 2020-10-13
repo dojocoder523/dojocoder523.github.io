@@ -4,6 +4,7 @@ let res;
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
     text.style.font = "200 4vh 'Comfortaa'";
+    text.style.color = "#fff";
     dat = this.getAttribute('data');
     if (text.value == '') {
       text.value = dat;
@@ -34,7 +35,10 @@ equal.onclick = function() {
     text.style.font = "200 2.5vh 'Comfortaa'";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
+    text.style.color = '#1ABC9C';
     text.value += ' = ' + exp;
+    
+    
   };
 };
 let clr = document.querySelector('.clr');
@@ -45,6 +49,8 @@ clr.onclick = function() {
     text.value = '';
   }
 };
+
+
 let bsp = document.querySelector('.backSpace');
 bsp.onclick = function() {
   let n = text.value;
@@ -60,10 +66,7 @@ let percent = document.querySelector('#percent');
 let result = document.querySelector('#result'),
   ok = document.querySelector('.ok');
 
-ok.onclick = function() {
-  let pd = numPerc.value * percent.value / 100;
-  result.value = pd;
-};
+
 
 let prcCalc = document.querySelector('#percentCalc'),
   prcBtn = document.querySelector('.prc'),
@@ -78,11 +81,15 @@ clsPerc.onclick = function() {
 };
 
 let prBtn = document.querySelectorAll('.perBtn'),
-  numBtn = document.querySelector('.numIn')
+  numBtn = document.querySelector('.n'),
 numBoard = document.querySelector('#number');
 
 numBtn.onclick = function numInBoard() {
   numBoard.value = '0';
+  numBtn.style.color = "#1ABC9C";
+  numBoard.style.color = "#1ABC9C";
+  perCalc.style.color = "#fff";
+  perBoard.style.color = "#fff";
   for (let a = 0; a < prBtn.length; a++) {
     prBtn[a].onclick = function() {
       let dat1 = this.getAttribute('data');
@@ -95,11 +102,15 @@ numBtn.onclick = function numInBoard() {
   }
 };
 
-let perCalc = document.querySelector('.per')
+let perCalc = document.querySelector('.p')
 perBoard = document.querySelector('#percent');
 
 perCalc.onclick = function() {
   perBoard.value = '0';
+  perCalc.style.color = "#1ABC9C";
+  perBoard.style.color = "#1ABC9C";
+  numBtn.style.color = "#fff";
+  numBoard.style.color = "#fff";
   for (let a = 0; a < prBtn.length; a++) {
     prBtn[a].onclick = function() {
       let dat1 = this.getAttribute('data');
@@ -112,6 +123,11 @@ perCalc.onclick = function() {
   }
 };
 
+ok.onclick = function() {
+  let pd = numPerc.value * percent.value / 100;
+  result.value = pd;
+};
+
 let prClr = document.querySelector('.prClr');
 
 prClr.onclick = function() {
@@ -119,3 +135,14 @@ prClr.onclick = function() {
   perBoard.value = '';
   result.value = '';
 };
+
+let about = document.querySelector('#aboutCont');
+let aboutBtn = document.querySelector('.abActive');
+let open = document.querySelector('.openActive');
+
+open.onclick = function () {
+  about.classList.toggle('active');
+}
+aboutBtn.onclick = function () {
+  about.classList.remove('active');
+}

@@ -13,47 +13,61 @@
 
 <body>
   <div class="app">
+ <div id="aboutCont">
+    <div class="aboutMe">
+      <h2>About Me</h2>
+      <h3>Developer:</h3>
+      <p class="dev">_dojo.coder_</p>
+      <hr />
+      <h3>Version:</h3>
+      <p>v2.1.1 beta</p>
+      <button class="abActive">OK</button>
+    </div>
+  </div>
     <div id="percentCalc">
       <div class="appHeader">
-        <h1>Процент от числа</h1>
+        <h1>Процент</h1>
         <button><i class="clsPerc fal fa-times"></i></button>
       </div>
       <div class="percentBoard">
-        <input type="text" id="number" placeholder="Число..." readonly />
-        <input type="text" id="percent" placeholder="Процент..." readonly />
-        <input type="text" id="result" placeholder="Результат..." readonly />
+       
+        <label class="n" for="number">Число</label>
+        <input type="text" id="number" placeholder="0" readonly />
+        <label class="p" for="percent">Процент (%)</label>
+        <input type="text" id="percent" placeholder="0" readonly />
+        <label class="r" for="result">Результат</label>
+        <input type="text" id="result" placeholder="0" readonly />
       </div>
       <div class="inpBoard">
         <button class="perBtn" data="1">1</button>
         <button class="perBtn" data="2">2</button>
         <button class="perBtn" data="3">3</button>
-        <button class="vt"><i class="prClr fal fa-eraser"></i></button>
+        <button class="cl vt"><i class="prClr fal fa-eraser"></i></button>
         <button class="perBtn" data="4">4</button>
         <button class="perBtn" data="5">5</button>
         <button class="perBtn" data="6">6</button>
-        <button class="vt per">%</button>
-        <button class="perBtn" data="7">7</button>
+       
+        <button class="seven perBtn" data="7">7</button>
         <button class="perBtn" data="8">8</button>
         <button class="perBtn" data="9">9</button>
         <button class="vt ok"><i class="fal fa-equals"></i></button>
-        <button class="numIn">Число</button>
         <button data="0" class="perBtn zero">0</button>
       </div>
     </div>
     <div class="appHeader">
       <h1>Calc+</h1>
-      <button><i class="fal fa-bars"></i></button>
+      <button class="openActive"><i class="fal fa-bars"></i></button>
     </div>
-    <div class="ioBoard">
+    <div id="ioBoard">
       <textarea id="n1" placeholder="0" readonly></textarea>
-      <div class="panel">
+      <div id="panel">
         <button><i class="fal fa-trash"></i></button>
-        <button><i class="fal fa-history"></i></button>
+        <button class="jur"><i class="fal fa-history"></i></button>
         <button><i class="clr fal fa-eraser"></i></button>
         <button><i class="backSpace fal fa-arrow-left"></i></button>
       </div>
     </div>
-    <div class="numBlock">
+    <div id="numBlock">
       <div class="numBtn">
         <button data="1" class="num">1</button>
         <button data="2" class="num">2</button>

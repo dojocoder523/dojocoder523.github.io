@@ -126,6 +126,7 @@ perCalc.onclick = function() {
 ok.onclick = function() {
   let pd = numPerc.value * percent.value / 100;
   result.value = pd;
+  perBoard.value += '%';
 };
 
 let prClr = document.querySelector('.prClr');
@@ -146,3 +147,35 @@ open.onclick = function () {
 aboutBtn.onclick = function () {
   about.classList.remove('active');
 }
+let chInd = document.querySelector('.fa-bolt'),
+chPr = document.querySelector('.chPerc'),
+batteryLevel = document.querySelector('#batteryCharge');
+navigator.getBattery().then(function (battery) {
+  function updateAllBatteryInfo() {
+    updateChargeInfo();
+    updateLevelInfo();
+  }
+  updateAllBatteryInfo();
+  
+  battery.addEventListener('chargingchange', function() {
+    updateChargeInfo();
+  });
+  
+  function updateChargeInfo() {
+    console.log(battery.charging);
+    if (battery.charging) {
+      chInd.style.visibility = 'visible';
+      batteryLevel.classList.add('chargeActive');
+    }else {
+      chInd.style.visibility = 'hidden';
+      batteryLevel.classList.remove('chargeActive');
+    }
+  }
+  battery.addEventListener('levelchange', updateLevelInfo);
+  function updateLevelInfo() {
+    let chLev = battery.level*100;
+    chLev = chLev.toFixed();
+    chPr.innerHTML = chLev + '%';
+    batteryLevel.style.height = chLev + '%';
+  }
+});

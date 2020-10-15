@@ -20,26 +20,101 @@ body {
 }
 
 .appHeader {
-  width: 100%;
-  height: 10%;
-  justify-content: space-between;
-  display: flex;
+  width: 100vw;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background: rgba(0, 0, 0, 0.4);
-  align-items: center;
+  
 }
 
 .appHeader h1 {
-  width: 75%;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
   font-size: 3.5vh;
   font-weight: 200;
-  margin-left: 20px;
+  margin-left: 8vw;
   color: #1ABC9C;
   letter-spacing: 2px;
 }
 
+.batteryCont {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.chargeInfo {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  color: #1ABC9C;
+}
+.battery {
+  position: relative;
+  width: 3vw;
+  height: 3vh;
+  background: none;
+  border: 1px solid #1ABC9C;
+  border-radius: 2px;
+  padding: 0;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.battery::after {
+  content: "";
+  position: absolute;
+  right: 25%;
+  top: -15%;
+  width: 50%;
+  height: 10%;
+  background: #1ABC9C;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+@keyframes batterLevelAnimation {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 25%;
+  }
+  50% {
+    height: 50%;
+  }
+  75% {
+    height: 75%;
+  }
+  100% {
+    height: 100%;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+  }
+}
+#batteryCharge {
+  width: 100%;
+  height: 30%;
+  background: #1ABC9C;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  transition: 0.5s ease;
+}
+
+#batteryCharge.chargeActive {
+  animation: batterLevelAnimation 5s linear infinite;
+}
+
+.fa-bolt {
+  color: #1ABC9C;
+  font-size: 2vh;
+}
+
 .appHeader button {
-  width: 25%;
-  height: 100%;
   background: #26292e;
   font-size: 3vh;
   font-weight: lighter;
@@ -50,8 +125,8 @@ body {
 
 #ioBoard {
   position: relative;
-  width: 100%;
-  height: 30%;
+  width: 100vw;
+  height: 30vh;
   background: rgba(0,0,0,0.6);
   display: flex;
   flex-direction: column;
@@ -61,8 +136,8 @@ body {
 }
 
 #ioBoard textarea {
-  width: 100%;
-  height: 75%;
+  width: 100vw;
+  height: 22vh;
   resize: none;
   background: none;
   border: none;
@@ -70,29 +145,23 @@ body {
   padding: 20px;
   text-align: right;
   color: #fff;
- 
 }
 
 #numBlock {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  
-  justify-content: center;
-  align-items: flex-start;
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #panel {
-  width: 100%;
-  height: 25%;
-  display: flex;
-  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #panel button {
-  width: 25%;
-  height: 100%;
   background: none;
   border: none;
   color: #fafafa;
@@ -100,14 +169,7 @@ body {
   outline: none;
 }
 
-.numBtn {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.numBtn button {
+#numBlock button {
   border: none;
   outline: none;
   background: rgba(0, 0, 0, 0.4);
@@ -152,7 +214,9 @@ body {
 #percentCalc.percAct {
   visibility: visible;
 }
-
+#percentCalc .appHeader h1 {
+  grid-column: 1/4;
+}
 .percentBoard {
   width: 100%;
   height: 30%;
@@ -165,9 +229,10 @@ body {
   color: #fff;
   width: 45%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 3vh;
+  padding-left: 5vh;
 }
 
 
@@ -214,7 +279,6 @@ body {
   grid-row: 4;
 }
 
-
 .seven {
   grid-column: 1;
 }
@@ -234,7 +298,6 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
-  
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
@@ -254,7 +317,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
@@ -265,9 +328,18 @@ body {
   width: 60%;
 }
 .aboutMe h2 {
+  width: 100%;
+  height: 20%;
   font-size: 3.5vh;
   font-weight: bold;
   color: #1ABC9C;
+  letter-spacing: 2px;
+  background: #26292e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutMe h3 {
@@ -275,16 +347,18 @@ body {
   letter-spacing: 2px;
   font-size: 2.5vh;
   font-weight: bold;
+  margin: 25px 0 20px 0;
 }
 
 .aboutMe p {
   color: #fff;
   font-weight: 300;
   letter-spacing: 2px;
+  margin: 0 0 25px 0;
 }
 
 .aboutMe button {
-  width: 15vw;
+  width: 18vw;
   height: 7vh;
   border: none;
   color: #1ABC9C;
@@ -294,3 +368,4 @@ body {
   background: #26292e;
   letter-spacing: 2px;
 }
+

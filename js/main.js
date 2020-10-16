@@ -12,25 +12,24 @@ for (let i = 0; i < btn.length; i++) {
       text.value = dat;
     }else {
       text.value += dat;
-    };
+    }
 };
    
-};
+}
 
 let equal = document.querySelector('.equal');
-equal.onclick = function() {
-  let exp = text.value,
-    exp1 = [];
+equal.onclick = function () {
+  let exp = text.value;
   exp = eval(exp);
 
   if (exp % 1 != 0) {
     exp = exp.toFixed(2);
   } else {
     exp = exp.toFixed();
-  };
+  }
   if (exp == undefined) {
     text.value = '';
-  };
+  }
   if (exp == Infinity) {
     text.style.font = "200 2.5vh 'Comfortaa'";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
@@ -39,7 +38,7 @@ equal.onclick = function() {
     text.value += ' = ' + exp;
     
     
-  };
+  }
 };
 let clr = document.querySelector('.clr');
 clr.onclick = function() {

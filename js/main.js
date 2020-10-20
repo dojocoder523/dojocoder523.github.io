@@ -1,12 +1,14 @@
 let btn = document.querySelectorAll('.num');
 let text = document.querySelector('#n1');
 let res;
+text.style.font = "200 4vh 'Comfortaa'";
+text.value = 0;
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
     text.style.font = "200 4vh 'Comfortaa'";
     text.style.color = "#fff";
     dat = this.getAttribute('data');
-    if (text.value == '') {
+    if (text.value == 0) {
       text.value = dat;
     }else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
       text.value = dat;
@@ -42,10 +44,11 @@ equal.onclick = function () {
 };
 let clr = document.querySelector('.clr');
 clr.onclick = function() {
+  text.style.color = '#fff';
   if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
-    text.value = '';
+    text.value = 0;
   }else {
-    text.value = '';
+    text.value = 0;
   }
 };
 
@@ -54,7 +57,7 @@ let bsp = document.querySelector('.backSpace');
 bsp.onclick = function() {
   let n = text.value;
   if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
-    text.value = '';
+    text.value = 0;
   }else {
     text.value = n.substring(0, n.length - 1);
   }
@@ -175,6 +178,6 @@ navigator.getBattery().then(function (battery) {
     let chLev = battery.level*100;
     chLev = chLev.toFixed();
     chPr.innerHTML = chLev + '%';
-    batteryLevel.style.height = chLev + '%';
+    batteryLevel.style.width = chLev + '%';
   }
 });

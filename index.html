@@ -25,64 +25,46 @@
       <button class="abActive">OK</button>
     </div>
   </div>
-    <div id="percentCalc">
+    <div id="journal">
       <div class="appHeader">
-        <h1>Процент</h1>
-        <button><i class="clsPerc fal fa-times"></i></button>
+        <h1>Журнал</h1>
+        <button><i class="clsJur fal fa-times"></i></button>
       </div>
-      <div class="percentBoard">
-       
-        <label class="n" for="number">Число</label>
-        <input type="text" id="number" placeholder="0" readonly />
-        <label class="p" for="percent">Процент (%)</label>
-        <input type="text" id="percent" placeholder="0" readonly />
-        <label class="r" for="result">Результат</label>
-        <input type="text" id="result" placeholder="0" readonly />
-      </div>
-      <div class="inpBoard">
-        <button class="perBtn" data="1">1</button>
-        <button class="perBtn" data="2">2</button>
-        <button class="perBtn" data="3">3</button>
-        <button class="cl vt"><i class="prClr fal fa-eraser"></i></button>
-        <button class="perBtn" data="4">4</button>
-        <button class="perBtn" data="5">5</button>
-        <button class="perBtn" data="6">6</button>
-       
-        <button class="seven perBtn" data="7">7</button>
-        <button class="perBtn" data="8">8</button>
-        <button class="perBtn" data="9">9</button>
-        <button class="vt ok"><i class="fal fa-equals"></i></button>
-        <button data="0" class="perBtn zero">0</button>
+      <div class="journalBoard">
+        <div class="outBoard">
+          <textarea class="hysBoard"></textarea>
+        </div>
+        <div class="hysPanel">
+         <button class="hysClr"><i class="fal fa-trash"></i></button>
+       </div>
       </div>
     </div>
     <div class="appHeader">
       <h1>Calc+</h1>
-      <div class="batteryCont">
-        <div class="battery">
-          <div id="batteryCharge">
-            
-          </div>
-        </div>
-        <div class="chargeInfo">
-          <div class="chargingPercent">
-              <p class="chPerc">0%</p>
-           </div>
-           <div class="chargingStatus">
-              <i class="fal fa-bolt"></i>
-           </div>
-        </div>
-        
-      </div>
       <button class="openActive"><i class="fal fa-bars"></i></button>
     </div>
     <div id="ioBoard">
       <textarea id="n1" readonly></textarea>
       <div id="panel">
-        <button><i class="fal fa-trash"></i></button>
         <button class="jur"><i class="fal fa-history"></i></button>
         <button><i class="clr fal fa-eraser"></i></button>
         <button><i class="backSpace fal fa-arrow-left"></i></button>
+       <button class="adBtn"><i class="fal fa-chevron-down"></i></button>
       </div>
+    </div>
+    <div id="additionalOper">
+      <button>rad</button>
+      <button data="sin" class="adBt">sin</button>
+      <button data="cos" class="adBt">cos</button>
+      <button data="ctg" class="adBt">ctg</button>
+      <button data="x^y" class="adBt">x<sup>y</sup></button>
+      <button data="ln" class="adBt">ln</button>
+      <button data="lg" class="adBtn">lg</button>
+      <button data="sqr" class="adBt">x<sup>2</sup></button>
+      <button data="x^-1" class="adBt">x<sup>-1</sup></button>
+      <button data="sqrt" class="adBt">&radic;x</button>
+      <button data="fact" class="adBt">x!</button>
+      <button data="pi" class="adBt">π</button>
     </div>
     <div id="numBlock">
         <button data="1" class="num">1</button>
@@ -102,8 +84,8 @@
         <button data="." class="num">•</button>
         <button data=" / " class="vt num"><i class="fal fa-divide"></i></button>
         <button class="prc">%</button>
-        <button data="(" class="num">(</button>
-        <button data=")" class="num">)</button>
+        <button data="(" class="vt num">(</button>
+        <button data=")" class="vt num">)</button>
         <button class="equal"><i class="fal fa-equals"></i></button>
     </div>
   </div>

@@ -18,10 +18,11 @@ for (let i = 0; i < btn.length; i++) {
 };
    
 }
-
-let equal = document.querySelector('.equal');
+let equal = document.querySelector('.equal'),
+hysBoard = document.querySelector('.hysBoard');
 equal.onclick = function () {
-  let exp = text.value;
+  let exp = text.value,
+  exp1 = [];
   exp = eval(exp);
 
   if (exp % 1 != 0) {
@@ -36,10 +37,10 @@ equal.onclick = function () {
     text.style.font = "200 2.5vh 'Comfortaa'";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
-    text.style.color = '#1ABC9C';
+    text.style.color = '#0F9B97';
     text.value += ' = ' + exp;
-    
-    
+    exp1.push(text.value);
+    hysBoard.value += exp1 + '\n';
   }
 };
 let clr = document.querySelector('.clr');
@@ -63,82 +64,36 @@ bsp.onclick = function() {
   }
 };
 
-let numPerc = document.querySelector('#number');
-let percent = document.querySelector('#percent');
-let result = document.querySelector('#result'),
-  ok = document.querySelector('.ok');
+let prcBtn = document.querySelector('.prc');
 
+prcBtn.onclick = function () {
 
-
-let prcCalc = document.querySelector('#percentCalc'),
-  prcBtn = document.querySelector('.prc'),
-  clsPerc = document.querySelector('.clsPerc');
-
-prcBtn.onclick = function() {
-  prcCalc.classList.add('percAct');
-};
-
-clsPerc.onclick = function() {
-  prcCalc.classList.remove('percAct');
-};
-
-let prBtn = document.querySelectorAll('.perBtn'),
-  numBtn = document.querySelector('.n'),
-numBoard = document.querySelector('#number');
-
-numBtn.onclick = function numInBoard() {
-  numBoard.value = '0';
-  numBtn.style.color = "#1ABC9C";
-  numBoard.style.color = "#1ABC9C";
-  perCalc.style.color = "#fff";
-  perBoard.style.color = "#fff";
-  for (let a = 0; a < prBtn.length; a++) {
-    prBtn[a].onclick = function() {
-      let dat1 = this.getAttribute('data');
-      if (numBoard.value == '0') {
-        numBoard.value = dat1;
-      } else {
-        numBoard.value += dat1;
-      }
-    }
+  if (text.value == 0 || text.value == '') {
+    text.value = 0;
+  }else {
+  text.style.color = '#0F9B97';
+  text.value = text.value + ' % ' + eval(text.value)/100;
   }
-};
+}
 
-let perCalc = document.querySelector('.p')
-perBoard = document.querySelector('#percent');
+let jurBtn = document.querySelector('.jur'),
+jrActive = document.querySelector('#journal'),
+clsJur = document.querySelector('.clsJur');
 
-perCalc.onclick = function() {
-  perBoard.value = '0';
-  perCalc.style.color = "#1ABC9C";
-  perBoard.style.color = "#1ABC9C";
-  numBtn.style.color = "#fff";
-  numBoard.style.color = "#fff";
-  for (let a = 0; a < prBtn.length; a++) {
-    prBtn[a].onclick = function() {
-      let dat1 = this.getAttribute('data');
-      if (perBoard.value == '0') {
-        perBoard.value = dat1;
-      } else {
-        perBoard.value += dat1;
-      }
-    }
-  }
-};
+jurBtn.onclick = function () {
+  jrActive.classList.add('jrAct');
+}
 
-ok.onclick = function() {
-  let pd = numPerc.value * percent.value / 100;
-  result.value = pd;
-  perBoard.value += '%';
-};
+clsJur.onclick = function () {
+  jrActive.classList.remove('jrAct');
+}
 
-let prClr = document.querySelector('.prClr');
+let hysClr = document.querySelector('.hysClr');
 
-prClr.onclick = function() {
-  numBoard.value = '';
-  perBoard.value = '';
-  result.value = '';
-};
-
+hysClr.onclick = function () {
+  hysBoard.value = '';
+  exp1 = '';
+}
 let about = document.querySelector('#aboutCont');
 let aboutBtn = document.querySelector('.abActive');
 let open = document.querySelector('.openActive');
@@ -149,35 +104,50 @@ open.onclick = function () {
 aboutBtn.onclick = function () {
   about.classList.remove('active');
 }
-let chInd = document.querySelector('.fa-bolt'),
-chPr = document.querySelector('.chPerc'),
-batteryLevel = document.querySelector('#batteryCharge');
-navigator.getBattery().then(function (battery) {
-  function updateAllBatteryInfo() {
-    updateChargeInfo();
-    updateLevelInfo();
-  }
-  updateAllBatteryInfo();
-  
-  battery.addEventListener('chargingchange', function() {
-    updateChargeInfo();
-  });
-  
-  function updateChargeInfo() {
-    console.log(battery.charging);
-    if (battery.charging) {
-      chInd.style.visibility = 'visible';
-      batteryLevel.classList.add('chargeActive');
-    }else {
-      chInd.style.visibility = 'hidden';
-      batteryLevel.classList.remove('chargeActive');
+
+let adOp = document.querySelector('#additionalOper'),
+adBtn = document.querySelector('.adBtn');
+
+adBtn.onclick = function () {
+  adOp.classList.toggle('adActive');
+  document.querySelector('#numBlock').classList.toggle('nbActive');
+}
+// Тригонометрические операции
+
+function factorial(f) {
+  return (f != 1) ? f * factorial(f - 1) : 1
+}
+
+let adBt = document.querySelectorAll('.adBt');
+
+for (let o = 0; o < adBt.length; o++) {
+  adBt[o].onclick = function () {
+    text.style.color = '#0F9B97';
+    let oper = this.getAttribute('data');
+    if (oper == 'pi') {
+      if (text.value == 0) {
+        text.value = 0;
+      }else {
+        text.value = text.value + Math.PI.toFixed(2);
+      }
+    }
+    if (oper == 'sqrt') {
+      text.value = Math.sqrt(eval(text.value)).toFixed(2);
+    }
+    if (oper == 'sqr') {
+      text.value = Math.pow(eval(text.value), 2).toFixed(2);
+    }
+    if (oper == 'x^-1') {
+      text.value = Math.pow(eval(text.value), -1);
+    }
+    if (oper == 'fact') {
+      text.value = factorial(+eval(text.value));
+    }
+    if (oper == 'lg') {
+      text.value = Math.log10(eval(text.value)).toFixed(2);
+    }
+    if (oper == 'ln') {
+      text.value = Math.log(eval(text.value)).toFixed(2);
     }
   }
-  battery.addEventListener('levelchange', updateLevelInfo);
-  function updateLevelInfo() {
-    let chLev = battery.level*100;
-    chLev = chLev.toFixed();
-    chPr.innerHTML = chLev + '%';
-    batteryLevel.style.width = chLev + '%';
-  }
-});
+}

@@ -18,11 +18,11 @@ for (let i = 0; i < btn.length; i++) {
 };
    
 }
+exp1 = [];
 let equal = document.querySelector('.equal'),
 hysBoard = document.querySelector('.hysBoard');
 equal.onclick = function () {
-  let exp = text.value,
-  exp1 = [];
+  let exp = text.value;
   exp = eval(exp);
 
   if (exp % 1 != 0) {
@@ -124,6 +124,7 @@ for (let o = 0; o < adBt.length; o++) {
   adBt[o].onclick = function () {
     text.style.color = '#0F9B97';
     let oper = this.getAttribute('data');
+    let jr = text.value;
     if (oper == 'pi') {
       if (text.value == 0) {
         text.value = 0;
@@ -134,13 +135,13 @@ for (let o = 0; o < adBt.length; o++) {
     if (oper == 'sqrt') {
       text.value = Math.sqrt(eval(text.value)).toFixed(2);
     }
-    if (oper == 'sqr') {
+    if (oper == 'x^2') {
       text.value = Math.pow(eval(text.value), 2).toFixed(2);
     }
     if (oper == 'x^-1') {
-      text.value = Math.pow(eval(text.value), -1);
+      text.value = Math.pow(eval(text.value), -1).toFixed(2);
     }
-    if (oper == 'fact') {
+    if (oper == 'x!') {
       text.value = factorial(+eval(text.value));
     }
     if (oper == 'lg') {
@@ -150,4 +151,5 @@ for (let o = 0; o < adBt.length; o++) {
       text.value = Math.log(eval(text.value)).toFixed(2);
     }
   }
+
 }

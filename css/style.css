@@ -3,7 +3,14 @@
   padding: 0;
   margin: 0;
 }
-
+html {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  user-select: none;
+  user-zoom: none;
+}
 body {
   font-family: 'Comfortaa';
   background: #0f1012;
@@ -149,8 +156,7 @@ body {
 }
 .equal {
   background: none!important;
- 
-  color: #fff!important;
+  color: #0F9B97!important;
   font-size: 3vh !important;
   display: flex;
   justify-content: center;
@@ -165,9 +171,7 @@ body {
 }
 
 .fa-equals {
-  padding: 20% 23%;
-  border-radius: 50%;
-  background: #054b54;
+ 
 }
 
 #n1::placeholder {
@@ -302,5 +306,3 @@ body {
   background: #054b54;
   letter-spacing: 2px;
 }
-
-

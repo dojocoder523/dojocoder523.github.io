@@ -7,7 +7,7 @@ for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
     text.style.font = "200 4vh 'Comfortaa'";
     text.style.color = "#fff";
-    dat = this.getAttribute('data');
+   let  dat = this.getAttribute('data');
     if (text.value == 0) {
       text.value = dat;
     }else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
@@ -18,11 +18,12 @@ for (let i = 0; i < btn.length; i++) {
 };
    
 }
-exp1 = [];
+
 let equal = document.querySelector('.equal'),
 hysBoard = document.querySelector('.hysBoard');
 equal.onclick = function () {
-  let exp = text.value;
+  let exp = text.value,
+  exp1 = [];
   exp = eval(exp);
 
   if (exp % 1 != 0) {
@@ -115,7 +116,7 @@ adBtn.onclick = function () {
 // Тригонометрические операции
 
 function factorial(f) {
-  return (f != 1) ? f * factorial(f - 1) : 1
+  return (f != 1) ? f * factorial(f - 1) : 1;
 }
 
 let adBt = document.querySelectorAll('.adBt');

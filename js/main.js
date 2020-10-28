@@ -2,39 +2,40 @@ let btn = document.querySelectorAll('.num');
 let text = document.querySelector('#n1');
 let res;
 text.style.font = "200 4vh 'Comfortaa'";
-text.value = 0;
+text.value = '';
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
     text.style.font = "200 4vh 'Comfortaa'";
     text.style.color = "#fff";
-   let  dat = this.getAttribute('data');
-    if (text.value == 0) {
+    let dat = this.getAttribute('data');
+    if (text.value === '') {
       text.value = dat;
-    }else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+    } else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
       text.value = dat;
-    }else {
+    } else {
       text.value += dat;
     }
-};
-   
+  };
+
 }
 
 let equal = document.querySelector('.equal'),
-hysBoard = document.querySelector('.hysBoard');
-equal.onclick = function () {
+  hysBoard = document.querySelector('.hysBoard');
+equal.onclick = function() {
   let exp = text.value,
-  exp1 = [];
+    exp1 = [];
   exp = eval(exp);
 
-  if (exp % 1 != 0) {
+  if (exp % 1 !== 0) {
     exp = exp.toFixed(2);
   } else {
     exp = exp.toFixed();
   }
-  if (exp == undefined) {
+
+  if (exp === 'undefined') {
     text.value = '';
   }
-  if (exp == Infinity) {
+  if (exp === 'Infinity') {
     text.style.font = "200 2.5vh 'Comfortaa'";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
@@ -47,10 +48,10 @@ equal.onclick = function () {
 let clr = document.querySelector('.clr');
 clr.onclick = function() {
   text.style.color = '#fff';
-  if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
-    text.value = 0;
-  }else {
-    text.value = 0;
+  if (text.value === 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+    text.value = '';
+  } else {
+    text.value = '';
   }
 };
 
@@ -58,40 +59,40 @@ clr.onclick = function() {
 let bsp = document.querySelector('.backSpace');
 bsp.onclick = function() {
   let n = text.value;
-  if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
-    text.value = 0;
-  }else {
+  if (text.value === 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+    text.value = '';
+  } else {
     text.value = n.substring(0, n.length - 1);
   }
 };
 
 let prcBtn = document.querySelector('.prc');
 
-prcBtn.onclick = function () {
+prcBtn.onclick = function() {
 
-  if (text.value == 0 || text.value == '') {
+  if (text.value === 0 || text.value === '') {
     text.value = 0;
-  }else {
-  text.style.color = '#0F9B97';
-  text.value = text.value + ' % ' + eval(text.value)/100;
+  } else {
+    text.style.color = '#0F9B97';
+    text.value = text.value + ' % ' + eval(text.value) / 100;
   }
 }
 
 let jurBtn = document.querySelector('.jur'),
-jrActive = document.querySelector('#journal'),
-clsJur = document.querySelector('.clsJur');
+  jrActive = document.querySelector('#journal'),
+  clsJur = document.querySelector('.clsJur');
 
-jurBtn.onclick = function () {
+jurBtn.onclick = function() {
   jrActive.classList.add('jrAct');
 }
 
-clsJur.onclick = function () {
+clsJur.onclick = function() {
   jrActive.classList.remove('jrAct');
 }
 
 let hysClr = document.querySelector('.hysClr');
 
-hysClr.onclick = function () {
+hysClr.onclick = function() {
   hysBoard.value = '';
   exp1 = '';
 }
@@ -99,17 +100,17 @@ let about = document.querySelector('#aboutCont');
 let aboutBtn = document.querySelector('.abActive');
 let open = document.querySelector('.openActive');
 
-open.onclick = function () {
+open.onclick = function() {
   about.classList.toggle('active');
 }
-aboutBtn.onclick = function () {
+aboutBtn.onclick = function() {
   about.classList.remove('active');
 }
 
 let adOp = document.querySelector('#additionalOper'),
-adBtn = document.querySelector('.adBtn');
+  adBtn = document.querySelector('.adBtn');
 
-adBtn.onclick = function () {
+adBtn.onclick = function() {
   adOp.classList.toggle('adActive');
   document.querySelector('#numBlock').classList.toggle('nbActive');
 }
@@ -122,14 +123,14 @@ function factorial(f) {
 let adBt = document.querySelectorAll('.adBt');
 
 for (let o = 0; o < adBt.length; o++) {
-  adBt[o].onclick = function () {
+  adBt[o].onclick = function() {
     text.style.color = '#0F9B97';
     let oper = this.getAttribute('data');
     let jr = text.value;
     if (oper == 'pi') {
-      if (text.value == 0) {
+      if (text.value === 0) {
         text.value = 0;
-      }else {
+      } else {
         text.value = text.value + Math.PI.toFixed(2);
       }
     }

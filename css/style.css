@@ -6,16 +6,19 @@
 
 html {
 
-  overflow: hidden;
   user-select: none;
   user-zoom: none;
 }
 
 body {
+  position: fixed;
+  left: 0;
+  top: 0;
+
   font-family: 'Comfortaa';
   background: #202833;
   font-weight: lighter;
-
+  overflow: hidden;
 }
 
 .app {

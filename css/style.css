@@ -272,7 +272,7 @@ body {
 
 .aboutMe {
   width: 60vw;
-  height: 50vh;
+  height: 55vh;
   background: #202833;
   border-radius: 16px;
   display: flex;
@@ -287,6 +287,7 @@ body {
   border-top: 2px solid #0a4d8b;
   padding: 0;
   width: 60%;
+  margin-bottom: 18px;
 }
 
 .aboutMe h2 {
@@ -304,22 +305,30 @@ body {
   align-items: center;
 }
 
-.aboutMe h3 {
+.aboutLayout {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutLayout h3 {
   color: #fff;
   letter-spacing: 2px;
   font-size: 2.5vh;
   font-weight: bold;
-  margin: 16px 0 16px 0;
+  margin-bottom: 18px;
 }
 
-.aboutMe p {
+.aboutLayout p {
   color: #fff;
   font-weight: 300;
   letter-spacing: 2px;
-  margin: 0 0 16px 0;
+  margin-bottom: 18px;
 }
 
-.aboutMe button {
+.aboutLayout button {
   width: 15vw;
   height: 6vh;
   border: none;

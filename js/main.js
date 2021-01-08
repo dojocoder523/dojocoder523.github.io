@@ -112,7 +112,7 @@ let adOp = document.querySelector('#additionalOper'),
 
 adBtn.onclick = function() {
   adOp.classList.toggle('adActive');
-  document.querySelector('#numBlock').classList.toggle('nbActive');
+
 }
 // Тригонометрические операции
 

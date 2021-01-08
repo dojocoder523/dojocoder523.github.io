@@ -269,7 +269,7 @@ body {
 
 .aboutMe {
   width: 60vw;
-  height: 55vh;
+  height: 50vh;
   background: #202833;
   border-radius: 16px;
   display: flex;
@@ -306,19 +306,19 @@ body {
   letter-spacing: 2px;
   font-size: 2.5vh;
   font-weight: bold;
-  margin: 18px 0 18px 0;
+  margin: 16px 0 16px 0;
 }
 
 .aboutMe p {
   color: #fff;
   font-weight: 300;
   letter-spacing: 2px;
-  margin: 0 0 18px 0;
+  margin: 0 0 16px 0;
 }
 
 .aboutMe button {
   width: 15vw;
-  height: 7vh;
+  height: 6vh;
   border: none;
   color: #fff;
   font-size: 2.2vh;

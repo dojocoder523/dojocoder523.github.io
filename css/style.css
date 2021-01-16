@@ -138,7 +138,9 @@ body {
   color: #1ABC9C;
   margin-bottom: 14px;
 }
-
+.active {
+  outline: none;
+}
 .accordion-item.active .accordion-item-content {
 	height: 200px;
 }

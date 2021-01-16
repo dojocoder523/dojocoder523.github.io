@@ -2,41 +2,96 @@
 <html lang="en">
 
 <head>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calc+ by _dojo.coder_</title>
+  <link rel="stylesheet" href="wfonts/css/all.min.css" />
+  <link rel="stylesheet" href="fonts/stylesheet.css" />
+  <title>HTML</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="app">
- <div id="aboutCont">
-    <div class="aboutMe">
-      <h2>About Me</h2>
-      <div class="aboutLayout">
-         <h3>Developer:</h3>
-         <p class="dev">_dojo.coder_</p>
-         <hr />
-         <h3>Version:</h3>
-         <p>v2.1.3 beta</p>
-         <button class="abActive">OK</button>
+    <div id="appMenu">
+      <div class="appHeader">
+        <h1>Menu</h1>
+        <button><i class="fal fa-times"></i></button>
+      </div>
+      <div class="menuCont">
+        <div class="wrapper">
+          <div class="accordion-item">
+            <div class="accordion-item-title">
+              <h1>Settings</h1>
+              <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="accordion-item-content">
+              <h3>Theme</h3>
+              <p>
+                <label for="d">Темная &nbsp;&nbsp;
+                  <input type="radio" value="dark" onchange="bgcolor('d');" id="d" name="theme" checked>
+                </label>
+              </p>
+              <p>
+                <label for="w">Светлая &nbsp;
+                  <input type="radio" value="white" onchange="bgcolor('w');" id="w" name="theme" >
+                </label>
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-title">
+              <h1>Feedback</h1>
+              <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="accordion-item-content">
+              <h3>Report Bugs</h3>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-title">
+              <h1>About Me</h1>
+              <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="accordion-item-content">
+              <h3>Developer:</h3>
+              <p>_dojo.coder_</p>
+              <hr>
+              <h3>Version:</h3>
+              <p>v2.1.4 beta</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-    <div id="journal">
+    <div id="percentCalc">
       <div class="appHeader">
-        <h1>Журнал</h1>
-        <button><i class="clsJur fal fa-times"></i></button>
+        <h1>Процент</h1>
+        <button><i class="clsPerc fal fa-times"></i></button>
       </div>
-      <div class="journalBoard">
-        <div class="outBoard">
-          <textarea class="hysBoard"></textarea>
-        </div>
-        <div class="hysPanel">
-         <button class="hysClr"><i class="fal fa-trash"></i></button>
-       </div>
+      <div class="percentBoard">
+       
+        <label class="n" for="number">Число</label>
+        <input type="text" id="number" placeholder="0" readonly />
+        <label class="p" for="percent">Процент (%)</label>
+        <input type="text" id="percent" placeholder="0" readonly />
+        <label class="r" for="result">Результат</label>
+        <input type="text" id="result" placeholder="0" readonly />
+      </div>
+      <div class="inpBoard">
+        <button class="perBtn" data="1">1</button>
+        <button class="perBtn" data="2">2</button>
+        <button class="perBtn" data="3">3</button>
+        <button class="cl vt"><i class="prClr fal fa-eraser"></i></button>
+        <button class="perBtn" data="4">4</button>
+        <button class="perBtn" data="5">5</button>
+        <button class="perBtn" data="6">6</button>
+       
+        <button class="seven perBtn" data="7">7</button>
+        <button class="perBtn" data="8">8</button>
+        <button class="perBtn" data="9">9</button>
+        <button class="vt ok"><i class="fal fa-equals"></i></button>
+        <button data="0" class="perBtn zero">0</button>
       </div>
     </div>
     <div class="appHeader">
@@ -46,35 +101,21 @@
     <div id="ioBoard">
       <textarea id="n1" placeholder="0" readonly></textarea>
       <div id="panel">
+        <button><i class="fal fa-trash"></i></button>
         <button class="jur"><i class="fal fa-history"></i></button>
         <button><i class="clr fal fa-eraser"></i></button>
         <button><i class="backSpace fal fa-arrow-left"></i></button>
-       <button class="adBtn"><i class="fal fa-plus-circle"></i></button>
       </div>
     </div>
-    <div id="additionalOper">
-      <button>rad</button>
-      <button data="sin" class="adBt">sin</button>
-      <button data="cos" class="adBt">cos</button>
-      <button data="ctg" class="adBt">ctg</button>
-      <button data="x^y" class="adBt">x<sup>y</sup></button>
-      <button data="ln" class="adBt">ln</button>
-      <button data="lg" class="adBt">lg</button>
-      <button data="x^2" class="adBt">x<sup>2</sup></button>
-      <button data="x^-1" class="adBt">x<sup>-1</sup></button>
-      <button data="sqrt" class="adBt">&radic;x</button>
-      <button data="x!" class="adBt">x!</button>
-      <button data="pi" class="adBt">π</button>
-    </div>
     <div id="numBlock">
-        <button data="1" class="tbl num">1</button>
+        <button data="1" class="num">1</button>
         <button data="2" class="num">2</button>
         <button data="3" class="num">3</button>
-        <button data=" + " class="tbr vt num"><i class="fal fa-plus"></i></button>
+        <button data=" + " class="vt num"><i class="fal fa-plus"></i></button>
         <button data="4" class="num">4</button>
         <button data="5" class="num">5</button>
         <button data="6" class="num">6</button>
-        <button data=" - " class="vt num"><i class="fal fa-minus"></i></button>
+        <button data=" - " class="vt num"><i class="fal fa-minus"></i></button></button>
         <button data="7" class="num">7</button>
         <button data="8" class="num">8</button>
         <button data="9" class="num">9</button>
@@ -90,8 +131,6 @@
     </div>
   </div>
   <script src="js/main.js"></script>
-  <link rel="stylesheet" href="wfonts/css/all.min.css">
-  <link rel="stylesheet" href="fonts/stylesheet.css" />
 </body>
 
 </html>

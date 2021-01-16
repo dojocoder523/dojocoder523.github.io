@@ -2,23 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-html {
-
   user-select: none;
-  user-zoom: none;
 }
 
 body {
-  position: fixed;
-  left: 0;
-  top: 0;
-
   font-family: 'Comfortaa';
-  background: #202833;
+  background: #26292e;
   font-weight: lighter;
-  overflow: hidden;
+  
 }
 
 .app {
@@ -28,168 +19,210 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  backdrop-filter: blur(5px);
-
 }
 
 .appHeader {
-  width: 90vw;
-  height: 6vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #0a4d8b;
-  border-radius: 0 0 3vh 3vh;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-}
-
-.appHeader > h1{
-
-  margin-left: 23px;
-  font-size: 3vh;
-  font-weight: 300;
-  letter-spacing: 3px;
-  color: #fff;
-
-}
-
-.appHeader button {
-  background: none;
-  font-size: 3vh;
-  font-weight: lighter;
-  color: #fff;
-  padding: 0 28px;
-  border: none;
-
-  outline: none;
-  border-radius: 4px;
-}
-
-.journalBoard {
   width: 100vw;
-  height: 94vh;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: rgba(0, 0, 0, 0.4);
+  
+}
+
+.appHeader h1 {
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  font-size: 3.5vh;
+  font-weight: 200;
+  margin-left: 8vw;
+  color: #1ABC9C;
+  letter-spacing: 2px;
+}
+
+#appMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #26292e;
+  z-index: 45;
+  
+}
+
+.menuCont {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wrapper {
+  width: 70vw;
+  margin-top: 20%;
+  background: #26292e;
+}
+
+.accordion-item {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-item-title {
+	padding: 15px 15px;
+	background:rgba(0,0,0,0.5);
+	color: #1ABC9C;
+	cursor: pointer;
+	position: relative;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	transition: .3s ease-in-out;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.accordion-item-title h1 {
+	padding: 0;
+	font-size: 3vh;
+	font-weight: lighter;
+}
+
+.accordion-item-content {
+	position: relative;
+	background:rgba(0, 0, 0, 0.3);
+	color: #fff;
+	height: 0;
+	overflow: hidden;
+  transition: .3s ease-in-out;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.accordion-item-content h3 {
+  margin-bottom: 18px;
+  font-size: 2.6vh;
+  letter-spacing: 1px;
+}
+
+.accordion-item-content p {
+  margin-bottom: 18px;
+  font-size: 2.3vh;
+  letter-spacing: 1px;
+}
+
+.accordion-item-content p label {
+  position: relative;
+  width: 50%;
+}
+
+.accordion-item-content p label input {
+  position: absolute;
+  top: 18%;
+}
+
+.accordion-item-content hr {
+  width: 50%;
+  color: #1ABC9C;
+  margin-bottom: 14px;
+}
+
+.accordion-item.active .accordion-item-content {
+	height: 200px;
+}
+
+.accordion-item.active .fa-plus-circle::before {
+	content: "\f056";
+}
+
+
+.appHeader button {
+  background: #26292e;
+  font-size: 3vh;
+  font-weight: lighter;
+  color: #1ABC9C;
+  border: none;
+  outline: none;
 }
 
 #ioBoard {
   position: relative;
   width: 100vw;
-  height: 35vh;
-  background: none;
+  height: 30vh;
+  background: rgba(0,0,0,0.6);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+ 
 }
 
 #ioBoard textarea {
   width: 100vw;
-  height: 29vh;
-
+  height: 22vh;
   resize: none;
   background: none;
   border: none;
   outline: none;
-  padding: 20px 46px;
+  padding: 20px;
   text-align: right;
   color: #fff;
 }
 
 #numBlock {
-  width: 90vw;
-  height: 55vh;
-  margin-top: 15px;
+  width: 100vw;
+  height: 60vh;
   display: grid;
-
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  transition: height 0.3s;
 }
 
-
-
 #panel {
-  width: 90vw;
-  background: rgb(10, 77, 139);
-  height: 6vh;
+  width: 100vw;
+  height: 8vh;
   display: grid;
-  border-radius: 3vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
 
 #panel button {
   background: none;
-  height: 100%;
   border: none;
-  color: #fff;
+  color: #fafafa;
   font-size: 2.3vh;
   outline: none;
-}
-
-
-#additionalOper {
-  position: absolute;
-  right: 0;
-  bottom: 2vh;
-  width: 70vw;
-  height: 55vh;
-  overflow: hidden;
-  transform: translateX(101%);
-  transition: 0.3s ease;
-
-  display: grid;
-  border-radius: 14px 0 0 14px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#additionalOper.adActive {
-  transform: translateX(0);
-  transition: 0.3s ease;
-}
-
-#additionalOper button {
-  background: #424242;
-  border: none;
-  outline: none;
-  font-size: 2.5vh;
-  color: #fff;
-  font-weight: 300;
 }
 
 #numBlock button {
   border: none;
   outline: none;
-  background: #202833;
+  background: rgba(0, 0, 0, 0.4);
   font-size: 3.5vh;
   font-weight: 200;
   color: #fafafa;
 }
-
 .prc {
-  color: #fff !important;
-  font-size: 4vh !important;
-
-
+  font-size: 4vh!important;
 }
-
 .equal {
-  background: none !important;
-  color: #d82a0c !important;
-  font-size: 3vh !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10vh;
+  background: #26292e!important;
+  color: #1ABC9C!important;
+  font-size: 4vh !important;
 }
 
 .vt {
-  color: #0b93ee !important;
-
+  color: #1ABC9C!important;
+  background: #26292e!important;
   font-size: 3vh !important;
-  font-weight: bold !important;
 }
 
 #n1::placeholder {
@@ -200,7 +233,7 @@ body {
   font-size: 4vh;
 }
 
-#journal {
+#percentCalc {
   position: absolute;
   visibility: hidden;
   left: 0;
@@ -208,134 +241,90 @@ body {
   z-index: 3;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  background: #202833;
+  background: #26292e;
 }
 
-.hysBoard {
-  width: 100%;
-  height: 80vh;
-  outline: none;
-  border: none;
-  background: none;
-  padding: 20px 42px;
-  color: #0F9B97;
-  resize: none;
-  font: 300 4vh 'Comfortaa';
-}
-
-.hysPanel {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-}
-
-.hysPanel button {
-  font-size: 3.5vh;
-  background: none;
-  outline: none;
-  border: none;
-  color: #0F9B97;
-}
-
-#journal.jrAct {
+#percentCalc.percAct {
   visibility: visible;
 }
-
-#journal .appHeader h1 {
+#percentCalc .appHeader h1 {
   grid-column: 1/4;
 }
-
-#aboutCont {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(5px);
+.percentBoard {
+  width: 100%;
+  height: 30%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  z-index: 5;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-#aboutCont.active {
-  visibility: visible;
-}
-
-.aboutMe {
-  width: 60vw;
-  height: 55vh;
-  background: #202833;
-  border-radius: 16px;
+.percentBoard label {
+  color: #fff;
+  width: 45%;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  font-size: 3vh;
+  padding-left: 5vh;
 }
 
-.aboutMe hr {
+
+.percentBoard input[type="text"] {
+  background: transparent;
   border: none;
-  border-top: 2px solid #0a4d8b;
-  padding: 0;
-  width: 60%;
-  margin-bottom: 18px;
-}
-
-.aboutMe h2 {
-  width: 100%;
-  height: 20%;
-  font-size: 3.5vh;
-  font-weight: bold;
+  width: 55%;
+  padding: 0 20px 0 20px;
+  text-align: right;
   color: #fff;
+  font-size: 3vh;
+  font-family: 'Comfortaa';
+  font-weight: 200;
   letter-spacing: 2px;
-  background: #0a4d8b;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutLayout {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.aboutLayout h3 {
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 2.5vh;
-  font-weight: bold;
-  margin-bottom: 18px;
-}
-
-.aboutLayout p {
-  color: #fff;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-bottom: 18px;
-}
-
-.aboutLayout button {
-  width: 15vw;
-  height: 6vh;
-  border: none;
-  color: #fff;
-  font-size: 2.2vh;
   outline: none;
-  border-radius: 8px;
-  background: #0a4d8b;
+}
+
+.percentBoard input[type="text"]::placeholder {
+  font-size: 3vh;
+  color: #fff;
+  font-family: 'Comfortaa';
+  font-weight: 200;
   letter-spacing: 2px;
 }
+
+.inpBoard {
+  width: 100%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ok {
+  grid-column: 4;
+  grid-row: 3/5;
+}
+.cl {
+  grid-column: 4;
+  grid-row: 1/3;
+}
+
+.zero {
+  grid-column: 1/4;
+  grid-row: 4;
+}
+
+.seven {
+  grid-column: 1;
+}
+
+.inpBoard button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 3.5vh;
+  font-weight: 200;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+

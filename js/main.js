@@ -1,56 +1,51 @@
 let btn = document.querySelectorAll('.num');
 let text = document.querySelector('#n1');
 let res;
-text.style.font = "200 4vh 'Comfortaa'";
-text.value = '';
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
     text.style.font = "200 4vh 'Comfortaa'";
     text.style.color = "#fff";
-    let dat = this.getAttribute('data');
-    if (text.value === '') {
+    dat = this.getAttribute('data');
+    if (text.value == '') {
       text.value = dat;
-    } else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+    }else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
       text.value = dat;
-    } else {
+    }else {
       text.value += dat;
-    }
-  };
+    };
+};
+   
+};
 
-}
-
-let equal = document.querySelector('.equal'),
-  hysBoard = document.querySelector('.hysBoard');
+let equal = document.querySelector('.equal');
 equal.onclick = function() {
   let exp = text.value,
     exp1 = [];
   exp = eval(exp);
 
-  if (exp % 1 !== 0) {
+  if (exp % 1 != 0) {
     exp = exp.toFixed(2);
   } else {
     exp = exp.toFixed();
-  }
-
-  if (exp === 'undefined') {
+  };
+  if (exp == undefined) {
     text.value = '';
-  }
-  if (exp === 'Infinity') {
+  };
+  if (exp == Infinity) {
     text.style.font = "200 2.5vh 'Comfortaa'";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
-    text.style.color = '#0F9B97';
+    text.style.color = '#1ABC9C';
     text.value += ' = ' + exp;
-    exp1.push(text.value);
-    hysBoard.value += exp1 + '\n';
-  }
+    
+    
+  };
 };
 let clr = document.querySelector('.clr');
 clr.onclick = function() {
-  text.style.color = '#fff';
-  if (text.value === 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+  if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
     text.value = '';
-  } else {
+  }else {
     text.value = '';
   }
 };
@@ -59,99 +54,114 @@ clr.onclick = function() {
 let bsp = document.querySelector('.backSpace');
 bsp.onclick = function() {
   let n = text.value;
-  if (text.value === 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+  if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
     text.value = '';
-  } else {
+  }else {
     text.value = n.substring(0, n.length - 1);
   }
 };
 
-let prcBtn = document.querySelector('.prc');
+let numPerc = document.querySelector('#number');
+let percent = document.querySelector('#percent');
+let result = document.querySelector('#result'),
+  ok = document.querySelector('.ok');
+
+
+
+let prcCalc = document.querySelector('#percentCalc'),
+  prcBtn = document.querySelector('.prc'),
+  clsPerc = document.querySelector('.clsPerc');
 
 prcBtn.onclick = function() {
+  prcCalc.classList.add('percAct');
+};
 
-  if (text.value === 0 || text.value === '') {
-    text.value = 0;
-  } else {
-    text.style.color = '#0F9B97';
-    text.value = text.value + ' % ' + eval(text.value) / 100;
+clsPerc.onclick = function() {
+  prcCalc.classList.remove('percAct');
+};
+
+let prBtn = document.querySelectorAll('.perBtn'),
+  numBtn = document.querySelector('.n'),
+numBoard = document.querySelector('#number');
+
+numBtn.onclick = function numInBoard() {
+  numBoard.value = '0';
+  numBtn.style.color = "#1ABC9C";
+  numBoard.style.color = "#1ABC9C";
+  perCalc.style.color = "#fff";
+  perBoard.style.color = "#fff";
+  for (let a = 0; a < prBtn.length; a++) {
+    prBtn[a].onclick = function() {
+      let dat1 = this.getAttribute('data');
+      if (numBoard.value == '0') {
+        numBoard.value = dat1;
+      } else {
+        numBoard.value += dat1;
+      }
+    }
   }
-}
+};
 
-let jurBtn = document.querySelector('.jur'),
-  jrActive = document.querySelector('#journal'),
-  clsJur = document.querySelector('.clsJur');
+let perCalc = document.querySelector('.p')
+perBoard = document.querySelector('#percent');
 
-jurBtn.onclick = function() {
-  jrActive.classList.add('jrAct');
-}
+perCalc.onclick = function() {
+  perBoard.value = '0';
+  perCalc.style.color = "#1ABC9C";
+  perBoard.style.color = "#1ABC9C";
+  numBtn.style.color = "#fff";
+  numBoard.style.color = "#fff";
+  for (let a = 0; a < prBtn.length; a++) {
+    prBtn[a].onclick = function() {
+      let dat1 = this.getAttribute('data');
+      if (perBoard.value == '0') {
+        perBoard.value = dat1;
+      } else {
+        perBoard.value += dat1;
+      }
+    }
+  }
+};
 
-clsJur.onclick = function() {
-  jrActive.classList.remove('jrAct');
-}
+ok.onclick = function() {
+  let pd = numPerc.value * percent.value / 100;
+  result.value = pd;
+  perBoard.value += '%';
+};
 
-let hysClr = document.querySelector('.hysClr');
+let prClr = document.querySelector('.prClr');
 
-hysClr.onclick = function() {
-  hysBoard.value = '';
-  exp1 = '';
-}
+prClr.onclick = function() {
+  numBoard.value = '';
+  perBoard.value = '';
+  result.value = '';
+};
+
 let about = document.querySelector('#aboutCont');
 let aboutBtn = document.querySelector('.abActive');
 let open = document.querySelector('.openActive');
 
-open.onclick = function() {
+open.onclick = function () {
   about.classList.toggle('active');
 }
-aboutBtn.onclick = function() {
-  about.classList.remove('active');
-}
 
-let adOp = document.querySelector('#additionalOper'),
-  adBtn = document.querySelector('.adBtn');
 
-adBtn.onclick = function() {
-  adOp.classList.toggle('adActive');
+const accord = document.querySelectorAll('.accordion-item');
 
-}
-// Тригонометрические операции
+for (item of accord) {
+	item.addEventListener('click', function() {
+		
+		if (this.classList.contains('active')) {
+			this.classList.remove('active');
+		} else {
+			for (el of accord) {
+				el.classList.remove('active');
+			}
+			this.classList.add('active');
 
-function factorial(f) {
-  return (f != 1) ? f * factorial(f - 1) : 1;
-}
+		};
 
-let adBt = document.querySelectorAll('.adBt');
-
-for (let o = 0; o < adBt.length; o++) {
-  adBt[o].onclick = function() {
-    text.style.color = '#0F9B97';
-    let oper = this.getAttribute('data');
-    let jr = text.value;
-    if (oper == 'pi') {
-      if (text.value === 0) {
-        text.value = 0;
-      } else {
-        text.value = text.value + Math.PI.toFixed(2);
-      }
-    }
-    if (oper == 'sqrt') {
-      text.value = Math.sqrt(eval(text.value)).toFixed(2);
-    }
-    if (oper == 'x^2') {
-      text.value = Math.pow(eval(text.value), 2).toFixed(2);
-    }
-    if (oper == 'x^-1') {
-      text.value = Math.pow(eval(text.value), -1).toFixed(2);
-    }
-    if (oper == 'x!') {
-      text.value = factorial(+eval(text.value));
-    }
-    if (oper == 'lg') {
-      text.value = Math.log10(eval(text.value)).toFixed(2);
-    }
-    if (oper == 'ln') {
-      text.value = Math.log(eval(text.value)).toFixed(2);
-    }
-  }
+		
+	});
 
 }

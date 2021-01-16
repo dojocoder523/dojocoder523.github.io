@@ -82,6 +82,7 @@ body {
 	background:rgba(0,0,0,0.5);
 	color: #1ABC9C;
 	cursor: pointer;
+  outline: none;
 	position: relative;
 	font-weight: lighter;
 	letter-spacing: 1px;

@@ -81,7 +81,7 @@ body {
 	padding: 15px 15px;
 	background:rgba(0,0,0,0.5);
 	color: #1ABC9C;
-	
+
   outline: none;
 	position: relative;
 	font-weight: lighter;
@@ -130,7 +130,7 @@ body {
 
 .accordion-item-content p label input {
   position: absolute;
-  top: 18%;
+  top: 5%;
 }
 
 .accordion-item-content hr {

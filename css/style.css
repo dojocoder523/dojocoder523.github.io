@@ -128,10 +128,7 @@ body {
   width: 50%;
 }
 
-.accordion-item-content p label input {
-  position: absolute;
-  top: 5%;
-}
+
 
 .accordion-item-content hr {
   width: 50%;

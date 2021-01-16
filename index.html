@@ -16,7 +16,7 @@
     <div id="appMenu">
       <div class="appHeader">
         <h1>Menu</h1>
-        <button><i class="fal fa-times"></i></button>
+        <button class="menuClose"><i class="fal fa-times"></i></button>
       </div>
       <div class="menuCont">
         <div class="wrapper">
@@ -93,6 +93,22 @@
         <button data="0" class="perBtn zero">0</button>
       </div>
     </div>
+
+    <div id="journal">
+      <div class="appHeader">
+        <h1>Журнал</h1>
+        <button><i class="clsJur fal fa-times"></i></button>
+      </div>
+      <div class="journalBoard">
+        <div class="outBoard">
+          <textarea class="hysBoard"></textarea>
+        </div>
+        <div class="hysPanel">
+         <button class="hysClr"><i class="fal fa-trash"></i></button>
+       </div>
+      </div>
+    </div>
+
     <div class="appHeader">
       <h1>Calc+</h1>
       <button class="openActive"><i class="fal fa-bars"></i></button>
@@ -100,11 +116,25 @@
     <div id="ioBoard">
       <textarea id="n1" placeholder="0" readonly></textarea>
       <div id="panel">
-        <button><i class="fal fa-trash"></i></button>
         <button class="jur"><i class="fal fa-history"></i></button>
         <button><i class="clr fal fa-eraser"></i></button>
         <button><i class="backSpace fal fa-arrow-left"></i></button>
+       <button class="adBtn"><i class="fal fa-chevron-down"></i></button>
       </div>
+    </div>
+    <div id="additionalOper">
+      <button>rad</button>
+      <button data="sin" class="adBt">sin</button>
+      <button data="cos" class="adBt">cos</button>
+      <button data="ctg" class="adBt">ctg</button>
+      <button data="x^y" class="adBt">x<sup>y</sup></button>
+      <button data="ln" class="adBt">ln</button>
+      <button data="lg" class="adBt">lg</button>
+      <button data="x^2" class="adBt">x<sup>2</sup></button>
+      <button data="x^-1" class="adBt">x<sup>-1</sup></button>
+      <button data="sqrt" class="adBt">&radic;x</button>
+      <button data="x!" class="adBt">x!</button>
+      <button data="pi" class="adBt">π</button>
     </div>
     <div id="numBlock">
         <button data="1" class="num">1</button>

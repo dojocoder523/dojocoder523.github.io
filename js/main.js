@@ -1,11 +1,12 @@
 let btn = document.querySelectorAll('.num');
 let text = document.querySelector('#n1');
 let res;
-text.style.font = "200 4vh 'Comfortaa'";
+text.style.font = "400 4vh 'Roboto Condensed', sans-serif";
+text.style.color = "#fff";
 text.value = '';
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
-    text.style.font = "200 4vh 'Comfortaa'";
+    text.style.font = "400 4vh 'Roboto Condensed', sans-serif";
     text.style.color = "#fff";
     let dat = this.getAttribute('data');
     if (text.value === '') {
@@ -36,10 +37,10 @@ equal.onclick = function() {
     text.value = '';
   }
   if (exp === 'Infinity') {
-    text.style.font = "200 2.5vh 'Comfortaa'";
+    text.style.font = "400 2.5vh 'Roboto Condensed', sans-serif";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
-    text.style.color = '#0F9B97';
+    text.style.color = ' #1ABC9C';
     text.value += ' = ' + exp;
     exp1.push(text.value);
     hysBoard.value += exp1 + '\n';
@@ -196,6 +197,27 @@ for (item of accord) {
 	});
 
 }
+
+let panBtn = document.querySelectorAll('.panBtn');
+
+for (item of panBtn) {
+	item.addEventListener('click', function() {
+		
+		if (this.style.color == "#0F9B97") {
+			this.style.color = "#fff";
+		} else {
+			for (el of panBtn) {
+				el.style.color = "#fff";
+			}
+			this.style.color = "#0F9B97";
+
+		};
+
+		
+	});
+
+}
+
 
 let adOp = document.querySelector('#additionalOper'),
   adBtn = document.querySelector('.adBtn');

@@ -7,10 +7,9 @@
 }
 
 body {
-  font-family: 'Comfortaa';
+  font-family: 'Roboto Condensed', sans-serif;
   background: #26292e;
-  font-weight: lighter;
-
+  font-weight: 300;
 }
 
 .app {
@@ -27,8 +26,9 @@ body {
   height: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background: rgba(0, 0, 0, 0.4);
-
+  background: #17191c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  border-bottom: 0.5px solid #1ABC9C;
 }
 
 .appHeader h1 {
@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 3.5vh;
-  font-weight: 200;
+  font-weight: 300;
   margin-left: 8vw;
   color: #1ABC9C;
   letter-spacing: 2px;
@@ -71,7 +71,7 @@ body {
   width: 70vw;
   margin-top: 20%;
   background: none;
-
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 .accordion-item {
@@ -87,10 +87,9 @@ body {
 	padding: 20px 15px;
 	background: #17191c;
 	color: #1ABC9C;
-
   outline: none;
 	position: relative;
-	font-weight: lighter;
+	
 	letter-spacing: 1px;
 	transition: .3s ease-in-out;
 	display: flex;
@@ -100,9 +99,15 @@ body {
 
 .accordion-item-title h1 {
 	padding: 0;
-	font-size: 3vh;
-	font-weight: lighter;
+  font-size: 3.5vh;
+  font-weight: 400;
 }
+
+.accordion-item-title i {
+  font-size: 2.6vh;
+  
+}
+
 
 .accordion-item-content {
 	position: relative;
@@ -115,31 +120,68 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
 }
 
 .accordion-item-content h3 {
   margin-bottom: 15px;
-  font-size: 2.6vh;
+  font-size: 3vh;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .accordion-item-content p {
   margin-bottom: 15px;
-  font-size: 2.3vh;
+  font-size: 2.5vh;
   letter-spacing: 1px;
+  font-weight: 300;
+  
 }
 
 .accordion-item-content p label {
   position: relative;
-  width: 50%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.form_radio_btn {
+	display: inline-block;
+	margin-bottom: 14px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 30px;
+	line-height: 48px;
+	border: 1px solid #1ABC9C;
+  user-select: none;
+  color: #1ABC9C;
+  letter-spacing: 1px;
+  font-size: 2.5vh;
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+ 
 
+.form_radio_btn input[type=radio]:checked + label {
+  background: #1ABC9C;
+  color: #fff;
+}
+ 
+
+.form_radio_btn label:hover {
+  color: #fff;
+}
 
 .accordion-item-content hr {
   width: 50%;
-  color: #1ABC9C;
   margin-bottom: 14px;
+  border-color:#1ABC9C;
 }
 .active {
   outline: none;
@@ -156,7 +198,7 @@ body {
 .appHeader button {
   background: #26292e;
   font-size: 3vh;
-  font-weight: lighter;
+  font-weight: 300;
   color: #1ABC9C;
   border: none;
   outline: none;
@@ -171,7 +213,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 #ioBoard textarea {
@@ -186,26 +228,13 @@ body {
   color: #fff;
 }
 
+
 #numBlock {
   width: 100vw;
   height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-#panel {
-  width: 100vw;
-  height: 8vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-#panel button {
-  background: none;
-  border: none;
-  color: #1ABC9C;
-  font-size: 2.3vh;
-  outline: none;
+  border-top: 0.5px solid #1ABC9C;
 }
 
 #numBlock button {
@@ -231,14 +260,6 @@ body {
   font-size: 3vh !important;
 }
 
-#n1::placeholder {
-  color: #fff;
-  font-weight: 200;
-  letter-spacing: 2px;
-  font-family: 'Comfortaa';
-  font-size: 4vh;
-}
-
 #percentCalc {
   position: absolute;
   visibility: hidden;
@@ -262,6 +283,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 .percentBoard label {
@@ -274,6 +296,9 @@ body {
   padding-left: 5vh;
 }
 
+.percentBoard label:hover {
+  transition: .3s ease;
+} 
 
 .percentBoard input[type="text"] {
   background: transparent;
@@ -283,7 +308,7 @@ body {
   text-align: right;
   color: #fff;
   font-size: 3vh;
-  font-family: 'Comfortaa';
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 200;
   letter-spacing: 2px;
   outline: none;
@@ -292,8 +317,8 @@ body {
 .percentBoard input[type="text"]::placeholder {
   font-size: 3vh;
   color: #fff;
-  font-family: 'Comfortaa';
-  font-weight: 200;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
@@ -302,6 +327,7 @@ body {
   height: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-top: 0.5px solid #1ABC9C;
 }
 
 .ok {
@@ -335,7 +361,7 @@ body {
 #panel {
   width: 100vw;
   background: none;
-  height: 6vh;
+  height: 8vh;
   display: grid;
   border-radius: 3vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -346,11 +372,15 @@ body {
   background: none;
   height: 100%;
   border: none;
-  color:#1ABC9C;
-  font-size: 2.3vh;
+  color:#fff;
+  font-size: 2.2vh;
   outline: none;
+  transition: .3s ease;
 }
 
+.fa-plus-circle {
+  font-size: 2.5vh;
+}
 
 #additionalOper {
   position: absolute;
@@ -359,26 +389,29 @@ body {
   width: 75vw;
   height: 60vh;
   overflow: hidden;
-  transform: translateX(101%);
-  transition: 0.3s ease;
-
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 #additionalOper.adActive {
   transform: translateX(0);
-  transition: 0.3s ease;
 }
 
 #additionalOper button {
   background: #26292e;
   border: none;
   outline: none;
-  font-size: 3vh;
-  color:#1ABC9C;
-  font-weight: 200;
+  font-size: 3.5vh;
+  color:#fff;
+  font-weight: 300;
   letter-spacing: 1px;
+  transition: .3s ease;
+}
+
+#additionalOper button:hover {
+  color: #0F9B97;
 }
 
 #journal {
@@ -393,7 +426,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: #202833;
+  background:#131417;
 }
 
 .hysBoard {
@@ -405,7 +438,7 @@ body {
   padding: 20px 42px;
   color: #0F9B97;
   resize: none;
-  font: 300 4vh 'Comfortaa';
+  font: 400 4vh 'Roboto Condensed';
 }
 
 .hysPanel {
@@ -431,4 +464,10 @@ body {
 
 #journal .appHeader h1 {
   grid-column: 1/4;
+}
+
+
+textarea::placeholder {
+  font: 400 4vh 'Roboto Condensed'!important;
+  color: #fff;
 }

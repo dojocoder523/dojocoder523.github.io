@@ -28,7 +28,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background: #17191c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-  border-bottom: 0.5px solid #1ABC9C;
 }
 
 .appHeader h1 {
@@ -78,10 +77,7 @@ body {
 	width: 100%;
 	position: relative;
   outline: none;
-  border: 1px solid #1ABC9C;
 }
-
-
 
 .accordion-item-title {
 	padding: 20px 15px;
@@ -89,7 +85,6 @@ body {
 	color: #1ABC9C;
   outline: none;
 	position: relative;
-	
 	letter-spacing: 1px;
 	transition: .3s ease-in-out;
 	display: flex;
@@ -105,9 +100,8 @@ body {
 
 .accordion-item-title i {
   font-size: 2.6vh;
-  
-}
 
+}
 
 .accordion-item-content {
 	position: relative;
@@ -120,7 +114,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 .accordion-item-content h3 {
@@ -135,7 +129,7 @@ body {
   font-size: 2.5vh;
   letter-spacing: 1px;
   font-weight: 300;
-  
+
 }
 
 .accordion-item-content p label {
@@ -166,13 +160,13 @@ body {
   font-weight: 300;
   transition: 0.3s ease-in-out;
 }
- 
+
 
 .form_radio_btn input[type=radio]:checked + label {
   background: #1ABC9C;
   color: #fff;
 }
- 
+
 
 .form_radio_btn label:hover {
   color: #fff;
@@ -234,7 +228,6 @@ body {
   height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border-top: 0.5px solid #1ABC9C;
 }
 
 #numBlock button {
@@ -298,7 +291,7 @@ body {
 
 .percentBoard label:hover {
   transition: .3s ease;
-} 
+}
 
 .percentBoard input[type="text"] {
   background: transparent;
@@ -327,7 +320,6 @@ body {
   height: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border-top: 0.5px solid #1ABC9C;
 }
 
 .ok {
@@ -356,7 +348,6 @@ body {
   font-weight: 200;
   background: rgba(0, 0, 0, 0.4);
 }
-
 
 #panel {
   width: 100vw;

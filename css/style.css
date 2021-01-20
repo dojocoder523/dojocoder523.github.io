@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
   user-select: none;
+}
+
+html {
+  max-width: 100vw;
   overflow: hidden;
 }
 
@@ -13,8 +17,8 @@ body {
 }
 
 .app {
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,14 +28,14 @@ body {
 .appHeader {
   width: 100vw;
   height: 10vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   background: #17191c;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 .appHeader h1 {
-  grid-column: 1/4;
+  width: 75%;
   display: flex;
   align-items: center;
   font-size: 3.5vh;
@@ -67,8 +71,8 @@ body {
 }
 
 .wrapper {
-  width: 70vw;
-  margin-top: 20%;
+  width: 70%;
+  margin-top: 10%;
   background: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
@@ -80,7 +84,7 @@ body {
 }
 
 .accordion-item-title {
-	padding: 20px 15px;
+	padding: 10px 15px;
 	background: #17191c;
 	color: #1ABC9C;
   outline: none;
@@ -190,6 +194,7 @@ body {
 
 
 .appHeader button {
+  width: 25%;
   background: #26292e;
   font-size: 3vh;
   font-weight: 300;
@@ -206,13 +211,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 #ioBoard textarea {
-  width: 100vw;
-  height: 22vh;
+  width: 100%;
+  height: 75%;
   resize: none;
   background: none;
   border: none;
@@ -222,15 +227,18 @@ body {
   color: #fff;
 }
 
-
 #numBlock {
   width: 100vw;
   height: 60vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #numBlock button {
+  width: 25%;
+  height: 20%;
   border: none;
   outline: none;
   background: rgba(0, 0, 0, 0.4);
@@ -239,18 +247,19 @@ body {
   color: #fafafa;
 }
 .prc {
-  font-size: 4vh!important;
+  font-size: 3.5vh!important;
 }
 .equal {
   background: #26292e!important;
   color: #1ABC9C!important;
-  font-size: 4vh !important;
+  font-size: 3.5vh !important;
 }
 
 .vt {
   color: #1ABC9C!important;
   background: #26292e!important;
   font-size: 3vh !important;
+  font-weight: 300;
 }
 
 #percentCalc {
@@ -350,17 +359,16 @@ body {
 }
 
 #panel {
-  width: 100vw;
+  width: 100%;
   background: none;
-  height: 8vh;
-  display: grid;
-  border-radius: 3vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 25%;
+  display: flex;
+  justify-content: center;
 }
 
 #panel button {
+  width: 25%;
   background: none;
-  height: 100%;
   border: none;
   color:#fff;
   font-size: 2.2vh;
@@ -381,8 +389,10 @@ body {
   overflow: hidden;
   transform: translateX(100%);
   transition: 0.3s ease-in-out;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-center;
+  align-items: flex-start;
 }
 
 #additionalOper.adActive {
@@ -390,6 +400,8 @@ body {
 }
 
 #additionalOper button {
+  width: 33.33%;
+  height: 25%;
   background: #26292e;
   border: none;
   outline: none;
@@ -420,7 +432,7 @@ body {
 }
 
 .hysBoard {
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   outline: none;
   border: none;
@@ -432,7 +444,7 @@ body {
 }
 
 .hysPanel {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: center;

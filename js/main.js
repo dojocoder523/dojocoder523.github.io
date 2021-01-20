@@ -220,10 +220,12 @@ for (item of panBtn) {
 
 
 let adOp = document.querySelector('#additionalOper'),
-  adBtn = document.querySelector('.adBtn');
+  adBtn = document.querySelector('.adBtn'),
+  ioBoard = document.querySelector('#ioBoard');
 
 adBtn.onclick = function() {
   adOp.classList.toggle('adActive');
+  ioBoard.style.zIndex = '2';
 }
 // Тригонометрические операции
 

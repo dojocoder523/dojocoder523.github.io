@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   user-select: none;
-  user-zoom: none;
+  user-zoom: fixed;
 }
 
 html {

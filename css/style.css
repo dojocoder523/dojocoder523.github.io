@@ -356,7 +356,6 @@ body {
   display: grid;
   border-radius: 3vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
 #panel button {
@@ -456,7 +455,6 @@ body {
 #journal .appHeader h1 {
   grid-column: 1/4;
 }
-
 
 textarea::placeholder {
   font: 400 4vh 'Roboto Condensed'!important;

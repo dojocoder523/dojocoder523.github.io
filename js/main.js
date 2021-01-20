@@ -182,7 +182,7 @@ const accord = document.querySelectorAll('.accordion-item');
 
 for (item of accord) {
 	item.addEventListener('click', function() {
-		
+
 		if (this.classList.contains('active')) {
 			this.classList.remove('active');
 		} else {
@@ -193,7 +193,7 @@ for (item of accord) {
 
 		};
 
-		
+
 	});
 
 }
@@ -202,7 +202,7 @@ let panBtn = document.querySelectorAll('.panBtn');
 
 for (item of panBtn) {
 	item.addEventListener('click', function() {
-		
+
 		if (this.style.color == "#0F9B97") {
 			this.style.color = "#fff";
 		} else {
@@ -213,7 +213,7 @@ for (item of panBtn) {
 
 		};
 
-		
+
 	});
 
 }
@@ -224,7 +224,6 @@ let adOp = document.querySelector('#additionalOper'),
 
 adBtn.onclick = function() {
   adOp.classList.toggle('adActive');
-
 }
 // Тригонометрические операции
 

@@ -57,12 +57,11 @@ body {
   height: 100vh;
   background: #26292e;
   z-index: 45;
-  transform: translateX(100%);
-  transition: .3s ease-in-out;
+  display: none;
 }
 
 #appMenu.menuActive {
-  transform: translateX(0);
+  display: block;
 }
 
 .menuCont {

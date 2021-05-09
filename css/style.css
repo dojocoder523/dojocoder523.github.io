@@ -390,16 +390,14 @@ body {
   bottom: 0;
   width: 75vw;
   height: 60vh;
-  transform: translateX(100%);
-  transition: 0.3s ease-in-out;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
 
 #additionalOper.adActive {
-  transform: translateX(0%);
+  display: flex;
 }
 
 #additionalOper button {

@@ -36,7 +36,7 @@ equal.onclick = function() {
   if (exp === 'undefined') {
     text.value = '';
   }
-  if (exp === 'Infinity' || 'NaN') {
+  if (exp == 'Infinity' || exp == 'NaN') {
     text.style.font = "400 2.5vh 'Roboto Condensed', sans-serif";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {

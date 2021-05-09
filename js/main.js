@@ -36,7 +36,7 @@ equal.onclick = function() {
   if (exp === 'undefined') {
     text.value = '';
   }
-  if (exp === 'Infinity') {
+  if (exp === 'Infinity' || 'NaN') {
     text.style.font = "400 2.5vh 'Roboto Condensed', sans-serif";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
@@ -203,13 +203,13 @@ let panBtn = document.querySelectorAll('.panBtn');
 for (item of panBtn) {
 	item.addEventListener('click', function() {
 
-		if (this.style.color == "#0F9B97") {
+		if (this.style.color == "#0063B1") {
 			this.style.color = "#fff";
 		} else {
 			for (el of panBtn) {
 				el.style.color = "#fff";
 			}
-			this.style.color = "#0F9B97";
+			this.style.color = "#0063B1";
 
 		};
 

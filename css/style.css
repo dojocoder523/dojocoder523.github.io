@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  background: #212121;
+  background: #333c4d;
   font-weight: 300;
 }
 
@@ -37,7 +37,7 @@ body {
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  background: #212121;
+  background: #21252b;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -48,7 +48,7 @@ body {
   font-size: 3.5vh;
   font-weight: 300;
   margin-left: 8vw;
-  color: #0078D7;
+  color: #00cc6a;
   letter-spacing: 2px;
 }
 
@@ -93,8 +93,8 @@ body {
 
 .accordion-item-title {
 	padding: 10px 15px;
-	background: #212121;
-	color: #0078D7;
+	background: #21252b;
+	color: #00cc6a;
   outline: none;
 	position: relative;
 	letter-spacing: 1px;
@@ -117,7 +117,7 @@ body {
 
 .accordion-item-content {
 	position: relative;
-	background: #363636;
+	background: #3a3f4b;
 	color: #fff;
 	height: 0;
 	overflow: hidden;
@@ -176,7 +176,8 @@ body {
 
 
 .form_radio_btn input[type=radio]:checked + label {
-  background: #204e8a;
+  background: #00d16c;
+  color: #000;
 }
 
 
@@ -187,7 +188,7 @@ body {
 .accordion-item-content hr {
   width: 50%;
   margin-bottom: 14px;
-  border-color:#0078D7;
+  border-color:#00d16c;
 }
 .active {
   outline: none;
@@ -203,10 +204,10 @@ body {
 
 .appHeader button {
   width: 25%;
-  background: #204e8a;
+  background: #3a3f4b;
   font-size: 3vh;
   font-weight: 300;
-  color: #fff;
+  color: #00d16c;
   border: none;
   outline: none;
 }
@@ -215,7 +216,7 @@ body {
   position: relative;
   width: 100vw;
   height: 30vh;
-  background: #232327;
+  background: #282c34;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,7 +252,7 @@ body {
   height: 20%;
   border: none;
   outline: none;
-  background: #212121;
+  background: #21252b;
   font-size: 3.5vh;
   font-weight: 200;
   color: #fafafa;
@@ -260,14 +261,14 @@ body {
   font-size: 3.5vh!important;
 }
 .equal {
-  background: #204e8a!important;
-  color: #fff!important;
+  background: #3a3f4b!important;
+  color: #00cc6a!important;
   font-size: 3.5vh !important;
 }
 
 .vt {
-  color: #fff!important;
-  background: #204e8a!important;
+  color: #00cc6a!important;
+  background: #3a3f4b!important;
   font-size: 3vh !important;
   font-weight: 300;
 }
@@ -294,7 +295,7 @@ body {
   height: 30%;
   display: flex;
   flex-wrap: wrap;
-  background: #232327;
+  background: #282c34;
   box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.5),
   inset 0 0px 1px transparent;
 }
@@ -366,7 +367,7 @@ body {
   color: #fff;
   font-size: 3.5vh;
   font-weight: 200;
-  background: #212121;
+  background: #21252b;
 }
 
 #panel {

@@ -438,7 +438,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background:#232327;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
 }
 
 .hysBoard {

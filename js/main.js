@@ -40,7 +40,7 @@ equal.onclick = function() {
     text.style.font = "400 2.5vh 'Roboto Condensed', sans-serif";
     text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
   } else {
-    text.style.color = ' #1ABC9C';
+    text.style.color = '#0078D7';
     text.value += ' = ' + exp;
     exp1.push(text.value);
     hysBoard.value += exp1 + '\n';
@@ -112,8 +112,8 @@ numBoard = document.querySelector('#number');
 
 numBtn.onclick = function numInBoard() {
   numBoard.value = '0';
-  numBtn.style.color = "#1ABC9C";
-  numBoard.style.color = "#1ABC9C";
+  numBtn.style.color = "#0078D7";
+  numBoard.style.color = "#0078D7";
   perCalc.style.color = "#fff";
   perBoard.style.color = "#fff";
   for (let a = 0; a < prBtn.length; a++) {
@@ -133,8 +133,8 @@ perBoard = document.querySelector('#percent');
 
 perCalc.onclick = function() {
   perBoard.value = '0';
-  perCalc.style.color = "#1ABC9C";
-  perBoard.style.color = "#1ABC9C";
+  perCalc.style.color = "#0078D7";
+  perBoard.style.color = "#0078D7";
   numBtn.style.color = "#fff";
   numBoard.style.color = "#fff";
   for (let a = 0; a < prBtn.length; a++) {
@@ -203,13 +203,13 @@ let panBtn = document.querySelectorAll('.panBtn');
 for (item of panBtn) {
 	item.addEventListener('click', function() {
 
-		if (this.style.color == "#0063B1") {
+		if (this.style.color == "#0078D7") {
 			this.style.color = "#fff";
 		} else {
 			for (el of panBtn) {
 				el.style.color = "#fff";
 			}
-			this.style.color = "#0063B1";
+			this.style.color = "#0078D7";
 
 		};
 

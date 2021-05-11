@@ -151,8 +151,14 @@ perCalc.onclick = function() {
 
 ok.onclick = function() {
   let pd = numPerc.value * percent.value / 100;
-  result.value = pd;
-  perBoard.value += '%';
+  if ((numBoard.value == '0' || numBoard.value == '') || (perBoard.value == '0' || perBoard.value == '')) {
+    numBoard.value = '0';
+    perBoard.value = '0';
+    result.value = '0';
+  }else {
+    result.value = pd;
+    perBoard.value += '%';
+  }
 };
 
 let prClr = document.querySelector('.prClr');
@@ -237,7 +243,7 @@ let adBt = document.querySelectorAll('.adBt');
 
 for (let o = 0; o < adBt.length; o++) {
   adBt[o].onclick = function() {
-    text.style.color = '#0F9B97';
+    text.style.color = '#00d16c';
     let oper = this.getAttribute('data');
     let jr = text.value;
     if (oper == 'pi') {

@@ -152,12 +152,10 @@ perCalc.onclick = function() {
 ok.onclick = function() {
   let pd = numPerc.value * percent.value / 100;
   if ((numBoard.value == '0' || numBoard.value == '') || (perBoard.value == '0' || perBoard.value == '')) {
-    numBoard.value = '0';
-    perBoard.value = '0';
     result.value = '0';
   }else {
     if (percent.value > 100){
-      result.value = '0';
+      result.value = '% > 100';
     }else {
       result.value = pd;
     }

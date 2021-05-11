@@ -156,8 +156,11 @@ ok.onclick = function() {
     perBoard.value = '0';
     result.value = '0';
   }else {
-    result.value = pd;
-    perBoard.value += '%';
+    if (percent.value > 100){
+      result.value = '0';
+    }else {
+      result.value = pd;
+    }
   }
 };
 

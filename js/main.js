@@ -234,7 +234,6 @@ let adOp = document.querySelector('#additionalOper'),
 
 adBtn.onclick = function() {
   adOp.classList.toggle('adActive');
-  ioBoard.style.zIndex = '2';
 }
 // Тригонометрические операции
 

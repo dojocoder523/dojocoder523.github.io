@@ -1,18 +1,26 @@
 let btn = document.querySelectorAll('.num');
 let text = document.querySelector('#n1');
 let res;
-text.style.font = "400 4vh 'Roboto Condensed', sans-serif";
-text.style.color = "#fff";
+const ERR_DIV_MESS = 'Warning: "You cannot divide by zero!"' + '\n' + '\n' + '(Press the clear button to go back)';
+const BIG_FONT_SIZE = "400 4vh 'Roboto Condensed', sans-serif";
+const SMALL_FONT_SIZE = "400 3vh 'Roboto Condensed', sans-serif";
+const GREEN = '#00cc6a', WHITE = '#fff';
+text.style.font = BIG_FONT_SIZE;
+text.style.color = WHITE;
 text.value = '';
+
+// Функция ввода данных в текстовое поле
+
 for (let i = 0; i < btn.length; i++) {
   btn[i].onclick = function() {
-    text.style.font = "400 4vh 'Roboto Condensed', sans-serif";
-    text.style.color = "#fff";
+    text.style.font = BIG_FONT_SIZE;
+    text.style.color = WHITE;
     let dat = this.getAttribute('data');
     if (text.value === '') {
       text.value = dat;
-    } else if (text.value == 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+    } else if (text.value == ERR_DIV_MESS) {
       text.value = dat;
+      text.style.textAlign = "right";
     } else {
       text.value += dat;
     }
@@ -22,51 +30,63 @@ for (let i = 0; i < btn.length; i++) {
 
 let equal = document.querySelector('.equal'),
   hysBoard = document.querySelector('.hysBoard');
+  
+/*
+ Данная функция получает выражение 
+ из текстового поля и производит
+ вычисление, результат записывается 
+ в переменную exp, после нескольких 
+ проверок, если все хорошо, результат 
+ плюсуется к выражению и выводится в 
+ текстовое поле. После чего выведенная
+ строка добавляется к массиву exp1 и 
+ происходит обновление журнала.
+*/
+
 equal.onclick = function() {
-  let exp = text.value,
-    exp1 = [];
+  let exp = text.value, exp1 = [];
   exp = eval(exp);
+  
+  // Проверка, является ли результат выражения вещественным числом, если да то сократить до сотых, если нет, то до целых.
+  
+  exp % 1 !== 0 
+     ? exp = exp.toFixed(2) 
+     : exp = exp.toFixed();
+     
+// Защиты от дураков: 
 
-  if (exp % 1 !== 0) {
-    exp = exp.toFixed(2);
-  } else {
-    exp = exp.toFixed();
-  }
-
-  if (exp === 'undefined') {
-    text.value = '';
-  }
+  if (exp === 'undefined') { text.value = ''; }
+  
   if (exp == 'Infinity' || exp == 'NaN') {
-    text.style.font = "400 2.5vh 'Roboto Condensed', sans-serif";
-    text.value = 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)';
+    text.style.font = SMALL_FONT_SIZE;
+    text.value = ERR_DIV_MESS;
+    text.style.textAlign = "center";
   } else {
-    text.style.color = '#00cc6a';
-    text.value += ' = ' + exp;
+    text.style.color = GREEN;
+    text.value += '=' + exp;
     exp1.push(text.value);
     hysBoard.value += exp1 + '\n';
   }
 };
 let clr = document.querySelector('.clr');
 clr.onclick = function() {
-  text.style.color = '#fff';
-  if (text.value === 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+  text.style.color = WHITE;
+  if (text.value == ERR_DIV_MESS || text.value) {
     text.value = '';
-  } else {
-    text.value = '';
+    text.style.textAlign = "right";
   }
 };
-
 
 let bsp = document.querySelector('.backSpace');
 bsp.onclick = function() {
   let n = text.value;
-  if (text.value === 'На 0 делить нельзя!' + '\n' + '\n' + '(Нажми кнопку очистки чтобы вернуться назад)') {
+  if (text.value == ERR_DIV_MESS) {
     text.value = '';
+    text.style.textAlign = "right";
   } else {
     text.value = n.substring(0, n.length - 1);
   }
 };
-
 
 let jurBtn = document.querySelector('.jur'),
   jrActive = document.querySelector('#journal'),
@@ -92,8 +112,6 @@ let percent = document.querySelector('#percent');
 let result = document.querySelector('#result'),
   ok = document.querySelector('.ok');
 
-
-
 let prcCalc = document.querySelector('#percentCalc'),
   prcBtn = document.querySelector('.prc'),
   clsPerc = document.querySelector('.clsPerc');
@@ -112,18 +130,16 @@ numBoard = document.querySelector('#number');
 
 numBtn.onclick = function numInBoard() {
   numBoard.value = '0';
-  numBtn.style.color = "#00cc6a";
-  numBoard.style.color = "#00cc6a";
-  perCalc.style.color = "#fff";
-  perBoard.style.color = "#fff";
+  numBtn.style.color = GREEN;
+  numBoard.style.color = GREEN;
+  perCalc.style.color = WHITE;
+  perBoard.style.color = WHITE;
   for (let a = 0; a < prBtn.length; a++) {
     prBtn[a].onclick = function() {
       let dat1 = this.getAttribute('data');
-      if (numBoard.value == '0') {
-        numBoard.value = dat1;
-      } else {
-        numBoard.value += dat1;
-      }
+      numBoard.value == '0' ? 
+      numBoard.value = dat1
+      : numBoard.value += dat1;
     }
   }
 };
@@ -133,10 +149,10 @@ perBoard = document.querySelector('#percent');
 
 perCalc.onclick = function() {
   perBoard.value = '0';
-  perCalc.style.color = "#00cc6a";
-  perBoard.style.color = "#00cc6a";
-  numBtn.style.color = "#fff";
-  numBoard.style.color = "#fff";
+  perCalc.style.color = GREEN;
+  perBoard.style.color = GREEN;
+  numBtn.style.color = WHITE;
+  numBoard.style.color = WHITE;
   for (let a = 0; a < prBtn.length; a++) {
     prBtn[a].onclick = function() {
       let dat1 = this.getAttribute('data');
@@ -210,16 +226,15 @@ let panBtn = document.querySelectorAll('.panBtn');
 for (item of panBtn) {
 	item.addEventListener('click', function() {
 
-		if (this.style.color == "#00cc6a") {
-			this.style.color = "#fff";
+		if (this.style.color == GREEN) {
+			this.style.color = WHITE;
 		} else {
 			for (el of panBtn) {
-				el.style.color = "#fff";
+				el.style.color = WHITE;
 			}
-			this.style.color = "#00cc6a";
+			this.style.color = GREEN;
 
 		};
-
 
 	});
 
@@ -243,9 +258,13 @@ let adBt = document.querySelectorAll('.adBt');
 
 for (let o = 0; o < adBt.length; o++) {
   adBt[o].onclick = function() {
-    text.style.color = '#00d16c';
+    text.style.font = BIG_FONT_SIZE;
     let oper = this.getAttribute('data');
     let jr = text.value;
+    if (text.value == ERR_DIV_MESS) {
+      text.value = '0';
+      text.style.textAlign = "right";
+    }
     if (oper == 'pi') {
       if (text.value === 0) {
         text.value = 0;

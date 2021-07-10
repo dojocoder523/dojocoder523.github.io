@@ -262,7 +262,7 @@ for (let o = 0; o < adBt.length; o++) {
     let oper = this.getAttribute('data');
     let jr = text.value;
     if (text.value == ERR_DIV_MESS) {
-      text.value = '0';
+      text.value = '';
       text.style.textAlign = "right";
     }
     if (oper == 'pi') {

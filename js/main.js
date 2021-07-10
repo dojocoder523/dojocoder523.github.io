@@ -263,7 +263,10 @@ for (let o = 0; o < adBt.length; o++) {
     let jr = text.value;
     if (text.value == ERR_DIV_MESS) {
       text.value = '';
+      text.style.color = WHITE;
       text.style.textAlign = "right";
+    } else {
+      text.style.color = GREEN;
     }
     if (oper == 'pi') {
       if (text.value === 0) {

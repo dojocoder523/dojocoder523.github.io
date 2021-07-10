@@ -3,7 +3,7 @@ let text = document.querySelector('#n1');
 let res;
 const ERR_DIV_MESS = 'Warning: "You cannot divide by zero!"' + '\n' + '\n' + '(Press the clear button to go back)';
 const BIG_FONT_SIZE = "400 4vh 'Roboto Condensed', sans-serif";
-const SMALL_FONT_SIZE = "400 3vh 'Roboto Condensed', sans-serif";
+const SMALL_FONT_SIZE = "400 2.5vh 'Roboto Condensed', sans-serif";
 const GREEN = '#00cc6a', WHITE = '#fff';
 text.style.font = BIG_FONT_SIZE;
 text.style.color = WHITE;
